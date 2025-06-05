@@ -1,0 +1,27 @@
+.about-detail {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 10 40px;
+    height: 200px;
+    width: 50%;
+    min-width: 500px;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.about-divider {
+    width: 0;
+    border-right: solid 1px white;
+    height: 90%;
+    margin: 0 40px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
