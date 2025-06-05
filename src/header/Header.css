@@ -17,7 +17,7 @@
         linear-gradient(120deg, blue, rgba(255,255,255,0) 20%),
         linear-gradient(120deg, rgba(255,255,255,0) 80%, red 100%); */
     /* background-color: rgba(255,255,255,0.1); */
-    backdrop-filter: blur(8px);
+    backdrop-filter: invert(30%) brightness(0.33) blur(1px);
     height: var(--header-height);
 
     display: flex;
@@ -54,9 +54,9 @@
 }
 
 #header nav a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
 }
 
-a:visited {
+a, a:visited {
     color:inherit;
 }

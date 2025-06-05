@@ -5,13 +5,9 @@
     flex-direction: row;
 
     padding: 10 40px;
-    height: 200px;
-    width: 50%;
+    height: 150px;
+    width: 60%;
     min-width: 500px;
-}
-
-.reversed {
-    flex-direction: row-reverse;
 }
 
 .about-divider {
@@ -24,4 +20,17 @@
 img {
     width: 100px;
     height: 100px;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.about-description {
+    text-align: end;
+    white-space: pre-wrap;
+}
+
+.reversed .about-description {
+    text-align: start;
 }
