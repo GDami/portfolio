@@ -16,11 +16,6 @@ function App() {
 			<div className='content'>
 				<Landing />
 				<About />
-				<Boiler />
-				<Boiler />
-				<Boiler />
-				<Boiler />
-				<Boiler />
 			</div>
 		</>
 	)
