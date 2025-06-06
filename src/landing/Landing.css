@@ -3,3 +3,7 @@
     align-content: center;
     height: calc(100vh - var(--header-height));
 }
+
+.home-img {
+    height:150px;
+}

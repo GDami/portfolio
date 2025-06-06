@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-  margin: 0;
-  background-color: rgb(31,31,31);
-  color: white;
-  --header-height: 40px;
+	margin: 0;
+	background-color: rgb(31,31,31);
+	color: white;
 
-  font-family: "Rubik", sans-serif;
+	font-family: "Rubik", sans-serif;
+}
+
+	/* variables */
+html {
+	--header-height: 40px;
 }
 
 :root {
-    scroll-padding-top: 50px;
+    scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
 }
