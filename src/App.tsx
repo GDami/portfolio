@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import './App.css'
-import Boiler from './Boiler'
 import { Header } from './header/Header'
 import { Landing } from './landing/Landing'
 import { About } from './about/About'
