@@ -1,9 +1,9 @@
-import viteLogo from '/vite.svg'
 import './AboutDetail.css'
 
 interface AboutProps {
     description: string,
-    reversed:boolean
+    reversed:boolean,
+    svg:string
 }
 
 export function AboutDetail(props: AboutProps) {
@@ -11,7 +11,7 @@ export function AboutDetail(props: AboutProps) {
         <div className={"about-detail " + (props.reversed ? "reversed" : "")}>
             <span className="about-description">{props.description}</span>
             <div className="about-divider" />
-            <img src={viteLogo} alt="vite logo"></img>
+            <img className="about-img" src={props.svg} alt="svg img"></img>
         </div>
     )
 }
