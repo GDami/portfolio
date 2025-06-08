@@ -15,17 +15,17 @@ export function About() {
             <h1>About me</h1>
             <AboutDetail
                 description={generalDescription}
-                reversed={true}
+                reversed={false}
                 svg={meSvg}
             />
             <AboutDetail
                 description={skillsDescription}
-                reversed={false}
+                reversed={true}
                 svg={skillsSvg}
             />
             <AboutDetail
                 description={hobbiesDescription}
-                reversed={true}
+                reversed={false}
                 svg={hobbiesSvg}
             />
         </div>
