@@ -12,7 +12,7 @@ export function Projects() {
             <div className="projects-list">
                 <Project
                     title="Suivi Candidatures"
-                    description="Suivi Candidatures (French for 'application tracking') is a tool I developed to help me keep track of all the applications I've sent (what a world we live in)."
+                    description="Suivi Candidatures - French for 'application tracking' - is a tool I developed to help me keep track of all the applications I've sent (you're in there)."
                     url="https://github.com/GDami/SuiviCandidatures/"
                     image={suiviImg}
                 ></Project>
