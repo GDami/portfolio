@@ -8,7 +8,6 @@ export function Projects() {
     return (
         <div className="section projects" id="projects">
             <h1>Projects</h1>
-            <h3></h3>
             <div className="projects-list">
                 <Project
                     title="Suivi Candidatures"
