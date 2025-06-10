@@ -1,0 +1,25 @@
+@media screen and (min-width: 700px) {
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: var(--spacing-large);
+        column-gap: var(--spacing-large);
+    }
+
+}
+
+@media screen and (max-width: 699px) {
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--spacing-large);
+    }
+
+}
+
+.projects-list {
+    margin-inline: var(--spacing-large);
+    max-width: 900px;
+}

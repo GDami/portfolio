@@ -1,0 +1,23 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    /* width: 400px; */
+
+    margin-block: var(--spacing-low);
+    row-gap: var(--spacing-low);
+}
+
+.project-img {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+}
+
+.project-title {
+    text-align: center;
+    margin:0;
+}
+
+.project-description {
+    color: var(--color-easy);
+    margin-left: var(--spacing-xlow);
+}

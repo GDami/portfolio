@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1000px) {
     .about-detail {
-        margin-inline: 40px;
+        margin-inline: var(--spacing-large);
     }
 }
 
