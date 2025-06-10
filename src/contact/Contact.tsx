@@ -8,13 +8,13 @@ export function Contact() {
                 <h3>You can find me on</h3>
                 <ul className="contact-list">
                     <li className="contact-item">
-                        <a href="https://github.com/GDami">GitHub</a>
+                        <a href="https://github.com/GDami" target="_blank">GitHub</a>
                     </li>
                     <li className="contact-item">
-                        <a href="https://www.linkedin.com/in/damien-gervy/">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/damien-gervy/" target="_blank">Linkedin</a>
                     </li>
                     <li className="contact-item">
-                        <a href="mailto:gervydamien@gmail.com">gervydamien@gmail.com</a>
+                        <a href="mailto:gervydamien@gmail.com" target="_blank">gervydamien@gmail.com</a>
                     </li>
                 </ul>
             </div>
