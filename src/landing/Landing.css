@@ -7,3 +7,7 @@
 .home-img {
     height:150px;
 }
+
+.landing h3 {
+    color: var(--color-strong)
+}

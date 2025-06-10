@@ -23,3 +23,12 @@
     margin-inline: var(--spacing-large);
     max-width: 900px;
 }
+
+.projects > h3 {
+    display: none;
+    font-weight: normal;
+}
+
+.projects h3 {
+    color: var(--color-strong);
+}

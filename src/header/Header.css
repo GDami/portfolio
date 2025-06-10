@@ -32,6 +32,8 @@
     animation-range: 100px 150px; */
 
     border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    color: var(--color-strong)
     
 }
 

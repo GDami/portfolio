@@ -6,3 +6,17 @@
     flex-direction: column;
     align-items: center;
 }
+
+.section:last-child {
+    margin-bottom: var(--spacing-large);
+}
+
+footer {
+    margin-inline: var(--spacing-large);
+    padding-block: var(--spacing-low);
+
+}
+
+h1 {
+    color: var(--color-strong);
+}
