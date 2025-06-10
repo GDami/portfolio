@@ -1,0 +1,16 @@
+.contact-list {
+    padding:0;
+}
+
+.contact-item {
+    list-style: none;
+    color: var(--color-strong);
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.contact h3 {
+    font-weight: normal;
+}
