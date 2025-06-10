@@ -8,6 +8,7 @@ export function Projects() {
     return (
         <div className="section projects" id="projects">
             <h1>Projects</h1>
+            <h3>Projects 👍</h3>
             <div className="projects-list">
                 <Project
                     title="Suivi Candidatures"
@@ -23,7 +24,7 @@ export function Projects() {
                 ></Project>
                 <Project
                     title="random spotify button"
-                    description="A simple app I made to familiarize myself with Angular. This app gives you a random track with the press of a button. It uses the Spotify API."
+                    description="A simple app I made to familiarize myself with Angular. This app shows you a random track with the press of a button. It uses the Spotify API."
                     url="https://github.com/GDami/random-spotify/"
                     image={randomImg}
                 ></Project>
