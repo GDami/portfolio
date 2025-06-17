@@ -20,11 +20,11 @@
     }
 } */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .about-detail {
         margin-inline: var(--spacing-common);
     }
-}
+} */
 
 @media screen and (min-width: 481px) {
 
@@ -57,6 +57,7 @@
     .about-detail {
         flex-direction: row ;
         padding: 10 40px;
+        gap: var(--spacing-common);
         height: auto;
         width: auto;
         min-width: 200px;
@@ -72,8 +73,18 @@
         float: left;
     }
 
-    .about-description {
+    /* .about-description {
         margin-left: 20px;
+    } */
+}
+
+@media screen and (max-width: 380px) {
+    .about-detail {
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 50px;
     }
 }
 
