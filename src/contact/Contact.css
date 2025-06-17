@@ -1,4 +1,7 @@
 .contact-list {
+    display: flex;
+    justify-content: center;
+    gap:var(--spacing-large);
     padding:0;
 }
 
@@ -7,10 +10,22 @@
     color: var(--color-strong);
 }
 
+.contact-item img {
+    width: 30px;
+}
+
 .contact-container {
     text-align: center;
 }
 
 .contact h3 {
     font-weight: normal;
+}
+
+.contact-divider {
+    content:"";
+    width: var(--spacing-xlarge);
+    margin:auto;
+    height: 1px;
+    background-color: var(--color-easy);
 }
