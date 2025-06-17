@@ -20,6 +20,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .about-detail {
+        margin-inline: var(--spacing-common);
+    }
+}
+
 @media screen and (min-width: 481px) {
 
     .about-description {
@@ -54,7 +60,7 @@
         height: auto;
         width: auto;
         min-width: 200px;
-        margin-block: 20px;
+        margin: var(--spacing-common);
     }
 
     .about-divider {

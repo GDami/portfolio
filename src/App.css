@@ -1,18 +1,25 @@
 .section {
-    margin-top: var(--spacing-large);
-    margin-bottom: var(--spacing-xlarge);
+    margin: var(--spacing-common);
+    padding: var(--spacing-common);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: 1200px;
+
+    border: solid 1px var(--color-easy);
 }
 
-.section:last-child {
-    margin-bottom: var(--spacing-large);
+.section::before {
+    content: "";
+    height: 1;
+    width: 500px;
 }
 
 footer {
-    margin-inline: var(--spacing-large);
+    border-top: solid 1px var(--color-easy);
+    margin-inline: var(--spacing-common);
     padding-block: var(--spacing-low);
 
 }
