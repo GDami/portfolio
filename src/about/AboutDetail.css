@@ -14,11 +14,11 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .about-detail {
         margin-inline: var(--spacing-large);
     }
-}
+} */
 
 @media screen and (max-width: 600px) {
     .about-detail {
@@ -60,7 +60,7 @@
         height: auto;
         width: auto;
         min-width: 200px;
-        margin: var(--spacing-common);
+        margin-block: var(--spacing-common);
     }
 
     .about-divider {

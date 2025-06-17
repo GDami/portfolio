@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
 
     .projects-list {
         display: grid;
@@ -9,7 +9,7 @@
 
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 799px) {
 
     .projects-list {
         display: flex;
@@ -20,13 +20,12 @@
 }
 
 .projects-list {
-    margin-inline: var(--spacing-large);
+    /* margin-inline: var(--spacing-large); */
     max-width: 900px;
 }
 
 .projects > h3 {
     display: none;
-    font-weight: normal;
 }
 
 .projects h3 {
