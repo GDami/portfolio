@@ -23,15 +23,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     position: sticky;
-    top: 0;
-    padding: 0 100px;
+
     /* animation: shrinkHeader linear auto both;
     animation-timeline: scroll();
     animation-range: 100px 150px; */
 
-    border-bottom: 1px solid var(--color-easy);
 
     color: var(--color-strong)
     
@@ -43,7 +41,6 @@
     top: 0; */
 
     display: flex;
-    justify-content: center;
     /* vertical-align: middle; */
     /* align-items: center; */
 }
@@ -61,4 +58,29 @@
 
 a, a:visited {
     color:inherit;
+}
+
+@media screen and (min-width: 481px) {
+    #header {
+        top: 0;
+        border-bottom: 1px solid var(--color-easy);
+    }
+
+    #header nav {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        bottom: 0;
+        border-top: 1px solid var(--color-easy);
+
+        order:10;
+    }
+
+    #header nav{
+        width: 100vw;
+        justify-content: space-evenly;
+    }
 }
