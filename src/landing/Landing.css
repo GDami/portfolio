@@ -2,6 +2,9 @@
     text-align: center;
     align-content: center;
     height: calc(100vh - var(--header-height));
+
+    margin: var(--spacing-common);
+    padding: var(--spacing-common);
 }
 
 .home-img {
