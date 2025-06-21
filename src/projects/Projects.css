@@ -1,10 +1,8 @@
 @media screen and (min-width: 800px) {
 
     .projects-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: var(--spacing-large);
-        column-gap: var(--spacing-large);
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -14,20 +12,6 @@
     .projects-list {
         display: flex;
         flex-direction: column;
-        row-gap: var(--spacing-large);
     }
 
-}
-
-.projects-list {
-    /* margin-inline: var(--spacing-large); */
-    max-width: 900px;
-}
-
-.projects > h3 {
-    display: none;
-}
-
-.projects h3 {
-    color: var(--color-strong);
 }

@@ -2,10 +2,12 @@
 
 body {
 	margin: 0;
-	background-color: rgb(31,31,31);
+	background-color: var(--bg-color);
 	color: var(--color-easy);
 
-	font-family: "Rubik", sans-serif;
+	font-family: "Monaco", monospace;
+
+	line-height: 1.5;
 }
 
 	/* variables */
@@ -18,7 +20,20 @@ html {
 	--spacing-xlarge: 3.5rem;
 
 	--color-strong: white;
-	--color-easy: #C5C5C5;
+	--color-easy: rgb(197,197,197);
+
+	--color-strong-light: black;
+	--color-easy-light: rgb(21,21,21);
+
+	--bg-color: rgb(31,31,31);
+	--bg-color-light: white;
+
+	--transition-time: 0.2s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
 :root {

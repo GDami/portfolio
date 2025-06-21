@@ -5,7 +5,7 @@ import mailImg from "/mail.svg"
 
 export function Contact() {
     return (
-        <div className="section contact" id="contact">
+        <div className="section-container contact" id="contact">
             <h1>Contact</h1>
             <div className="contact-divider"></div>
             <div className="contact-container">

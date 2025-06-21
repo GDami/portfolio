@@ -1,0 +1,34 @@
+.about {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: var(--spacing-xlarge)
+}
+
+.about-portrait {
+    width: 100%;
+    height: auto;
+}
+
+.about-details {
+    height: 100%;
+}
+
+.about-details h2 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.about-details h2 + p {
+    margin-top: var(--spacing-common);
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-portrait {
+        max-width: 200px;
+    }
+}

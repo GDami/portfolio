@@ -48,6 +48,8 @@
 #header nav a {
     padding: calc((var(--header-height) - 1em) / 2) 15px;
     text-decoration: none;
+
+    transition: background-color var(--transition-time);
     /* display: flex;
     align-items: center; */
 }
