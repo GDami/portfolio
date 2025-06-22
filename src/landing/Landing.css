@@ -3,10 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* min-height: calc(100vh - var(--header-height) - 2*var(--spacing-common)); */
 
     padding: var(--spacing-large);
-    margin-top: var(--spacing-large);
+    padding-top: calc(var(--spacing-large) * 2);
 }
 
 .home-img {

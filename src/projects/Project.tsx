@@ -27,7 +27,7 @@ export function Project(props:ProjectProps) {
                     {props.technos.map((techno) => {
                         const src = techno.startsWith('/') ? techno : 'bxl  bx-' + techno
                         return (
-                        <ProjectIcon iconSrc={src}></ProjectIcon>
+                        <ProjectIcon key={techno} iconSrc={src}></ProjectIcon>
                     )})}
                 </div>
             </div>
