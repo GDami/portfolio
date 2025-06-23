@@ -1,17 +1,4 @@
-
-
-@keyframes shrinkHeader {
-    from {
-        height:80px;
-    }
-
-    to {
-        height:30px;
-    }
-}
-
 #header {
-
     height: var(--header-height);
     width: fit-content;
     align-self: flex-end;
