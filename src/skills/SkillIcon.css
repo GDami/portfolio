@@ -1,0 +1,88 @@
+.skill-icon {
+    display: flex;
+    width: auto;
+    height: 3em;
+    padding: var(--spacing-common);
+
+    position: relative;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    
+    border: solid 1px var(--color-strong-light);
+}
+
+.skill-text {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skill-text i {
+    font-size: 1.5em;
+}
+
+.skill-bg {
+    height: 1em;
+    width: 0;
+    background-color: transparent;
+
+    position: absolute;
+    left:var(--spacing-common);
+    bottom:var(--spacing-common);
+
+    transition: all var(--transition-time);
+
+    border-radius: 20px;
+}
+
+.skill-bg:not(.back) {
+    backdrop-filter: invert(100%);
+}
+
+.skill-bg.back {
+    width: calc(100% - 2 * var(--spacing-common));
+    background-color: black;
+    transform: translateX(2px) translateY(2px);
+}
+
+/* .skill-icon:hover .skill-bg:not(.back){
+    background-color: var(--color-strong);
+} */
+
+.skill-icon .skill-bg.level1 {
+    width: 20%;
+}
+
+.skill-icon .skill-bg.level2 {
+    width: 40%;
+}
+
+.skill-icon .skill-bg.level3 {
+    width: 60%;
+}
+
+.skill-icon .skill-bg.level4 {
+    width: 80%;
+}
+
+.skill-icon .skill-bg.level5 {
+    width: 100%;
+}
+
+.skill-icon .inverter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: backdrop-filter var(--transition-time);
+
+    cursor: pointer;
+}
+
+.skill-icon .inverter:hover {
+    backdrop-filter: invert(100%);
+}

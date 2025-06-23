@@ -9,6 +9,8 @@
     color: var(--color-strong);
     background-color: var(--bg-color);
     transition: all var(--transition-time);
+
+    z-index: 10;
     
 }
 

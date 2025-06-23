@@ -4,7 +4,7 @@ import { Landing } from './landing/Landing'
 import { About } from './about/About'
 import { Projects } from './projects/Projects'
 import { Contact } from './contact/Contact'
-// import { Skills } from './skills/Skills'
+import { Skills } from './skills/Skills'
 
 
 
@@ -16,8 +16,8 @@ function App() {
 			<Header />
 			<div className='content'>
 				<Landing />
+				<section className="light"><Skills /></section>
 				<section className="light"><About /></section>
-				{/* <section className="light"><Skills /></section> */}
 				<section><Projects /></section>
 				<section><Contact /></section>
 			</div>
