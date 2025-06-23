@@ -12,45 +12,26 @@
 
 #header {
 
-    
-    /* background:
-        linear-gradient(120deg, blue, rgba(255,255,255,0) 20%),
-        linear-gradient(120deg, rgba(255,255,255,0) 80%, red 100%); */
-    /* background-color: var(--bg-color); */
-    /* backdrop-filter: invert(30%) brightness(0.33) blur(1px); */
     height: var(--header-height);
     width: fit-content;
     align-self: flex-end;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     
     position: fixed;
-
-    /* animation: shrinkHeader linear auto both;
-    animation-timeline: scroll();
-    animation-range: 100px 150px; */
-
 
     backdrop-filter: blur(5px);
     color: var(--color-strong);
     background-color: var(--bg-color);
     transition: all var(--transition-time);
-
-    /* opacity: 90%; */
     
 }
 
 #header.light {
     color: var(--color-strong-light);
-    /* background: linear-gradient(to right, #FFFFFF00, #FFFFFFAA 2%, #FFFFFFAA 98%, #FFFFFF00 ); */
     background-color: var(--bg-color-light);
 }
 
 #header nav {
     height: 100%;
-    /* position: sticky;
-    top: 0; */
 
     display: flex;
     flex-direction: row;
@@ -59,8 +40,6 @@
 
     border-bottom: solid 1px var(--color-easy);
     border-left: solid 1px var(--color-easy);
-    /* vertical-align: middle; */
-    /* align-items: center; */
 }
 
 #header nav a {
@@ -70,12 +49,9 @@
     text-decoration: none;
 
     transition: all var(--transition-time);
-    /* display: flex;
-    align-items: center; */
 }
 
 #header nav a:hover {
-    /* background-color: var(--bg-color); */
     transform: translateY(-3px);
     font-weight: 700;
 }
@@ -86,26 +62,7 @@ a, a:visited {
 }
 
 @media screen and (min-width: 481px) {
-    #header {
-        top: 0;
-        /* border-bottom: 1px solid var(--color-easy); */
-    }
-
-    #header nav {
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 480px) {
-    #header {
-        bottom: 0;
-        border-top: 1px solid var(--color-easy);
-
-        order:10;
-    }
-
-    #header nav{
-        width: 100vw;
-        justify-content: space-evenly;
-    }
 }
