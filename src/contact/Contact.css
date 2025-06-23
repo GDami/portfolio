@@ -3,6 +3,7 @@
     border-top: solid 1px var(--color-easy);
 
     gap: var(--spacing-common);
+    max-width: 400px;
 }
 
 

@@ -20,9 +20,11 @@ export function Project(props:ProjectProps) {
             <div className="project-text">
                 <br></br>
                 <h2 className="project-title">{props.title}</h2>
+                <br></br>
                 <p className="project-description">
                     {props.description}
                 </p>
+                <br></br>
                 <div className="project-icons">
                     {props.technos.map((techno) => {
                         const src = techno.startsWith('/') ? techno : 'bxl  bx-' + techno
