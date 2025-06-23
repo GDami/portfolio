@@ -1,3 +1,4 @@
+import { ContactIcon } from '../contact/ContactIcon'
 import './Landing.css'
 import homeImg from '/monkey-desktop.png'
 
@@ -14,15 +15,9 @@ export function Landing() {
                     <p>I am a web developer passionate about creating smooth user-focused experiences, with an emphasis on quality. I am dedicated to continuous learning and growth, putting both skill and commitment into every project.</p>
                 </div>
                 <div className='landing-buttons'>
-                    <a className='' href='https://github.com/GDami' target="_blank">
-                        <span>< i className='bxl  bx-github'  ></i> </span>
-                    </a>
-                    <a className='' href='https://www.linkedin.com/in/damien-gervy/' target="_blank">
-                        <span>< i className='bxl  bx-linkedin'  ></i>  </span>
-                    </a>
-                    <a className='' href='https://x.com/DamienGervy' target="_blank">
-                        <span>< i className='bxl  bx-twitter'  ></i>  </span>
-                    </a>
+                    <ContactIcon link='https://github.com/GDami' class='bxl  bx-github'></ContactIcon>
+                    <ContactIcon link='https://www.linkedin.com/in/damien-gervy' class='bxl  bx-linkedin'></ContactIcon>
+                    <ContactIcon link='https://x.com/DamienGervy' class='bxl  bx-twitter'></ContactIcon>
                 </div>
             </div>
             <img className="home-img" alt="home-img" src={homeImg}></img>

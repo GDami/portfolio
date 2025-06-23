@@ -1,7 +1,16 @@
+.contact {
+    padding-top: var(--spacing-large);
+    border-top: solid 1px var(--color-easy);
+
+    gap: var(--spacing-common);
+}
+
+
+
 .contact-list {
     display: flex;
     justify-content: center;
-    gap:var(--spacing-large);
+    gap:var(--spacing-common);
     padding:0;
 }
 
