@@ -52,23 +52,23 @@
 } */
 
 .skill-icon .skill-bg.level1 {
-    width: 20%;
+    width: calc((100% - 2 * var(--spacing-common)) * 0.2);
 }
 
 .skill-icon .skill-bg.level2 {
-    width: 40%;
+    width: calc((100% - 2 * var(--spacing-common)) * 0.4);
 }
 
 .skill-icon .skill-bg.level3 {
-    width: 60%;
+    width: calc((100% - 2 * var(--spacing-common)) * 0.6);
 }
 
 .skill-icon .skill-bg.level4 {
-    width: 80%;
+    width: calc((100% - 2 * var(--spacing-common)) * 0.8);
 }
 
 .skill-icon .skill-bg.level5 {
-    width: 100%;
+    width: calc((100% - 2 * var(--spacing-common)));
 }
 
 .skill-icon .inverter {
