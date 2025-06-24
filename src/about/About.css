@@ -1,15 +1,19 @@
 .about {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: var(--spacing-xlarge)
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xlarge);
 }
 
 .about-portrait {
-    width: 100%;
+    flex: 2;
+    max-width: 400px;
     height: auto;
+
+    border: solid 1px var(--bg-color);
 }
 
 .about-details {
+    flex: 3;
     height: 100%;
 }
 
@@ -24,11 +28,14 @@
 
 @media screen and (max-width: 800px) {
     .about {
-        display: flex;
         flex-direction: column;
     }
 
     .about-portrait {
-        max-width: 200px;
+        max-width: 300px;
+    }
+
+    .about-details .main-heading {
+        text-align: center;
     }
 }
