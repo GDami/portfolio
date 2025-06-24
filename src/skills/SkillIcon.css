@@ -81,9 +81,11 @@
     transition: all var(--transition-time);
 
     cursor: pointer;
+
+    background-color: transparent;
 }
 
-.skill-icon .inverter:hover {
+.skill-icon .inverter:hover, .skill-icon .inverter:focus {
     backdrop-filter: invert(100%);
     transform: translateX(-5px) translateY(5px);
 }
