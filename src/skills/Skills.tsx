@@ -13,7 +13,7 @@ export function Skills() {
                 <SkillIcon name="TypeScript" class="bxl bx-typescript" level={3} description="I have learned TypeScript back during my last internship, when I had to update an internal application with it. I never looked back, and used it in every project since then."></SkillIcon>
                 <SkillIcon name="React.js" class="bxl bx-react" level={2} description="This website was made in it !"></SkillIcon>
                 <SkillIcon name="Angular" class="bxl bx-angular" level={1}></SkillIcon>
-                <SkillIcon name="Java" class="bxl bx-java" level={3} description="Probably the language I have most diverse experience in. School projects, personal projects and client projects using Spring Boot."></SkillIcon>
+                <SkillIcon name="Java" class="bxl bx-java" level={3} description="Probably the language I have most the diverse experience in. School projects, personal projects and client projects using Spring Boot."></SkillIcon>
                 <SkillIcon name="PostgreSQL" class="bxl bx-postgresql" level={2}></SkillIcon>
                 <SkillIcon name="Python" class="bxl bx-python" level={1} description=""></SkillIcon>
                 <SkillIcon name="django" class="bxl bx-django" level={1} description="I learned this recently, for a personal project you can read about if you scroll down a bit !"></SkillIcon>
