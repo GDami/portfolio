@@ -15,7 +15,7 @@ export function About() {
                 <p>{generalDescription}</p>
                 <br></br>
                 <h2>&gt; cat hobbies.txt</h2>
-                <p>My other interests include <b>cat petting</b>, <u>cat petting</u> and <em>cat petting</em>. I love exploring new places, learning stuff and overusing html tags. But behind the scenes is where I like to look. Figuring out how it works is what excites me.</p>
+                <p>My other interests include <b>piano</b>, <u>biking</u> and <em>cat petting</em>. I love exploring new places, learning stuff and misusing html tags. Generally, behind the scenes is where I like to look. Figuring out how something works is what excites me.</p>
                 
             </div>
         </div>
