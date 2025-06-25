@@ -5,6 +5,11 @@
     font-size: 1.5em;
 }
 
+.contact-icon svg {
+    max-width: 1.5em;
+    max-height: 1.5em;
+}
+
 .contact-icon {
     display: flex;
     width: 3em;
