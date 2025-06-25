@@ -12,7 +12,7 @@ function initHtmlElements() {
 }
 
 function handleScroll(this: Window, _ev: Event) : any {
-    const comparedHeight = 20 + this.screen.width >= 800 ? 0 : this.screen.height
+    const comparedHeight = (this.screen.width >= 800 ? 0 : this.screen.height) - 20
     for (let i = 0; i<lightSections.length; i++) {
         const rect = lightSections[i].getBoundingClientRect()
         if (rect.top <= comparedHeight && rect.bottom >= comparedHeight) {
