@@ -23,6 +23,7 @@ export function Landing() {
                     <ContactIcon link='https://www.codingame.com/profile/8df919d89c9224b9ccf053820029c7986684466' class=''>
                         {codinGameSvg}
                     </ContactIcon>
+                    <ContactIcon link='https://leetcode.com/u/DamienDamien/' class='bxl  bx-leetcode'></ContactIcon>
                 </div>
             </div>
             <img className="home-img" alt="home-img" src={homeImg}></img>
