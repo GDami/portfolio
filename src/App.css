@@ -18,6 +18,14 @@ footer {
 
 }
 
+@media screen and (max-width: 800px) {
+
+    /* without this the header and footer borders are aligned */
+    footer {
+        padding-block: calc(var(--spacing-low) + 2px);
+    }
+}
+
 h1 {
     color: var(--color-strong);
     font-size: 2.5em;

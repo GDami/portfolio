@@ -12,16 +12,16 @@ function initHtmlElements() {
 }
 
 function handleScroll(this: Window, _ev: Event) : any {
+    const comparedHeight = 20 + this.screen.width >= 800 ? 0 : this.screen.height
     for (let i = 0; i<lightSections.length; i++) {
         const rect = lightSections[i].getBoundingClientRect()
-        if (rect.top <= 20 && rect.bottom >= 20) {
+        if (rect.top <= comparedHeight && rect.bottom >= comparedHeight) {
             header.classList.add("light")
             break
         } else if (i == lightSections.length - 1) {
             header.classList.remove("light")
         }
     }
-    console.log("d")
 }
 
 export function Header() {
@@ -34,11 +34,26 @@ export function Header() {
     return (
         <header id="header">
             <nav>
-                <a href='#home'>Home</a>
-                <a href='#skills'>Skills</a>
-                <a href='#about'>About</a>
-                <a href='#projects'>Projects</a>
-                <a href='#contact'>Contact</a>
+                <a href='#home'>
+                    <span>Home</span>
+                    < i className='bx  bx-home-alt'  ></i> 
+                </a>
+                <a href='#skills'>
+                    <span>Skills</span>
+                    < i className='bx  bx-brush'  ></i> 
+                </a>
+                <a href='#about'>
+                    <span>About</span>
+                    < i className='bx  bx-info-square'  ></i> 
+                </a>
+                <a href='#projects'>
+                    <span>Projects</span>
+                    < i className='bx  bx-chart-gantt'  ></i> 
+                </a>
+                <a href='#contact'>
+                    <span>Contact</span>
+                    < i className='bx  bx-contact-book'  ></i> 
+                </a>
             </nav>
         </header>
     )
