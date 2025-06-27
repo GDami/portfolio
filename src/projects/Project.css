@@ -7,7 +7,13 @@
     padding: var(--spacing-common);
     margin-top: var(--spacing-common);
     
-    border: solid 1px var(--color-easy)
+    border: solid 1px var(--color-easy);
+
+    transition: all var(--transition-time);
+}
+
+.project:hover {
+    box-shadow: 0 0 10px white;
 }
 
 .project:first-child {

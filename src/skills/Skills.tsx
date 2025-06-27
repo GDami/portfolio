@@ -4,7 +4,7 @@ import './Skills.css'
 export function Skills() {
     return (
         <div className="section-container skills" id="skills">
-            <h1 className="main-heading">My <span>Skills</span></h1>
+            <h1 className="main-heading section-title">My <span>Skills</span></h1>
             <div className="skills-list">
                 <SkillIcon name="HTML5" class="bxl bx-html5" level={4} description={
                     "<h1>Hello World!</h1>"
