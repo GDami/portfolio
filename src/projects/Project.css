@@ -14,7 +14,6 @@
 
 .project:hover {
     box-shadow: 0 0 10px white;
-    transform: scale(1);
 }
 
 .project:first-child {
