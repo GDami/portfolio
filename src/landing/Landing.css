@@ -45,6 +45,7 @@
     display: flex;
     gap: var(--spacing-common);
     margin-top: var(--spacing-common);
+    flex-wrap: wrap;
 }
 
 
@@ -53,4 +54,10 @@
     flex-direction: column;
     gap: 1em;
     text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+    .home-img {
+        font-size: 5em;
+    }
 }

@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: row;
     gap: var(--spacing-common);
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 800px) {
