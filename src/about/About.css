@@ -26,6 +26,10 @@
     margin-top: var(--spacing-common);
 }
 
+.about-details .main-heading {
+    margin: auto;
+}
+
 @media screen and (max-width: 800px) {
     .about {
         flex-direction: column;

@@ -9,7 +9,7 @@ export function About() {
         <div className='section-container about' id="about">
             <img className="about-portrait" src={portraitSvg} alt='portrait'></img>
             <div className='about-details'>
-                <h1 className='main-heading'>About <span>me</span></h1>
+                <h1 className='main-heading section-title'>About <span>me</span></h1>
                 <br></br>
                 <h2>&gt; whoami</h2>
                 <p>{generalDescription}</p>
