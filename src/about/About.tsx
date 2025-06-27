@@ -11,10 +11,10 @@ export function About() {
             <div className='about-details'>
                 <h1 className='main-heading section-title'>About <span>me</span></h1>
                 <br></br>
-                <h2>&gt; whoami</h2>
+                <h2>&gt; whoami<span>_</span></h2>
                 <p>{generalDescription}</p>
                 <br></br>
-                <h2>&gt; cat hobbies.txt</h2>
+                <h2>&gt; cat hobbies.txt<span>_</span></h2>
                 <p>My other interests include <b>piano</b>, <u>biking</u> and <em>cat petting</em>. I love exploring new places, learning stuff and misusing html tags. Generally, behind the scenes is where I like to look. Figuring out how something works is what excites me.</p>
                 
             </div>

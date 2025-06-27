@@ -24,19 +24,12 @@
     position:relative;
 }
 
-.about-details h2::after {
-    content: "";
-    position: absolute;
-    right:-2px;
-    top:10%;
-    width: 1px;
-    height: 80%;
-    background-color: var(--color-strong-light);
+.about-details h2 span {
     opacity: 0;
 }
 
-.about-details h2:hover::after {
-    animation: blink 1s step-start infinite;
+.about-details h2:hover span {
+    animation: blink 1s var(--transition-time) step-start infinite;
 }
 
 @keyframes blink {
