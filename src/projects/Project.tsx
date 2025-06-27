@@ -23,7 +23,6 @@ export function Project(props:ProjectProps) {
     return (
         <div className={"project" + (props.reversed ? " reversed" : "")}>
             <div className="project-text">
-                <br></br>
                 <h2 className="project-title">{props.title}</h2>
                 <br></br>
                 <p className="project-description">

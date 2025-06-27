@@ -5,15 +5,19 @@
     gap: var(--spacing-large);
 
     padding: var(--spacing-common);
+    padding-inline: calc(2 * var(--spacing-common));
     margin-top: var(--spacing-common);
     
     border: solid 1px var(--color-easy);
+    border-radius: 2px;
 
     transition: all var(--transition-time);
 }
 
 .project:hover {
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 5px white;
+    background-color: #242424;
+    filter: brightness(104%);
 }
 
 .project:first-child {
