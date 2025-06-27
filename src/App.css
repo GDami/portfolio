@@ -47,7 +47,7 @@ h1 {
 .section-title::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     height: 2px;
     background-color: var(--color-strong);
     width: 0;
