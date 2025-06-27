@@ -1,17 +1,16 @@
+import type { PropsWithChildren } from 'react'
 import './ProjectIcon.css'
 
-type IconProps = {
+type IconProps = PropsWithChildren & {
     iconSrc:string
 }
 
 export function ProjectIcon(props:IconProps) {
+    const inside = props.children ? props.children : < i className={props.iconSrc}  ></i> 
+
     return (
         <span className="project-icon">
-            {props.iconSrc.startsWith("/") ? (
-                <img src={props.iconSrc} alt='project-icon'></img>
-            ) : (
-                < i className={props.iconSrc}></i> 
-            )}
+            {inside}
         </span>
     )
 }

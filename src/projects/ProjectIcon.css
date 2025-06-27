@@ -13,14 +13,21 @@
 .project-icon i {
     color: var(--color-strong);
     font-size: 2em;
-    
+}
+.project-icon i, .project-icon svg {
     transition: all var(--transition-time);
+}
+
+.project-icon svg {
+    color: var(--color-strong);
+    width: 2em;
+    height: 2em;
 }
 
 .project-icon:hover {
     background-color: var(--color-strong);
 }
 
-.project-icon:hover i {
+.project-icon:hover i, .project-icon:hover svg {
     color: var(--color-strong-light);
 }

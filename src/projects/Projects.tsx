@@ -15,7 +15,7 @@ export function Projects() {
                         description="Suivi Candidatures - French for 'application tracking' - is a tool I developed to help me keep track of all the applications I've sent (you're in there). It is a fullstack project with a few pages, data management and server side rendering."
                         url="https://github.com/GDami/SuiviCandidatures/"
                         image={suiviImg}
-                        technos={['html5','css3','python','django',]}
+                        technos={['html5','css3','python','django', 'sqlite']}
                     ></Project>
                     <Project
                         title="random spotify button"
@@ -30,7 +30,7 @@ export function Projects() {
                         description="My obsession with games has led me to delve into game dev, and I started coding mods as a way to gain experience developing and testing in short cycles. Mods also come with the advantage of requiring a minimal setup to start working, and having a bunch of game system already in place and ready to be messed with. I have mostly made mods for Brotato and Slay the Spire, but I have also tried my hand at 3D animation on Skyrim, using blender mainly."
                         url="https://github.com/stars/GDami/lists/mod-repos/"
                         image={modsImg}
-                        technos={['java','blender']}
+                        technos={['java','blender', 'godot']}
                     ></Project>
                     <Project
                         title="Godot Mod Loader"
@@ -38,7 +38,7 @@ export function Projects() {
                         url="https://github.com/GodotModding/godot-mod-loader"
                         image={modloaderImg}
                         reversed
-                        technos={[]}
+                        technos={['godot']}
                     ></Project>
                 </div>
             </div>
