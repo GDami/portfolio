@@ -6,6 +6,7 @@ const codinGameSvg = (<svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin=
 export function Landing() {
     return (
         <div className="landing" id="home">
+            <span className='home-img'><span className="type">&gt;Hi!</span><span className="blink">_</span></span>
             <div className='landing-text'>
                 <div className='landing-header'>
                     <h1 className='main-heading'>Hello, I'm <span>Damien Gervy.</span></h1>
@@ -25,7 +26,6 @@ export function Landing() {
                     <ContactIcon link='https://leetcode.com/u/DamienDamien/' class='bxl  bx-leetcode'></ContactIcon>
                 </div>
             </div>
-            <span className='home-img'>&gt;hi!<span>_</span></span>
         </div>
     )
 }
