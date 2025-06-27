@@ -47,6 +47,19 @@ h1 {
     width: fit-content;
     position: relative;
     align-self: flex-start;
+    margin-left: var(--spacing-large);
+}
+
+.section-title::before {
+    content: "";
+    position:absolute;
+    right: calc(100% + var(--spacing-xlarge));
+    bottom: 22%;
+    height: 50%;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--color-strong);
+    transition: all var(--transition-time) ease;
 }
 
 .section-title::after {
@@ -61,13 +74,18 @@ h1 {
     transition: width var(--transition-time) ease;
 }
 
+.section-title:hover::before {
+    height: 40%;
+    transform: translateX(2px);
+}
+
 .section-title:hover::after {
     width: 110%;
     left: 0;
     right: auto;
 }
 
-.light .section-title::after {
+.light .section-title::after, .light .section-title::before {
     background-color: var(--color-strong-light);
 }
 
@@ -102,5 +120,9 @@ p span {
 @media screen and (max-width: 480px) {
     .section-container {
         margin-inline: var(--spacing-common);
+    }
+
+    .section-title::before {
+        right: calc(100% + 2 * var(--spacing-common));
     }
 }
