@@ -53,13 +53,13 @@ h1 {
 .section-title::before {
     content: "";
     position:absolute;
-    right: calc(100% + var(--spacing-xlarge));
-    bottom: 22%;
-    height: 50%;
-    width: 100%;
-    border-radius: 4px;
+    right: calc(100% + var(--spacing-large));
+    top: 35%;
+    height: 40%;
+    width: var(--spacing-xlarge);
+    border-radius: 8px;
     background-color: var(--color-strong);
-    transition: all var(--transition-time) ease;
+    pointer-events: none;
 }
 
 .section-title::after {
@@ -69,18 +69,17 @@ h1 {
     height: 2px;
     background-color: var(--color-strong);
     width: 0;
-    right: -10%;
+    right: 0;
     left:auto;
     transition: width var(--transition-time) ease;
 }
 
-.section-title:hover::before {
+/* .section-title:hover::before {
     height: 40%;
-    transform: translateX(2px);
-}
+} */
 
 .section-title:hover::after {
-    width: 110%;
+    width: 100%;
     left: 0;
     right: auto;
 }
