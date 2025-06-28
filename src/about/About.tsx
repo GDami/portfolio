@@ -1,5 +1,5 @@
 import './About.css'
-import portraitSvg from "/1518958240827.jpg"
+import portraitImg from "/barbesmall.jpg"
 
 export function About() {
     //@ts-expect-error
@@ -9,7 +9,10 @@ export function About() {
         <div className='section-container about' id="about">
             <h1 className='main-heading section-title'>About <span>me</span></h1>
             <div className='about-container'>
-                <img className="about-portrait" src={portraitSvg} alt='portrait'></img>
+                <div className='about-img-container'>
+                    <img className="about-portrait" src={portraitImg} alt='portrait'></img>
+                    <div className='about-portrait-description'>me</div>
+                </div>
                 <div className='about-details'>
                     <h2>&gt; whoami<span>_</span></h2>
                     <p>{generalDescription}</p>
