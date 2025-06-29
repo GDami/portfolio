@@ -9,7 +9,7 @@ export function Landing() {
             <span className='home-img'><span className="type">&gt;Hi!</span><span className="blink">_</span></span>
             <div className='landing-text'>
                 <div className='landing-header'>
-                    <h1 className='main-heading'>Hello, I'm <span>Damien Gervy.</span></h1>
+                    <h1 className='main-heading'>Hello, I'm <a href='#about' className='landing-highlight'>Damien Gervy</a>.</h1>
                     <h1 className='main-heading'>I'm a <span>Fullstack Web Developer</span></h1>
                     <h1 className='main-heading'>Based in <span>France</span>.</h1>
                 </div>
