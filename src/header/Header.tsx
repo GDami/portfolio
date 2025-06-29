@@ -38,13 +38,13 @@ export function Header() {
                     <span>Home</span>
                     < i className='bx  bx-home-alt'  ></i> 
                 </a>
-                <a href='#skills'>
-                    <span>Skills</span>
-                    < i className='bx  bx-brush'  ></i> 
-                </a>
                 <a href='#about'>
                     <span>About</span>
                     < i className='bx  bx-info-square'  ></i> 
+                </a>
+                <a href='#skills'>
+                    <span>Skills</span>
+                    < i className='bx  bx-brush'  ></i> 
                 </a>
                 <a href='#projects'>
                     <span>Projects</span>

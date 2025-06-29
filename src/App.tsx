@@ -16,8 +16,8 @@ function App() {
 			<Header />
 			<div className='content'>
 				<Landing />
-				<section className="light"><Skills /></section>
 				<section className="light"><About /></section>
+				<section className="light"><Skills /></section>
 				<section><Projects /></section>
 				<section><Contact /></section>
 			</div>
