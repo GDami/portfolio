@@ -3,12 +3,11 @@ import './Header.css'
 
 
 let header:HTMLElement
-const lightSectionNames = ['about', 'skills']
 let lightSections:HTMLElement[] = []
 
 function initHtmlElements() {
     header = document.getElementById("header")!
-    lightSections = lightSectionNames.map((id) => document.getElementById(id)!)
+    lightSections = Array.prototype.slice.call(document.getElementsByClassName("light"))
 }
 
 function handleScroll(this: Window, _ev: Event) : any {
