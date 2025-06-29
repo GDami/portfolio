@@ -45,6 +45,10 @@ export function Header() {
                     <span>Skills</span>
                     < i className='bx  bx-brush'  ></i> 
                 </a>
+                <a href='#experiences'>
+                    <span>Experience</span>
+                    < i className='bx  bx-briefcase-alt-2'  ></i> 
+                </a>
                 <a href='#projects'>
                     <span>Projects</span>
                     < i className='bx  bx-chart-gantt'  ></i> 
