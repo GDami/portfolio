@@ -18,7 +18,7 @@
 }
 
 .project:first-child {
-    margin-top: var(--spacing-xlarge);
+    margin-top: var(--spacing-large);
 }
 
 .project.reversed {
