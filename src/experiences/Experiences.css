@@ -1,0 +1,16 @@
+.experiences-vertical-container {
+
+    margin-top: var(--spacing-large);
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--spacing-common);
+}

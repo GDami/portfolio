@@ -1,0 +1,47 @@
+.experience {
+    padding: var(--spacing-large);
+    border: solid 1px var(--color-easy);
+
+    display: flex;
+    flex-direction: column;
+    gap: calc(2 * var(--spacing-common));
+
+
+    transition: border-color var(--transition-time);
+}
+
+.experience:hover {
+    border-color: var(--color-strong-light);
+}
+
+.experience-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.experience-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--color-strong-light);
+
+    position: relative;
+}
+
+.experience-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.5px;
+    background-color: var(--color-strong-light);
+    width: 0;
+    right: 0;
+    left:auto;
+    transition: width var(--transition-time) ease;
+}
+
+.experience:hover .experience-title::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
