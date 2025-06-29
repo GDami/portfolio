@@ -5,6 +5,7 @@ import { About } from './about/About'
 import { Projects } from './projects/Projects'
 import { Contact } from './contact/Contact'
 import { Skills } from './skills/Skills'
+import { Experiences } from './experiences/Experiences'
 
 
 
@@ -16,10 +17,11 @@ function App() {
 			<Header />
 			<div className='content'>
 				<Landing />
-				<section className="light"><About /></section>
+				<section className=""><About /></section>
 				<section className="light"><Skills /></section>
-				<section><Projects /></section>
-				<section><Contact /></section>
+				<section className="light"><Experiences /></section>
+				<section className=""><Projects /></section>
+				<section className=""><Contact /></section>
 			</div>
 			<footer>© 2025 Damien Gervy</footer>
 		</>
