@@ -1,6 +1,6 @@
 .section-container {
     /* margin-block: var(--spacing-common); */
-    padding-block: var(--spacing-xlarge);
+    /* padding-block: var(--spacing-xlarge); */
 
     display: flex;
     flex-direction: column;
@@ -11,9 +11,10 @@
     flex:1;
 }
 
-section.light + section.light .section-container {
+/* section.light + section.light .section-container,
+.landing + section:not(.light) .section-container {
     padding-top: 0;
-}
+} */
 
 footer {
     border-top: solid 1px var(--color-easy);
@@ -93,7 +94,7 @@ h3 {
 }
 
 section {
-    padding-top: 1px;
+    padding-bottom: var(--spacing-xlarge);
     display: flex;
     justify-content: center;
 }
