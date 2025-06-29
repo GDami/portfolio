@@ -67,7 +67,7 @@
 @keyframes appear {
     from {
         opacity: 0;
-        transform: translateX(-5rem);
+        transform: translateX(-2rem);
     }
     to {
         opacity: 1;
