@@ -75,7 +75,6 @@
 }
 
 .landing-highlight {
-    text-decoration: none;
     border-radius: 2px;
     border: solid 1px var(--color-strong);
     color: var(--color-strong-light);
@@ -83,8 +82,12 @@
     padding-inline: 0.2em;
     font-size: 1.1em;
     font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
 
     transition: all var(--transition-time);
+
+    position:relative;
 }
 
 .landing-highlight:visited {
@@ -94,6 +97,17 @@
 .landing-highlight:hover {
     color: inherit;
     background-color: inherit;
+}
+
+.landing-highlight::after {
+    content:'more about me';
+    position: absolute;
+    font-size: .35em;
+    line-height: normal;
+
+    right:-5px;
+    bottom:100%;
+
 }
 
 .landing-buttons {
@@ -139,5 +153,9 @@
 @media screen and (max-width: 480px) {
     .home-img {
         font-size: 5em;
+    }
+    
+    .landing-header .main-heading {
+        font-size: 2em;
     }
 }
