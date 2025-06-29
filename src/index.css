@@ -41,9 +41,6 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-	:root {
-    	scroll-padding-top: var(--spacing-common);
-	}
 }
 
 #root {
