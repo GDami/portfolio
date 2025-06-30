@@ -1,17 +1,17 @@
 .experience {
     padding: var(--spacing-large);
-    border: solid 1px var(--color-easy);
+    border: solid 1px var(--color-strong-light);
 
     display: flex;
     flex-direction: column;
     gap: calc(2 * var(--spacing-common));
 
 
-    transition: border-color var(--transition-time);
+    transition: box-shadow var(--transition-time) ease;
 }
 
 .experience:hover {
-    border-color: var(--color-strong-light);
+    box-shadow: -10px 10px;
 }
 
 .experience-header {
@@ -32,7 +32,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    height: 0.5px;
+    height: 1.2px;
     background-color: var(--color-strong-light);
     width: 0;
     right: 0;
