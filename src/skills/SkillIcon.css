@@ -82,6 +82,6 @@
 }
 
 .skill-icon .inverter:hover, .skill-icon .inverter:focus {
-    backdrop-filter: invert(90%);
+    backdrop-filter: invert(100%);
     transform: translateX(-5px) translateY(5px);
 }
