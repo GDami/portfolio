@@ -6,6 +6,8 @@
     max-width: 1600px;
     margin-inline: var(--spacing-large);
     flex:1;
+
+    padding-top: var(--spacing-large);
 }
 
 footer {
@@ -82,9 +84,13 @@ h3 {
 }
 
 section {
-    padding-bottom: var(--spacing-xlarge);
+    padding-bottom: var(--spacing-large);
     display: flex;
     justify-content: center;
+}
+/* little hack for the navbar links */
+section.light + section.light .section-container, .landing + section:not(.light) .section-container {
+    margin-top: calc(0px - var(--spacing-large));
 }
 
 
