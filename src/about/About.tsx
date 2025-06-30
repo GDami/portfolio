@@ -17,8 +17,11 @@ export function About() {
                     <h2>&gt; whoami<span>_</span></h2>
                     <p>{generalDescription}</p>
                     <br></br>
-                    <h2>&gt; cat hobbies.txt<span>_</span></h2>
-                    <p>My other interests include <b>piano</b>, <u>biking</u> and <em>cat petting</em>. I love exploring new places, learning stuff and misusing html tags. Generally, behind the scenes is where I like to look. Figuring out how something works is what excites me.</p>
+                    <h2>&gt; education<span>_</span></h2>
+                    <p>I attended and graduated from the <a href='https://www.utt.fr/'>University of Technology of Troyes</a> in 2021. This is where I took on my first large coding projects, and learnt useful tools like algorithms, statistics or geometry.</p>
+                    <br></br>
+                    <h2>&gt; hobbies<span>_</span></h2>
+                    <p>My other interests include <b>piano</b>, <b>biking</b>, <b>cooking</b>, <b>games</b> and <b>cat petting</b>. I love exploring and learning. I also find contentment in figuring out how things work, be it through research or experimenting.</p>
                     
                 </div>
             </div>
