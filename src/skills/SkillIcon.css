@@ -47,10 +47,6 @@
     transform: translateX(2px) translateY(2px);
 }
 
-/* .skill-icon:hover .skill-bg:not(.back){
-    background-color: var(--color-strong);
-} */
-
 .skill-icon .skill-bg.level1 {
     width: calc((100% - 2 * var(--spacing-common)) * 0.2);
 }
