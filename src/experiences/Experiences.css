@@ -21,6 +21,7 @@
 .experiences-visual-timeline {
     position: relative;
     border-right: solid 2px var(--color-strong-light) ;
+    height: calc(100% + var(--spacing-large));
 }
 
 .experiences-current-time {

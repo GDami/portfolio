@@ -6,14 +6,13 @@
     flex-direction: column;
     gap: calc(2 * var(--spacing-common));
 
-
-    transition: box-shadow var(--transition-time);
+    /* have to transition the outline so it doesn't look weird */
+    transition: box-shadow var(--transition-time), outline calc(var(--transition-time)/2);
 }
 
 .experience:hover {
     box-shadow: -10px 10px;
-    border-width: 2px;
-    padding: calc(var(--spacing-large) - 1.4px);
+    outline: solid 2px;
 }
 
 .experience-header {
@@ -55,7 +54,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 617px) {
     .experience:hover .experience-title::after {
         width: 0;
     }
@@ -64,10 +63,11 @@
 @media screen and (max-width: 480px) {
     .experience {
         padding: var(--spacing-common);
+        border-width: 2px;
     }
 
     .experience:hover {
         box-shadow: none;
-        padding: calc(var(--spacing-common) - 1.4px);
+        outline: none;
     }
 }
