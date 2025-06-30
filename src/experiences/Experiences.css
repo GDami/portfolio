@@ -42,3 +42,9 @@
     align-items: center;
 
 }
+
+@media screen and (max-width: 480px) {
+    .experiences-vertical-container{
+        gap: calc(var(--spacing-common));
+    }
+}

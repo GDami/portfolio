@@ -49,7 +49,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .experience {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .experience:hover .experience-title::after {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience {
+        padding: var(--spacing-common);
+    }
+
+    .experience:hover {
+        box-shadow: none;
+        padding: calc(var(--spacing-common) - 1.4px);
     }
 }
