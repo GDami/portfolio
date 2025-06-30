@@ -9,6 +9,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1em;
+
+    color: black;
     
     border: solid 1px var(--color-strong-light);
 }
