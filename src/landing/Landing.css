@@ -40,7 +40,7 @@
 .home-img .blink {
     position: absolute;
     display: inline-block;
-    animation: landing-blink 1.5s 2s step-start infinite;
+    animation: landing-blink 1s 2s step-start infinite;
 }
 
 @keyframes landing-blink {
