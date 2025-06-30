@@ -75,6 +75,10 @@
     animation: blink 1s var(--transition-time) step-start infinite;
 }
 
+.about-details p a:hover {
+    color: var(--color-strong);
+}
+
 @keyframes blink {
     50% {
         opacity: 1;
