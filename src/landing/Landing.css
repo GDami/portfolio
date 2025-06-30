@@ -151,6 +151,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .landing {
+        padding-inline: var(--spacing-common);
+    }
+
     .home-img {
         font-size: 5em;
     }
