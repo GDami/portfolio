@@ -12,6 +12,8 @@
 
 .experience:hover {
     box-shadow: -10px 10px;
+    border-width: 2px;
+    padding: calc(var(--spacing-large) - 1.4px);
 }
 
 .experience-header {
@@ -32,7 +34,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    height: 1.2px;
+    height: 1.3px;
     background-color: var(--color-strong-light);
     width: 0;
     right: 0;
@@ -44,4 +46,10 @@
     left: 0;
     right: auto;
     width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .experience {
+
+    }
 }

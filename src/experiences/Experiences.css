@@ -5,7 +5,10 @@
     display: flex;
     flex-direction: row;
 
+    gap: calc(var(--spacing-large));
+
     width: 100%;
+
 }
 
 .experiences-container {
@@ -13,4 +16,29 @@
     flex-direction: column;
     flex-grow: 1;
     gap: var(--spacing-common);
+}
+
+.experiences-visual-timeline {
+    position: relative;
+    border-right: solid 2px var(--color-strong-light) ;
+}
+
+.experiences-current-time {
+    position: absolute;
+    width: 1em;
+    aspect-ratio: 1 / 1;
+
+    top: 0;
+    left: 1px;
+
+    transform: translate(-50%, -100%);
+
+    border-radius: 50%;
+    border: solid 2px var(--bg-color);
+    /* background-color: var(--bg-color); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
