@@ -27,6 +27,8 @@
 
     margin: auto;
     align-self: center;
+
+    border-radius: 50%;
 }
 
 .about-portrait-description {
@@ -42,6 +44,8 @@
     font-size: 1.5em;
     color:transparent;
     transition: all var(--transition-time);
+    
+    border-radius: 50%;
 }
 
 .about-portrait-description:hover {
