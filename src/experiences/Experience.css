@@ -7,7 +7,7 @@
     gap: calc(2 * var(--spacing-common));
 
 
-    transition: box-shadow var(--transition-time) ease;
+    transition: box-shadow var(--transition-time);
 }
 
 .experience:hover {
@@ -39,7 +39,7 @@
     width: 0;
     right: 0;
     left:auto;
-    transition: width var(--transition-time) ease;
+    transition: width var(--transition-time);
 }
 
 .experience:hover .experience-title::after {
