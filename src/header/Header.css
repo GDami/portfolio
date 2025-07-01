@@ -80,6 +80,7 @@
 
 #header nav #dark-toggle {
     width: calc(var(--header-height) - 6px);
+    cursor: pointer;
 }
 
 #header nav #dark-toggle, #header nav a.resume-link {
