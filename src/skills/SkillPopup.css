@@ -23,7 +23,7 @@
     transition: all var(--transition-time);
 }
 
-.inverter:hover + .skill-popup, .inverter:active + .skill-popup {
+.skill-icon:hover .skill-popup, .skill-icon:active .skill-popup {
     opacity: 100%;
     bottom: 75%;
     right: 5%;

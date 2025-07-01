@@ -11,13 +11,14 @@ type SkillIconProps = {
 export function SkillIcon(props:SkillIconProps) {
     return (
         <div className="skill-icon">
+            <span className='inverter'></span>
             <span className='skill-text'>
                 < i className={props.class}  ></i> 
                 {props.name}
             </span>
             <span className='skill-bg back'></span>
             <span className={'skill-bg level'+ props.level}></span>
-            <span className='inverter'></span>
+            <span className='skill-border'></span>
             {props.description && <SkillPopup description={props.description}></SkillPopup>}
         </div>
     )
