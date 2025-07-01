@@ -5,26 +5,27 @@
     
     position: fixed;
 
-    color: var(--color-strong);
-    background-color: var(--bg-color);
-    transition: all var(--transition-time);
+    color: var(--color-main);
+    background-color: var(--color-bg);
+    transition: box-shadow calc(var(--transition-time) / 2),
+    color var(--transition-time) ease-in-out,
+    background-color var(--transition-time) ease-in-out;
 
     z-index: 10;
 
-    opacity: 50%;
-}
-
-#header.scrolled {
-    opacity: 90%;
-}
-
-#header:hover {
     opacity: 100%;
 }
 
-#header.light {
-    color: var(--color-strong-light);
-    background-color: var(--bg-color-light);
+#header.scrolled {
+    box-shadow: 0 0 2px;
+}
+
+#header:hover nav {
+    opacity: 100%;
+
+    transition-delay: 0s;
+    transition-duration: var(--transition-time);
+
 }
 
 #header nav {
@@ -35,6 +36,10 @@
     justify-content: end;
     gap: var(--spacing-common);
     padding-inline: var(--spacing-common);
+
+    transition: opacity 2s 3s;
+
+    opacity: 50%;
 
 }
 
@@ -48,16 +53,19 @@
     padding-block: calc(var(--header-height) / 2 - 1em * 0.75 + 1px);
     text-decoration: none;
 
+}
+
+#header nav a:hover:not(.resume-link):not(#dark-toggle) {
+    transform: translateY(-3px);
     transition: transform var(--transition-time);
 }
 
-#header nav a:hover {
-    transform: translateY(-3px);
-    font-weight: 700;
+#header nav a:hover, #header nav a:hover i {
+    font-weight: bold;
 }
 
 #header nav a.resume-link {
-    display: flex;
+    padding-inline: var(--spacing-common);
     gap: var(--spacing-low);
 }
 
@@ -70,6 +78,26 @@
     display: none;
 }
 
+#header nav #dark-toggle {
+    width: calc(var(--header-height) - 6px);
+}
+
+#header nav #dark-toggle, #header nav a.resume-link {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(var(--header-height) - 6px);
+
+    padding-block: 0;
+    padding-inline: var(--spacing-low);
+    border-radius: 4px;
+    color: var(--color-invert);
+    background-color: var(--color-main);
+
+
+}
 
 a, a:visited {
     color:inherit;
@@ -88,14 +116,10 @@ a, a:visited {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom: none;
-        border-top: solid 1px var(--color-easy);
-        border-right: solid 1px var(--color-easy);
+        border-top: solid 1px var(--color-secondary);
+        border-right: solid 1px var(--color-secondary);
         
         background-color: rgba(31,31,31, 0.5);
-    }
-
-    #header.light {
-        background-color: rgba(255,255,255, 0.5);
     }
 
     #header nav {

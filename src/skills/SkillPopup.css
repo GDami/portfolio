@@ -13,8 +13,8 @@
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 3px;
-    background-color: var(--bg-color-light);
-    color: var(--color-strong-light);
+    background-color: var(--color-invert);
+    color: var(--color-main);
 
     line-height: normal;
 

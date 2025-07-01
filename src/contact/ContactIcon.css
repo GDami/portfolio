@@ -17,24 +17,24 @@
     justify-content: center;
     align-items: center;
 
-    border: solid 1px var(--color-strong);
+    border: solid 1px var(--color-main);
     border-radius: 2px;
 
-    transition: all var(--transition-time);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 .contact-icon span{
-    color: var(--color-strong);
+    color: var(--color-main);
     height: 1.5em;
 
-    transition: all var(--transition-time);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 .contact-icon:hover {
-    background-color: var(--color-strong);
+    background-color: var(--color-main);
     transform: scale(1.1);
 }
 
 .contact-icon:hover span {
-    color: var(--color-strong-light);
+    color: var(--color-invert);
 }

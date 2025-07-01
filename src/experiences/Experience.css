@@ -1,13 +1,13 @@
 .experience {
     padding: var(--spacing-large);
-    border: solid 1px var(--color-strong-light);
+    border: solid 1px var(--color-main);
 
     display: flex;
     flex-direction: column;
     gap: calc(2 * var(--spacing-common));
 
     /* have to transition the outline so it doesn't look weird */
-    transition: box-shadow var(--transition-time), outline calc(var(--transition-time)/2);
+    transition: box-shadow var(--transition-time), outline calc(var(--transition-time)/2), border-color var(--transition-time) ease-in-out;
 }
 
 .experience:hover {
@@ -24,7 +24,7 @@
 .experience-title {
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--color-strong-light);
+    color: var(--color-main);
 
     position: relative;
 }
@@ -34,7 +34,7 @@
     position: absolute;
     bottom: 0;
     height: 1.3px;
-    background-color: var(--color-strong-light);
+    background-color: var(--color-main);
     width: 0;
     right: 0;
     left:auto;

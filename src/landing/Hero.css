@@ -82,11 +82,12 @@
     gap: var(--spacing-common);
     display:flex;
     align-items: center;
+    color:var(--color-secondary);
 }
 
 .hero-subtext {
     font-size: 1.1rem;
-    color: var(--color-strong);
+    color: var(--color-main);
 }
 
 .hero-ctas {
@@ -120,18 +121,18 @@
 }
 
 .hero-cta.animated-underline.primary::after {
-    background-color: var(--color-strong-light);
+    background-color: var(--color-invert);
 }
 
 .hero-cta.primary {
-    color: var(--color-strong-light);
-    background-color: var(--bg-color-light);
+    color: var(--color-invert);
+    background-color: var(--color-main);
     border: solid 1px;
     font-weight: bold;
 }
 
 .hero-cta.secondary {
-    color: var(--color-strong);
-    background-color: var(--bg-color);
+    color: var(--color-main);
+    background-color: var(--color-bg);
     border: solid 1px;
 }

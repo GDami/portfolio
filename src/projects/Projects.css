@@ -1,17 +1,5 @@
-@media screen and (min-width: 800px) {
-
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width: 799px) {
-
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-    }
-
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-large);
 }

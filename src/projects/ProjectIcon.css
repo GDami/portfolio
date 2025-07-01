@@ -6,28 +6,28 @@
     justify-content: center;
     align-items: center;
 
-    border: solid 1px var(--color-easy);
-    transition: all var(--transition-time);
+    border: solid 1px var(--color-secondary);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 .project-icon i {
-    color: var(--color-strong);
+    color: var(--color-main);
     font-size: 2rem;
 }
 .project-icon i, .project-icon svg {
-    transition: all var(--transition-time);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 .project-icon svg {
-    color: var(--color-strong);
+    color: var(--color-main);
     width: 2em;
     height: 2em;
 }
 
 .project-icon:hover {
-    background-color: var(--color-strong);
+    background-color: var(--color-main);
 }
 
 .project-icon:hover i, .project-icon:hover svg {
-    color: var(--color-strong-light);
+    color: var(--color-invert);
 }

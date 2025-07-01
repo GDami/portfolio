@@ -8,18 +8,12 @@
     padding-inline: calc(2 * var(--spacing-common));
     margin-top: var(--spacing-common);
     
-    border: solid 1px var(--color-easy);
+    border: solid 1px var(--color-secondary);
     border-radius: 2px;
 }
 
-.project:hover {
-    background-color: #242424;
-    filter: brightness(104%);
-}
-
-.project:first-child {
-    margin-top: var(--spacing-large);
-}
+/* .project:hover {
+} */
 
 .project.reversed {
     flex-direction: row-reverse;
@@ -38,13 +32,13 @@
 }
 
 .project-text h2 {
-    color: var(--color-strong)
+    color: var(--color-main)
 }
 
 .project-img {
     display: block;
     width: 100%;
-    border: 1px solid var(--color-strong)
+    border: 1px solid var(--color-main)
 }
 
 .project-description {

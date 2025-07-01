@@ -1,12 +1,18 @@
 .contact {
     padding-top: var(--spacing-large);
-    border-top: solid 1px var(--color-easy);
+    border-top: solid 1px var(--color-secondary);
 
     gap: var(--spacing-common);
     max-width: 400px;
 }
 
+.contact h1 {
+    line-height: 1;
+}
 
+.contact h3 {
+    color: var(--color-secondary);
+}
 
 .contact-list {
     display: flex;
@@ -18,7 +24,7 @@
 
 .contact-item {
     list-style: none;
-    color: var(--color-strong);
+    color: var(--color-main);
 }
 
 .contact-item img {
@@ -34,5 +40,5 @@
     width: var(--spacing-xlarge);
     margin:auto;
     height: 1px;
-    background-color: var(--color-easy);
+    background-color: var(--color-secondary);
 }

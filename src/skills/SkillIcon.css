@@ -10,7 +10,7 @@
     align-items: flex-start;
     gap: 1em;
 
-    color: black;
+    color: var(--color-main);
 
     z-index: 1;
 }
@@ -34,20 +34,20 @@
     left:var(--spacing-common);
     bottom:var(--spacing-common);
 
-    transition: all var(--transition-time);
+    transition: all var(--transition-time) ease-in-out;
 
     border-radius: 20px;
 }
 
 .skill-bg:not(.back) {
-    background-color: var(--color-strong);
+    background-color: var(--color-invert);
     transform: translateX(2px) translateY(-2px);
     height: calc(1em - 4px);
 }
 
 .skill-bg.back {
     width: calc(100% - 2 * var(--spacing-common));
-    background-color: var(--color-strong-light);
+    background-color: var(--color-main);
 }
 
 .skill-icon .skill-bg.level1 {
@@ -76,7 +76,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    border: solid 1px var(--color-strong-light);
+    border: solid 1px var(--color-main);
     transition: border-color var(--transition-time) ease-in;
 }
 
@@ -102,18 +102,18 @@
 
 .skill-icon:hover .inverter, .skill-icon:focus .inverter {
     backdrop-filter: invert(100%);
-    background-color: var(--color-strong-light);
+    background-color: var(--color-main);
     transform: translateX(-3px) translateY(3px);
 }
 
 .skill-icon:hover .skill-text {
-    color: var(--color-strong);
+    color: var(--color-invert);
 }
 
 .skill-icon:hover .skill-bg:not(.back) {
-    background-color:var(--color-strong-light);
+    background-color:var(--color-main);
 }
 
 .skill-icon:hover .skill-bg.back {
-    background-color:var(--color-strong);
+    background-color:var(--color-invert);
 }

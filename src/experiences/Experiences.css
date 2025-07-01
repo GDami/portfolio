@@ -20,8 +20,8 @@
 
 .experiences-visual-timeline {
     position: relative;
-    border-right: solid 2px var(--color-strong-light) ;
-    height: calc(100% + var(--spacing-large));
+    border-right: solid 2px var(--color-main) ;
+    height: 100%;
 }
 
 .experiences-current-time {
@@ -35,7 +35,7 @@
     transform: translate(-50%, -100%);
 
     border-radius: 50%;
-    border: solid 2px var(--bg-color);
+    border: solid 2px var(--color-main);
 
     display: flex;
     justify-content: center;

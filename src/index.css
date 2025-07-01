@@ -2,8 +2,8 @@
 
 body {
 	margin: 0;
-	background-color: var(--bg-color);
-	color: var(--color-easy);
+	background-color: var(--color-bg);
+	color: var(--color-main);
 
 	font-family: "Monaco", monospace;
 
@@ -12,6 +12,7 @@ body {
 
 	/* variables */
 html {
+
 	--header-height: 40px;
 	--spacing-xlow: 0.2rem;
 	--spacing-low: 0.5rem;
@@ -19,16 +20,25 @@ html {
 	--spacing-large: 2.5rem;
 	--spacing-xlarge: 3.5rem;
 
-	--color-strong: white;
-	--color-easy: rgb(197,197,197);
+	--transition-time: 0.3s;
+}
 
-	--color-strong-light: rgb(31,31,31);
-	--color-easy-light: rgb(21,21,21);
+html.dark {
 
-	--bg-color: rgb(31,31,31);
-	--bg-color-light: white;
+	--color-main: white;
+	--color-secondary: rgb(197,197,197);
+	--color-bg: rgb(31,31,31);
+	--color-invert: rgb(31,31,31);
 
-	--transition-time: 0.2s;
+}
+
+html:not(.dark) {
+
+	--color-main: rgb(31,31,31);
+	--color-secondary: rgb(31,31,31);
+	--color-bg: white;
+	--color-invert: white;
+
 }
 
 * {
@@ -46,4 +56,10 @@ html {
 #root {
 	display: flex;
 	flex-direction: column;
+}
+
+* {
+	transition: background-color var(--transition-time) ease-in-out,
+	color var(--transition-time) ease-in-out,
+	border-color var(--transition-time) ease-in-out;
 }

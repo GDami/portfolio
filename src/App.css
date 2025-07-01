@@ -11,7 +11,7 @@
 }
 
 footer {
-    border-top: solid 1px var(--color-easy);
+    border-top: solid 1px var(--color-secondary);
     margin-inline: var(--spacing-common);
     padding-block: var(--spacing-low);
 
@@ -26,7 +26,7 @@ footer {
 }
 
 h1 {
-    color: var(--color-strong);
+    color: var(--color-main);
     font-size: 2.5rem;
 }
 
@@ -52,7 +52,7 @@ h1 {
     height: 40%;
     width: var(--spacing-xlarge);
     border-radius: 8px;
-    background-color: var(--color-strong);
+    background-color: var(--color-main);
     pointer-events: none;
 }
 
@@ -65,7 +65,7 @@ h1 {
     position: absolute;
     bottom: 4px;
     height: 2px;
-    background-color: var(--color-strong);
+    background-color: var(--color-main);
     width: 0;
     right: 0;
     left:auto;
@@ -78,10 +78,6 @@ h1 {
     right: auto;
 }
 
-.light .animated-underline::after, .light .section-title::before {
-    background-color: var(--color-strong-light);
-}
-
 h3 {
     font-weight: normal;
 }
@@ -90,24 +86,6 @@ section {
     padding-bottom: var(--spacing-large);
     display: flex;
     justify-content: center;
-}
-/* little hack for the navbar links */
-section.light + section.light .section-container, .landing + section:not(.light) .section-container {
-    margin-top: calc(0px - var(--spacing-large));
-}
-
-
-.light {
-    background-color: var(--bg-color-light);
-    color: var(--color-strong-light)
-}
-
-.light h1 {
-    color: var(--color-strong-light);
-}
-
-.light h3 {
-    color: var(--color-strong-light);
 }
 
 p span {
