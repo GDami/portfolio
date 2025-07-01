@@ -8,7 +8,7 @@ import "./Projects.css"
 export function Projects() {
     return (
             <div className="section-container projects" id="projects">
-                <h1 className="main-heading section-title">My <span>Projects</span></h1>
+                <h1 className="main-heading section-title animated-underline">My <span>Projects</span></h1>
                 <div className="projects-list">
                     <Project
                         title="Suivi Candidatures"

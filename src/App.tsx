@@ -1,6 +1,6 @@
 import './App.css'
 import { Header } from './header/Header'
-import { Landing } from './landing/Landing'
+import { Hero } from './landing/Hero'
 import { About } from './about/About'
 import { Projects } from './projects/Projects'
 import { Contact } from './contact/Contact'
@@ -16,11 +16,11 @@ function App() {
 		<>
 			<Header />
 			<div className='content'>
-				<Landing />
-				<section className=""><About /></section>
-				<section className="light"><Skills /></section>
-				<section className="light"><Experiences /></section>
+				<Hero />
 				<section className=""><Projects /></section>
+				<section className="light"><Skills /></section>
+				<section className=""><About /></section>
+				<section className="light"><Experiences /></section>
 				<section className=""><Contact /></section>
 			</div>
 			<footer>© 2025 Damien Gervy</footer>

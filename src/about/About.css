@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color:transparent;
     transition: all var(--transition-time);
     
@@ -61,7 +61,6 @@
 .about-details h2 {
     font-style: italic;
     font-weight: normal;
-    width:fit-content;
     position:relative;
 
     color: var(--color-strong);
@@ -75,9 +74,20 @@
     animation: blink 1s var(--transition-time) step-start infinite;
 }
 
+.about-details p a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
 .about-details p a:hover {
+    text-decoration: underline;
+}
+
+.about-details p em, .about-details p a {
     color: var(--color-strong);
 }
+
+
 
 @keyframes blink {
     50% {

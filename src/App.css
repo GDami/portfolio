@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    max-width: 1600px;
+    max-width: 800px;
     margin-inline: var(--spacing-large);
     flex:1;
 
@@ -27,7 +27,7 @@ footer {
 
 h1 {
     color: var(--color-strong);
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .main-heading {
@@ -40,7 +40,6 @@ h1 {
 
 .section-title {
     width: fit-content;
-    position: relative;
     align-self: flex-start;
     margin-left: var(--spacing-large);
 }
@@ -57,7 +56,11 @@ h1 {
     pointer-events: none;
 }
 
-.section-title::after {
+.animated-underline {
+    position:relative;
+}
+
+.animated-underline::after {
     content: "";
     position: absolute;
     bottom: 4px;
@@ -69,13 +72,13 @@ h1 {
     transition: width var(--transition-time) ease;
 }
 
-.section-title:hover::after {
+.animated-underline:hover::after {
     width: 100%;
     left: 0;
     right: auto;
 }
 
-.light .section-title::after, .light .section-title::before {
+.light .animated-underline::after, .light .section-title::before {
     background-color: var(--color-strong-light);
 }
 

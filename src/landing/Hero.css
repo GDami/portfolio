@@ -1,0 +1,137 @@
+.hero {
+    max-width: 800px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--spacing-xlarge);
+
+    min-height: max(100vh, 500px);
+
+}
+
+.hero-img-container {
+    position:relative;
+    border-radius: 50%;
+}
+
+.hero-img {
+    display: block;
+    width: 300px;
+    border-radius: 50%;
+
+    transition: rotate var(--transition-time);
+    backface-visibility: hidden;
+}
+
+.villain-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    border-radius: 50%;
+
+    transition: rotate var(--transition-time);
+    backface-visibility: hidden;
+
+    rotate: y -180deg;
+
+}
+
+.hero-img-container:hover .hero-img {
+    rotate: y 180deg;
+}
+
+.hero-img-container:hover .villain-img {
+    rotate: y 0deg;
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-common);
+}
+
+.hero-title {
+    line-height: 1.2;
+    font-size: 2.7rem;
+}
+
+.wave-hand {
+    display: inline-block;
+    transform-origin: 65% 75%;
+    cursor: default;
+}
+
+.hero-title:hover .wave-hand {
+    animation: wave .9s ease-in-out infinite;
+}
+
+@keyframes wave {
+    50% {
+        rotate: 30deg;
+    }
+}
+
+.hero-info {
+    margin-top: calc(0px - var(--spacing-low));
+    /* padding-left: var(--spacing-common); */
+    gap: var(--spacing-common);
+    display:flex;
+    align-items: center;
+}
+
+.hero-subtext {
+    font-size: 1.1rem;
+    color: var(--color-strong);
+}
+
+.hero-ctas {
+    margin-top: var(--spacing-common);
+    display: flex;
+    gap: var(--spacing-common);
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    font-size: 1.2rem;
+
+    border-radius: 4px;
+    padding: var(--spacing-low);
+
+    text-decoration: none;
+}
+
+.hero-cta.animated-underline::after {
+    /* height: 2px; */
+    bottom: calc( 1.5 * var(--spacing-low));
+    right: var(--spacing-low);
+}
+
+.hero-cta.animated-underline:hover::after {
+    /* height: 2px; */
+    left: var(--spacing-low);
+    width: calc(100% - 2 * var(--spacing-low));
+}
+
+.hero-cta.animated-underline.primary::after {
+    background-color: var(--color-strong-light);
+}
+
+.hero-cta.primary {
+    color: var(--color-strong-light);
+    background-color: var(--bg-color-light);
+    border: solid 1px;
+    font-weight: bold;
+}
+
+.hero-cta.secondary {
+    color: var(--color-strong);
+    background-color: var(--bg-color);
+    border: solid 1px;
+}
