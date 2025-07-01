@@ -145,4 +145,8 @@ a, a:visited {
         display:inherit;
         font-size: 1.5rem;
     }
+
+    #header nav #dark-toggle {
+        margin-right: 4px;
+    }
 }

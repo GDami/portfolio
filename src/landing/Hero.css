@@ -15,11 +15,12 @@
 .hero-img-container {
     position:relative;
     border-radius: 50%;
+    min-width: 300px;
 }
 
 .hero-img {
     display: block;
-    width: 300px;
+    width: 100%;
     border-radius: 50%;
 
     transition: rotate var(--transition-time);
@@ -31,7 +32,7 @@
     top: 0;
     left: 0;
 
-    width: 300px;
+    width: 100%;
     border-radius: 50%;
 
     transition: rotate var(--transition-time);
@@ -135,4 +136,29 @@
     color: var(--color-main);
     background-color: var(--color-bg);
     border: solid 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-img-container {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding-top: calc(2 * var(--spacing-large));
+        padding-bottom: var(--spacing-xlarge);
+        padding-inline: var(--spacing-large);
+    }
+
+    .hero-img-container {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-cta {
+        font-size: 1.1rem;
+    }
 }
