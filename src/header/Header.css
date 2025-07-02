@@ -7,7 +7,7 @@
 
     color: var(--color-main);
     background-color: var(--color-bg);
-    /* transition: box-shadow calc(var(--transition-time) / 2), */
+    transition: box-shadow calc(var(--transition-time) / 2),
     color var(--transition-time) ease-in-out,
     background-color var(--transition-time) ease-in-out;
 
@@ -57,7 +57,7 @@
 
 #header nav a:hover:not(.resume-link):not(#dark-toggle) {
     transform: translateY(-3px);
-    transition: transform var(--transition-time);
+    transition: transform var(--transition-time-button);
 }
 
 #header nav a:hover, #header nav a:hover i {

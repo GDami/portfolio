@@ -7,15 +7,15 @@
     padding: var(--spacing-common);
     
     border: solid 1px var(--color-secondary);
-    outline: solid 0px;
+    outline: solid 0px var(--color-draw);
 
-    transition: box-shadow var(--transition-time), outline 0.1s, border-color var(--transition-time) ease-in-out;
+    transition: box-shadow var(--transition-time), outline 0.1s, border-color 0.1s ease-in-out;
 }
 
 .project:hover {
-    box-shadow: -8px 8px var(--color-main);
-    /* outline: solid 2px var(--color-draw); */
-    border-color: var(--color-main);
+    box-shadow: -8px 8px var(--color-draw);
+    outline-width: 2px;
+    border-color: var(--color-draw);
 }
 
 .project-img-container {
@@ -60,7 +60,7 @@
     color: white;
     border: solid 1px white;
     border-radius: 4px;
-    transition: all var(--transition-time);
+    transition: all var(--transition-time-button);
 }
 
 .project-link:visited {

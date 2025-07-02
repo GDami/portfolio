@@ -7,7 +7,7 @@
     align-items: center;
 
     border: solid 1px var(--color-secondary);
-    transition: all var(--transition-time) ease-in-out;
+    transition: all var(--transition-time-button) ease-in-out;
 }
 
 .project-icon i {
@@ -15,7 +15,7 @@
     font-size: 2rem;
 }
 .project-icon i, .project-icon svg {
-    transition: all var(--transition-time) ease-in-out;
+    transition: all var(--transition-time-button) ease-in-out;
 }
 
 .project-icon svg {
@@ -25,7 +25,8 @@
 }
 
 .project-icon:hover {
-    background-color: var(--color-main);
+    background-color: var(--color-draw);
+    border-color: var(--color-draw);
 }
 
 .project-icon:hover i, .project-icon:hover svg {

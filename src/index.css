@@ -21,6 +21,7 @@ html {
 	--spacing-xlarge: 3.5rem;
 
 	--transition-time: 0.3s;
+	--transition-time-button: calc(var(--transition-time) / 2);
 }
 
 html.dark {

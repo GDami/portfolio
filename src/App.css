@@ -110,3 +110,7 @@ strong {
         right: calc(100% + 2 * var(--spacing-common));
     }
 }
+
+g, path {
+    transition: inherit;
+}
