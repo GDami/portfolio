@@ -147,6 +147,10 @@ a, a:visited {
     }
 
     #header nav #dark-toggle {
+        width: 1.5rem;
+    }
+
+    #header nav #dark-toggle, #header nav a.resume-link {
         margin-right: 4px;
     }
 }
