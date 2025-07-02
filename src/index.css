@@ -5,7 +5,7 @@ body {
 	background-color: var(--color-bg);
 	color: var(--color-main);
 
-	font-family: "Monaco", monospace;
+	font-family: "Space Grotesk", sans-serif;
 
 	line-height: 1.5;
 }
