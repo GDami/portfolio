@@ -10,10 +10,15 @@
     align-items: flex-start;
     gap: 1em;
 
+    border: solid 1px var(--color-main);
     color: var(--color-main);
     background-color: var(--color-item-bg);
 
     z-index: 1;
+}
+
+.skill-icon:hover {
+    border-color: var(--color-draw-shadow);
 }
 
 .skill-text {
@@ -71,16 +76,6 @@
     width: calc((100% - 2 * var(--spacing-common)));
 }
 
-.skill-border {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: solid 1px var(--color-main);
-    transition: border-color var(--transition-time) ease-in;
-}
-
 .skill-icon .inverter {
     position: absolute;
     top: 0;
@@ -94,11 +89,6 @@
     z-index: -1;
 
     background-color: transparent;
-}
-
-.skill-icon:hover .skill-border {
-    border-color: transparent;
-    transition: none;
 }
 
 .skill-icon:hover .inverter, .skill-icon:focus .inverter {

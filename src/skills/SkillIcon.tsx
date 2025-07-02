@@ -18,7 +18,6 @@ export function SkillIcon(props:SkillIconProps) {
             </span>
             <span className='skill-bg back'></span>
             <span className={'skill-bg level'+ props.level}></span>
-            <span className='skill-border'></span>
             {props.description && <SkillPopup description={props.description}></SkillPopup>}
         </div>
     )
