@@ -195,6 +195,7 @@
 .hero-cta.secondary {
     color: var(--color-draw);
     background-color: var(--color-draw-light);
+    font-weight: 600;
     border: solid 1px;
 }
 
