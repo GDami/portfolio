@@ -4,7 +4,7 @@ import { ContactIcon } from "./ContactIcon"
 export function Contact() {
     return (
         <div className="section-container contact" id="contact">
-            <h1>Contact Me!</h1>
+            <h1>Contact <strong>Me!</strong></h1>
             <h3>gervydamien@gmail.com</h3>
             <div className="contact-container">
                 <ul className="contact-list">

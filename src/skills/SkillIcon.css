@@ -40,7 +40,7 @@
 }
 
 .skill-bg:not(.back) {
-    background-color: var(--color-invert);
+    background-color: var(--color-bg);
     transform: translateX(2px) translateY(-2px);
     height: calc(1em - 4px);
 }
@@ -101,19 +101,17 @@
 }
 
 .skill-icon:hover .inverter, .skill-icon:focus .inverter {
-    backdrop-filter: invert(100%);
-    background-color: var(--color-main);
-    transform: translateX(-3px) translateY(3px);
+    background-color: var(--color-draw-shadow);
 }
 
 .skill-icon:hover .skill-text {
-    color: var(--color-invert);
+    color: var(--color-bg);
 }
 
 .skill-icon:hover .skill-bg:not(.back) {
-    background-color:var(--color-main);
+    background-color:var(--color-draw-shadow);
 }
 
 .skill-icon:hover .skill-bg.back {
-    background-color:var(--color-invert);
+    background-color:var(--color-bg);
 }

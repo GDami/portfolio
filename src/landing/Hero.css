@@ -166,7 +166,7 @@
 }
 
 .hero-cta.animated-underline::after {
-    /* height: 2px; */
+    height: 1px;
     bottom: calc( 1.5 * var(--spacing-low));
     right: var(--spacing-low);
 }
@@ -178,20 +178,22 @@
 }
 
 .hero-cta.animated-underline.primary::after {
-    background-color: var(--color-invert);
+    background-color: var(--color-draw-light);
+}
+
+.hero-cta.animated-underline.hero-cta.secondary::after {
+    background-color: var(--color-draw);
 }
 
 .hero-cta.primary {
-    color: var(--color-invert);
-    background-color: var(--color-main);
-    border: solid 1px;
+    color: var(--color-draw-light);
+    background-color: var(--color-draw);
     font-weight: bold;
 }
 
 .hero-cta.secondary {
-    color: var(--color-main);
-    background-color: var(--color-bg);
-    border: solid 1px;
+    color: var(--color-draw);
+    background-color: var(--color-draw-light);
 }
 
 @media screen and (max-width: 1024px) {

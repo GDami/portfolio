@@ -64,6 +64,8 @@
     position:relative;
 
     color: var(--color-main);
+
+    transition: color var(--transition-time);
 }
 
 .about-details h2 span {
@@ -72,6 +74,10 @@
 
 .about-details h2:hover span {
     animation: blink 1s var(--transition-time) step-start infinite;
+}
+
+.about-details h2:hover::first-letter {
+    color: var(--color-draw);
 }
 
 .about-details p {

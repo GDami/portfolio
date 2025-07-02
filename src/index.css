@@ -28,7 +28,9 @@ html.dark {
 	--color-main: white;
 	--color-secondary: rgb(197,197,197);
 	--color-bg: rgb(31,31,31);
-	--color-invert: rgb(31,31,31);
+	--color-draw: rgb(18, 173, 90);
+	--color-draw-light: rgb(233,253,242);
+	--color-draw-shadow: var(--color-main)
 
 }
 
@@ -37,7 +39,9 @@ html:not(.dark) {
 	--color-main: rgb(31,31,31);
 	--color-secondary: rgb(31,31,31);
 	--color-bg: white;
-	--color-invert: white;
+	--color-draw: rgb(18, 173, 90);
+	--color-draw-light: rgb(233,253,242);
+	--color-draw-shadow: var(--color-draw);
 
 }
 

@@ -29,5 +29,5 @@
 }
 
 .project-icon:hover i, .project-icon:hover svg {
-    color: var(--color-invert);
+    color: var(--color-bg);
 }

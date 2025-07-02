@@ -7,13 +7,15 @@
     padding: var(--spacing-common);
     
     border: solid 1px var(--color-secondary);
+    outline: solid 0px;
 
-    transition: box-shadow var(--transition-time), outline calc(var(--transition-time)/2), border-color var(--transition-time) ease-in-out;
+    transition: box-shadow var(--transition-time), outline 0.1s, border-color var(--transition-time) ease-in-out;
 }
 
 .project:hover {
-    box-shadow: -8px 8px;
-    outline: solid 2px;
+    box-shadow: -8px 8px var(--color-main);
+    /* outline: solid 2px var(--color-draw); */
+    border-color: var(--color-main);
 }
 
 .project-img-container {

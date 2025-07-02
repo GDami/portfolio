@@ -7,7 +7,7 @@
 
     color: var(--color-main);
     background-color: var(--color-bg);
-    transition: box-shadow calc(var(--transition-time) / 2),
+    /* transition: box-shadow calc(var(--transition-time) / 2), */
     color var(--transition-time) ease-in-out,
     background-color var(--transition-time) ease-in-out;
 
@@ -94,7 +94,7 @@
     padding-block: 0;
     padding-inline: var(--spacing-low);
     border-radius: 4px;
-    color: var(--color-invert);
+    color: var(--color-bg);
     background-color: var(--color-main);
 
 

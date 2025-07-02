@@ -38,6 +38,10 @@ h1 {
     font-weight: 700;
 }
 
+.main-heading:hover span {
+    color: var(--color-draw);
+}
+
 .section-title {
     width: fit-content;
     align-self: flex-start;
@@ -65,7 +69,7 @@ h1 {
     position: absolute;
     bottom: 4px;
     height: 2px;
-    background-color: var(--color-main);
+    background-color: var(--color-draw);
     width: 0;
     right: 0;
     left:auto;
@@ -90,6 +94,11 @@ section {
 
 p span {
     font-weight: 700;
+}
+
+strong {
+    font-style: normal;
+    color: var(--color-draw)
 }
 
 @media screen and (max-width: 480px) {
