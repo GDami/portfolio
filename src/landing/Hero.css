@@ -12,6 +12,16 @@
 
 }
 
+@keyframes appear-from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes appear-and-scale {
     from {
         opacity: 0;
@@ -130,10 +140,15 @@
     animation: appear-from-right .3s .5s ease-in-out forwards;
 }
 
+.hero-subtext .animated-underline::after {
+    bottom: 0;
+}
+
 .hero-ctas {
     margin-top: var(--spacing-common);
     display: flex;
     gap: var(--spacing-common);
+    flex-wrap: wrap;
     opacity: 0;
     animation: appear-from-right .3s .7s ease-in-out forwards;
 }
@@ -194,12 +209,20 @@
     }
 
     .hero-img-container {
-        max-width: 400px;
+        max-width: 300px;
+    }
+
+    .hero-img-container, .hero-title, .hero-info, .hero-subtext, .hero-ctas {
+        animation-name: appear-from-left;
+    }
+
+    .hero-img-container {
+        animation-delay: .1s;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .hero-cta {
-        font-size: 1.1rem;
+@media screen and (max-width: 480px) {
+    .hero-cta.animated-underline::after {
+        display: none;
     }
 }
