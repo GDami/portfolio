@@ -12,10 +12,43 @@
 
 }
 
+@keyframes appear-and-scale {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear-from-above {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear-from-right {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .hero-img-container {
     position:relative;
     border-radius: 50%;
     min-width: 300px;
+
+    opacity: 0;
+    animation: appear-and-scale .3s 1s ease-in-out forwards;
 }
 
 .hero-img {
@@ -59,6 +92,8 @@
 .hero-title {
     line-height: 1.2;
     font-size: 2.7rem;
+    opacity: 0;
+    animation: appear-from-above .3s .3s ease-in-out forwards;
 }
 
 .wave-hand {
@@ -84,17 +119,23 @@
     display:flex;
     align-items: center;
     color:var(--color-secondary);
+    opacity: 0;
+    animation: appear-from-above .3s .3s ease-in-out forwards; 
 }
 
 .hero-subtext {
     font-size: 1.1rem;
     color: var(--color-main);
+    opacity: 0;
+    animation: appear-from-right .3s .5s ease-in-out forwards;
 }
 
 .hero-ctas {
     margin-top: var(--spacing-common);
     display: flex;
     gap: var(--spacing-common);
+    opacity: 0;
+    animation: appear-from-right .3s .7s ease-in-out forwards;
 }
 
 .hero-cta {
