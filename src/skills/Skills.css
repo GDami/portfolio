@@ -1,17 +1,12 @@
 .skills-list {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--spacing-common);
 
     margin-top: var(--spacing-large);
 }
 
-@media screen and (max-width: 1024px) {
-    .skills-list{
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 @media screen and (max-width: 480px) {
     .skills-list{
