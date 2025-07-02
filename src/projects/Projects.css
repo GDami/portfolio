@@ -1,5 +1,12 @@
 .projects-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-common);
     margin-top: var(--spacing-large);
+}
+
+@media screen and (max-width: 800px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
 }
