@@ -22,6 +22,10 @@
     border-color: var(--color-draw);
 }
 
+.project:hover .project-overlay {
+    opacity: 1;
+}
+
 .project-img-container {
     max-width: 700px;
 
@@ -52,10 +56,6 @@
     background-color: rgba(0,0,0,0.6);
 
     transition: all var(--transition-time);
-}
-
-.project-overlay:hover {
-    opacity: 1;
 }
 
 .project-link {
