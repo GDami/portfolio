@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
 	margin: 0;
 	background-color: var(--color-bg);
 	color: var(--color-main);
 
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "Roboto Mono", monospace;
 
 	line-height: 1.5;
 }
@@ -43,7 +43,7 @@ html:not(.dark) {
 
 	--color-main: rgb(38,52,46);
 	--color-secondary: rgb(31,31,31);
-	--color-bg: rgb(230,251,230);
+	--color-bg: rgb(230,251,245);
 
 	--color-draw: rgb(10, 120, 90);
 	--color-draw-light: white;
