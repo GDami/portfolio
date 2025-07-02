@@ -18,6 +18,7 @@
 
 #header.scrolled {
     box-shadow: 0 0 2px;
+    background-color: var(--color-header);
 }
 
 #header:hover nav {
