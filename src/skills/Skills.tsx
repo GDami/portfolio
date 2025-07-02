@@ -15,7 +15,7 @@ export function Skills() {
                 <SkillIcon name="Java" class="bxl bx-java" level={3} description="Probably the language I have the most diverse experience in. School projects, personal projects and client projects using Spring Boot."></SkillIcon>
                 {/* <SkillIcon name="PostgreSQL" class="bxl bx-postgresql" level={2}></SkillIcon> */}
                 <SkillIcon name="Docker" class="bxl bx-docker" level={1} description="I can sail boats and ship apps."></SkillIcon>
-                <SkillIcon name="Python" class="bxl bx-python" level={1} description="I've used Python a fair bit for file manipulation during my modding era."></SkillIcon>
+                <SkillIcon name="Python" class="bxl bx-python" level={2} description="I've used Python a fair bit for file manipulation during my modding era."></SkillIcon>
                 <SkillIcon name="django" class="bxl bx-django" level={1} description="I learned this recently, for a personal project you can read about further down this page."></SkillIcon>
                 <SkillIcon name="git" class="bxl bx-git" level={2} description="I can handle the basics, things like branch, checkout, clone, push, pull, commit and of course merge."></SkillIcon>
                 <SkillIcon name="Github" class="bxl bx-github" level={2} description="Feel free to check mine :)"></SkillIcon>
