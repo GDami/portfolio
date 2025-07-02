@@ -18,9 +18,9 @@ function App() {
 			<div className='content'>
 				<Hero />
 				<section className=""><Projects /></section>
+				<section className=""><About /></section>
 				<section className=""><Skills /></section>
 				<section className=""><Experiences /></section>
-				<section className=""><About /></section>
 				<section className=""><Contact /></section>
 			</div>
 			<footer>© 2025 Damien Gervy</footer>

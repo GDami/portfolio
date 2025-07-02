@@ -67,6 +67,10 @@ export function Header() {
                     <span>Projects</span>
                     < i className='bx  bx-chart-gantt'  ></i> 
                 </a>
+                <a href='#about'>
+                    <span>About</span>
+                    < i className='bx  bx-info-square'  ></i> 
+                </a>
                 <a href='#skills'>
                     <span>Skills</span>
                     < i className='bx  bx-brush'  ></i> 
@@ -74,10 +78,6 @@ export function Header() {
                 <a href='#experiences'>
                     <span>Experience</span>
                     < i className='bx  bx-briefcase-alt-2'  ></i> 
-                </a>
-                <a href='#about'>
-                    <span>About</span>
-                    < i className='bx  bx-info-square'  ></i> 
                 </a>
                 <a href='#contact'>
                     <span>Contact</span>
