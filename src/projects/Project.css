@@ -74,9 +74,11 @@
 }
 
 .project-icons {
+    flex: 1;
     margin-top: var(--spacing-common);
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     gap: var(--spacing-common);
     flex-wrap: wrap;
 }

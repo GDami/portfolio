@@ -18,7 +18,7 @@
     align-items: center;
 
     border: solid 1px var(--color-main);
-    border-radius: 2px;
+    border-radius: 4px;
 
     transition: all var(--transition-time) ease-in-out;
 }
