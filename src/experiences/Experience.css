@@ -31,7 +31,6 @@
 .experience-title {
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--color-main);
 
     position: relative;
 }
@@ -40,8 +39,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    height: 1.3px;
-    background-color: var(--color-main);
+    height: 2px;
+    background-color: var(--color-draw);
     width: 0;
     right: 0;
     left:auto;

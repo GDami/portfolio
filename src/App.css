@@ -30,22 +30,22 @@ h1 {
     font-size: 2.5rem;
 }
 
-.main-heading {
-    font-weight: 400;
+.section-title {
 }
 
-.main-heading span {
+.section-title span {
     font-weight: 700;
-}
-
-.main-heading:hover span {
-    color: var(--color-draw);
 }
 
 .section-title {
     width: fit-content;
     align-self: flex-start;
     margin-left: var(--spacing-large);
+    font-weight: 400;
+}
+
+.section-title:hover span {
+    color: var(--color-draw);
 }
 
 .section-title::before {
@@ -58,6 +58,7 @@ h1 {
     border-radius: 8px;
     background-color: var(--color-main);
     pointer-events: none;
+    transition: background-color var(--transition-time);
 }
 
 .animated-underline {

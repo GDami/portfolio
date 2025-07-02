@@ -76,7 +76,7 @@
     animation: blink 1s var(--transition-time) step-start infinite;
 }
 
-.about-details h2:hover::first-letter {
+.about-details h2:hover {
     color: var(--color-draw);
 }
 

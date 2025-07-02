@@ -17,8 +17,8 @@ function App() {
 			<Header />
 			<div className='content'>
 				<Hero />
-				<section className=""><Projects /></section>
 				<section className=""><About /></section>
+				<section className=""><Projects /></section>
 				<section className=""><Skills /></section>
 				<section className=""><Experiences /></section>
 				<section className=""><Contact /></section>

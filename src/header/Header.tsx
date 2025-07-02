@@ -63,13 +63,13 @@ export function Header() {
                     < i className='bx  bx-home-alt'  ></i> 
                 </a>
                 <div className='header-filler'></div>
-                <a href='#projects'>
-                    <span>Projects</span>
-                    < i className='bx  bx-chart-gantt'  ></i> 
-                </a>
                 <a href='#about'>
                     <span>About</span>
                     < i className='bx  bx-info-square'  ></i> 
+                </a>
+                <a href='#projects'>
+                    <span>Projects</span>
+                    < i className='bx  bx-chart-gantt'  ></i> 
                 </a>
                 <a href='#skills'>
                     <span>Skills</span>

@@ -26,6 +26,10 @@
     opacity: 1;
 }
 
+.project:hover .project-title {
+    color: var(--color-draw);
+}
+
 .project-img-container {
     max-width: 700px;
 
