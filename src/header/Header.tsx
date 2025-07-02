@@ -29,7 +29,7 @@ function toggleDarkMode() {
 }
 
 function handleScroll(this: Window, _ev: Event) : any {
-    if (this.scrollY > 60) {
+    if (this.scrollY > 1) {
         header.classList.add("scrolled")
     } else {
         header.classList.remove("scrolled")

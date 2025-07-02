@@ -95,7 +95,7 @@
     padding-inline: var(--spacing-low);
     border-radius: 4px;
     color: var(--color-bg);
-    background-color: var(--color-main);
+    background-color: var(--color-draw-shadow);
 }
 
 #dark-toggle:active, .resume-link:active {

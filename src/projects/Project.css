@@ -8,6 +8,7 @@
     
     border: solid 1px var(--color-secondary);
     outline: solid 0px var(--color-draw);
+    background-color: var(--color-item-bg);
 
     transition: box-shadow var(--transition-time), outline 0.1s, border-color 0.1s ease-in-out;
 }

@@ -11,6 +11,7 @@
     gap: 1em;
 
     color: var(--color-main);
+    background-color: var(--color-item-bg);
 
     z-index: 1;
 }
@@ -40,7 +41,7 @@
 }
 
 .skill-bg:not(.back) {
-    background-color: var(--color-bg);
+    background-color: var(--color-item-bg);
     transform: translateX(2px) translateY(-2px);
     height: calc(1em - 4px);
 }

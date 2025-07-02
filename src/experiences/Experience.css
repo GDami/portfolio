@@ -7,6 +7,7 @@
     gap: calc(2 * var(--spacing-common));
 
     outline: solid 0px var(--color-draw);
+    background-color: var(--color-item-bg);
 
     /* have to transition the outline so it doesn't look weird */
     transition: box-shadow var(--transition-time), outline 0.1s, border-color 0.1s ease-in-out;

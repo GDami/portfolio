@@ -189,11 +189,13 @@
     color: var(--color-draw-light);
     background-color: var(--color-draw);
     font-weight: bold;
+    border: solid 1px var(--color-draw);
 }
 
 .hero-cta.secondary {
     color: var(--color-draw);
     background-color: var(--color-draw-light);
+    border: solid 1px;
 }
 
 @media screen and (max-width: 1024px) {
