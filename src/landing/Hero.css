@@ -140,8 +140,9 @@
     animation: appear-from-right .3s .5s ease-in-out forwards;
 }
 
-.hero-subtext .animated-underline::after {
-    bottom: 0;
+.hero-detail:hover {
+    color: var(--color-draw);
+    cursor: default;
 }
 
 .hero-ctas {
@@ -160,7 +161,8 @@
     font-size: 1.2rem;
 
     border-radius: 4px;
-    padding: var(--spacing-low);
+    padding-block: var(--spacing-low);
+    padding-inline: var(--spacing-common);
 
     text-decoration: none;
 }
@@ -168,13 +170,13 @@
 .hero-cta.animated-underline::after {
     height: 1px;
     bottom: calc( 1.5 * var(--spacing-low));
-    right: var(--spacing-low);
+    right: var(--spacing-common);
 }
 
 .hero-cta.animated-underline:hover::after {
     /* height: 2px; */
-    left: var(--spacing-low);
-    width: calc(100% - 2 * var(--spacing-low));
+    left: var(--spacing-common);
+    width: calc(100% - 2 * var(--spacing-common));
 }
 
 .hero-cta.animated-underline.primary::after {

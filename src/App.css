@@ -39,6 +39,7 @@ h1 {
     align-self: flex-start;
     margin-left: var(--spacing-large);
     font-weight: 400;
+    cursor: default;
 }
 
 .section-title:hover span {
