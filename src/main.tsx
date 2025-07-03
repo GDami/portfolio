@@ -12,8 +12,6 @@ function initDarkMode() {
       localStorage.setItem("dark", "light")
       document.documentElement.classList.remove("dark")
     }
-
-    document.documentElement.classList.remove("no-transition")
 }
 
 initDarkMode()

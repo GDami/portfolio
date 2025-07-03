@@ -76,7 +76,3 @@ html:not(.dark) {
 	color var(--transition-time) ease-in-out,
 	border-color var(--transition-time) ease-in-out;
 }
-
-.no-transition * {
-	transition: none !important;
-}
