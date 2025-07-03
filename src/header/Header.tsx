@@ -13,7 +13,6 @@ function initHtmlElements() {
     html = document.documentElement
     header = document.getElementById("header")!
     darkToggle = document.getElementById("dark-toggle")!
-    console.log(darkToggle)
     lightSections = Array.prototype.slice.call(document.getElementsByClassName("light"))
 }
 
@@ -22,9 +21,11 @@ function toggleDarkMode() {
     if (html.classList.contains("dark")) {
         darkToggle.classList.add("bx-sun")
         darkToggle.classList.remove("bx-moon")
+        window.localStorage.setItem("dark", "dark")
     } else {
         darkToggle.classList.add("bx-moon")
         darkToggle.classList.remove("bx-sun")
+        window.localStorage.setItem("dark", "light")
     }
 }
 
