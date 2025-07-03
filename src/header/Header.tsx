@@ -5,15 +5,11 @@ import resumePDF from '/Resume Damien Gervy Front End.pdf'
 
 
 let html:HTMLElement
-let header:HTMLElement
 let darkToggle:HTMLElement
-let lightSections:HTMLElement[] = []
 
 function initHtmlElements() {
     html = document.documentElement
-    header = document.getElementById("header")!
     darkToggle = document.getElementById("dark-toggle")!
-    lightSections = Array.prototype.slice.call(document.getElementsByClassName("light"))
 }
 
 function toggleDarkMode() {
@@ -29,31 +25,9 @@ function toggleDarkMode() {
     }
 }
 
-function handleScroll(this: Window, _ev: Event) : any {
-    if (this.scrollY > 1) {
-        header.classList.add("scrolled")
-    } else {
-        header.classList.remove("scrolled")
-    }
-
-    const comparedHeight = (this.screen.width >= 800 ? 20 : this.innerHeight - 20)
-    for (let i = 0; i<lightSections.length; i++) {
-        const rect = lightSections[i].getBoundingClientRect()
-        if (rect.top <= comparedHeight && rect.bottom >= comparedHeight) {
-            header.classList.add("light")
-            break
-        } else if (i == lightSections.length - 1) {
-            header.classList.remove("light")
-        }
-    }
-}
-
 export function Header() {
     useEffect(() => {
         initHtmlElements()
-        window.addEventListener('scroll', handleScroll, {passive: true})
-
-        return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
     return (
