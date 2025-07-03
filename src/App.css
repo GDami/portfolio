@@ -78,6 +78,12 @@ section {
     padding-bottom: calc( 2 * var(--spacing-xlarge));
     display: flex;
     justify-content: center;
+
+    opacity: 0;
+}
+
+section.shown {
+    animation: appear-and-scale .3s linear forwards;
 }
 
 p span {
