@@ -90,6 +90,10 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+    .section-title {
+        align-self: flex-start;
+    }
+
     .section-container {
         margin-inline: var(--spacing-common);
     }
