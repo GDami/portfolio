@@ -11,7 +11,7 @@ export function Hero() {
                 <img className='villain-img' src={versoImg} alt='noisette-img'></img>
             </div>
             <div className='hero-heading'>
-                <h1 className='hero-title'>Hey, I'm Damien <span className='wave-hand'>👋</span></h1>
+                <h1 className='hero-title'>hey, I'm Damien <span className='wave-hand'>👋</span></h1>
                 <h3 className='hero-info'><i className='bxr  bx-location'  ></i> Paris, France</h3>
                 <h3 className='hero-subtext'>I'm a junior <strong>frontend developer</strong> who creates user-focused experiences, and gives special attention to <span className='hero-detail'>detail</span>.</h3>
                 <div className='hero-ctas'>

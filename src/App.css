@@ -25,15 +25,6 @@ footer {
     }
 }
 
-h1 {
-    color: var(--color-main);
-    font-size: 2.9rem;
-}
-
-.section-title span {
-    font-weight: 700;
-}
-
 .section-title {
     width: fit-content;
     align-self: center;
@@ -64,7 +55,7 @@ h1 {
 .animated-underline::after {
     content: "";
     position: absolute;
-    bottom: 4px;
+    bottom: 2px;
     height: 2px;
     background-color: var(--color-draw);
     width: 0;
