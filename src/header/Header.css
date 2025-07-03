@@ -13,7 +13,18 @@
 
     z-index: 10;
 
-    opacity: 100%;
+    opacity: 0;
+
+    animation: appear .5s 1.5s forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #header.scrolled {
