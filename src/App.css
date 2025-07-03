@@ -75,7 +75,7 @@ h3 {
 }
 
 section {
-    padding-bottom: var(--spacing-large);
+    padding-bottom: calc( 2 * var(--spacing-xlarge));
     display: flex;
     justify-content: center;
 }

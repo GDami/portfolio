@@ -13,7 +13,8 @@ function initDarkMode() {
       document.documentElement.classList.remove("dark")
     }
 
-    document.documentElement.classList.remove("no-transition")
+    setTimeout(() => document.documentElement.classList.remove("no-transition"), 50);
+
 }
 
 initDarkMode()
