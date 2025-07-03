@@ -110,10 +110,11 @@
     display: inline-block;
     transform-origin: 65% 75%;
     cursor: default;
+    animation: wave .9s ease-in-out infinite paused;
 }
 
 .hero-title:hover .wave-hand {
-    animation: wave .9s ease-in-out infinite;
+    animation-play-state: running;
 }
 
 @keyframes wave {
