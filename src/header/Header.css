@@ -5,6 +5,7 @@
     
     position: fixed;
 
+    font-family: "Roboto Mono", monospace;
     color: var(--color-main);
     background-color: var(--color-bg);
     transition: box-shadow calc(var(--transition-time) / 2),
