@@ -33,7 +33,7 @@
     background-color: var(--color-header);
 }
 
-#header:hover nav {
+#header:hover nav .nav-center {
     opacity: 100%;
 
     transition-delay: 0s;
@@ -50,10 +50,17 @@
     gap: var(--spacing-common);
     padding-inline: var(--spacing-common);
 
+}
+
+
+
+#header nav .nav-center {
+    display: flex;
+    gap: var(--spacing-common);
+
     transition: opacity 4s 1s;
 
-    opacity: 50%;
-
+    opacity: 75%;
 }
 
 #header nav .header-filler {
@@ -91,9 +98,16 @@
     display: none;
 }
 
-#header nav #dark-toggle {
-    width: calc(var(--header-height) - 6px);
+#dark-toggle {
+    width: calc(var(--header-height) - 8px);
     cursor: pointer;
+    color: var(--color-bg);
+    background-color: var(--color-draw-shadow);
+}
+
+a.resume-link {
+    background-color: var(--color-item-bg);
+    border: solid 1px var(--color-main);
 }
 
 #header nav #dark-toggle, #header nav a.resume-link {
@@ -102,13 +116,11 @@
     justify-content: center;
     align-items: center;
 
-    height: calc(var(--header-height) - 6px);
+    height: calc(var(--header-height) - 8px);
 
     padding-block: 0;
     padding-inline: var(--spacing-low);
     border-radius: 4px;
-    color: var(--color-bg);
-    background-color: var(--color-draw-shadow);
 }
 
 #dark-toggle:active, .resume-link:active {
