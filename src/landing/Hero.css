@@ -101,7 +101,6 @@
 
 .hero-title {
     line-height: 1.2;
-    font-size: 2.7rem;
     opacity: 0;
     animation: appear-from-above .3s .3s ease-in-out forwards;
 }
