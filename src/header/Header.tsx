@@ -54,23 +54,23 @@ export function Header() {
                 <div className='header-filler'></div>
                 <div className='nav-center'>
                     <a href='#about'>
-                        <span>About</span>
+                        <span>about</span>
                         < i className='bx  bx-info-square'  ></i> 
                     </a>
                     <a href='#projects'>
-                        <span>Projects</span>
+                        <span>projects</span>
                         < i className='bx  bx-chart-gantt'  ></i> 
                     </a>
                     <a href='#skills'>
-                        <span>Skills</span>
+                        <span>skills</span>
                         < i className='bx  bx-brush'  ></i> 
                     </a>
                     <a href='#experiences'>
-                        <span>Experience</span>
+                        <span>experience</span>
                         < i className='bx  bx-briefcase-alt-2'  ></i> 
                     </a>
                     <a href='#contact'>
-                        <span>Contact</span>
+                        <span>contact</span>
                         < i className='bx  bx-contact-book'  ></i> 
                     </a>
                 </div>
