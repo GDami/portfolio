@@ -103,7 +103,7 @@
     font-size: 2.8rem;
     line-height: 1.2;
     opacity: 0;
-    animation: appear-from-above .3s .3s ease-in-out forwards;
+    animation: appear-from-left .3s .1s ease-in-out forwards;
 }
 
 .wave-hand {
@@ -131,14 +131,14 @@
     align-items: center;
     color:var(--color-secondary);
     opacity: 0;
-    animation: appear-from-above .3s .3s ease-in-out forwards; 
+    animation: appear-from-right .3s .3s ease-in-out forwards; 
 }
 
 .hero-subtext {
     font-size: 1.1rem;
     color: var(--color-main);
     opacity: 0;
-    animation: appear-from-right .3s .5s ease-in-out forwards;
+    animation: appear-from-left .3s .5s ease-in-out forwards;
 }
 
 .hero-detail:hover {
@@ -151,8 +151,6 @@
     display: flex;
     gap: var(--spacing-common);
     flex-wrap: wrap;
-    opacity: 0;
-    animation: appear-from-right .3s .7s ease-in-out forwards;
 }
 
 .hero-cta {
@@ -166,6 +164,8 @@
     padding-inline: var(--spacing-common);
 
     text-decoration: none;
+    opacity: 0;
+    animation: appear-from-right .3s .7s ease-in-out forwards;
 }
 
 .hero-cta.animated-underline::after {
@@ -200,6 +200,7 @@
     background-color: var(--color-draw-light);
     font-weight: 600;
     border: solid 1px;
+    animation-delay: 0.77s;
 }
 
 .dark .hero-cta.secondary {
