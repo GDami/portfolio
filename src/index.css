@@ -37,6 +37,8 @@ html.dark {
 
 	--color-header: var(--color-item-bg);
 
+	--color-darkmode-button-shadow: rgb(170,170,170);
+
 }
 
 html:not(.dark) {
@@ -48,9 +50,11 @@ html:not(.dark) {
 	--color-draw: rgb(10, 120, 90);
 	--color-draw-light: white;
 	--color-draw-shadow: var(--color-draw);
-	--color-item-bg: rgb(248,252,251);
+	--color-item-bg: rgb(22248,252,251);
 	
 	--color-header: var(--color-item-bg);
+	
+	--color-darkmode-button-shadow: rgb(120,200,160);
 
 }
 

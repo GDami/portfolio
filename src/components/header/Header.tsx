@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import './Header.css'
 
 import resumePDF from '/Resume Damien Gervy Front End.pdf'
@@ -22,12 +22,10 @@ function toggleDarkMode() {
         darkToggle.classList.add("bx-sun")
         darkToggle.classList.remove("bx-moon")
         window.localStorage.setItem("dark", "dark")
-        i18next.changeLanguage("fr")
     } else {
         darkToggle.classList.add("bx-moon")
         darkToggle.classList.remove("bx-sun")
         window.localStorage.setItem("dark", "light")
-        i18next.changeLanguage("en")
     }
 }
 
@@ -41,8 +39,27 @@ function handleScroll(this: Window, _ev: Event) : any {
 
 export function Header() {
     const { t } = useTranslation()
+
+    const languageRef = useRef<HTMLAnchorElement>(null)
+
+    const initLanguage = () => {
+        languageRef.current?.classList.toggle("en", i18next.resolvedLanguage == "en")
+        languageRef.current?.classList.toggle("fr", i18next.resolvedLanguage == "fr")
+    }
+    const toggleLanguage = () => {
+        if (i18next.resolvedLanguage == "fr") {
+            i18next.changeLanguage("en")
+            languageRef.current?.classList.add("en")
+            languageRef.current?.classList.remove("fr")
+        } else {
+            i18next.changeLanguage("fr")
+            languageRef.current?.classList.add("fr")
+            languageRef.current?.classList.remove("en")
+        }
+    }
     
     useEffect(() => {
+        initLanguage()
         initHtmlElements()
         window.addEventListener('scroll', handleScroll, {passive: true})
 
@@ -54,11 +71,10 @@ export function Header() {
         
         <header id="header">
             <nav>
-                <a href='#home'>
+                <a id="header-title" href='#home'>
                     <span>Damien Gervy</span>
                     < i className='bx  bx-home-alt'  ></i> 
                 </a>
-                <div className='header-filler'></div>
                 <div className='nav-center'>
                     <a href='#about'>
                         <span>{t("header.about")}</span>
@@ -81,12 +97,14 @@ export function Header() {
                         < i className='bx  bx-contact-book'  ></i> 
                     </a>
                 </div>
-                <div className='header-filler'></div>
-                <a className="bx-sun" id='dark-toggle' onClick={toggleDarkMode}></a>
+                <div className='header-buttons'>
                 <a className='resume-link' href={resumePDF} target='_blank'>
                     <span>{t("header.resume")}</span>
                     <i className='resume-icon bx  bx-file-code'  ></i>
                 </a>
+                <a ref={languageRef} id='language-toggle' onClick={toggleLanguage}></a>
+                <a className="bx-sun" id='dark-toggle' onClick={toggleDarkMode}></a>
+                </div>
             </nav>
         </header>
     )

@@ -6,7 +6,7 @@
     "header.contact": "contact",
     "header.resume": "CV",
     
-    "hero.title": "salut, moi c'est Damien ",
+    "hero.title": "hey, moi c'est Damien ",
     "hero.subtext.1": "",
     "hero.subtext.2": "Développeur frontend",
     "hero.subtext.3": " junior, je suis passionné par le design et très attentif aux ",
@@ -16,7 +16,7 @@
 
     "about.title.1": "à ",
     "about.title.2": "propos",
-    "whoami.description": "Je suis <1>développeur frontend</1> et passionné par l'UX/UI et la création d'interfaces modernes. Je suis à la recherche de <3>projets ou d’opportunités</3> pour continuer à progresser dans un environnement professionnel et stimulant. Mon expérience de développeur remonte à l'enfance, à bidouiller des jeux flash et parcourir des distro obscures pour contourner le contrôle parental. Désormais réformé, mon intérêt se structure autour du développement web, plus particulièrement en front, et dans une quête constante de <5>qualité</5> et de <7>partage de connaissances</7>.",
+    "whoami.description": "Je suis <1>développeur frontend</1> et passionné par l'UX/UI et la création d'interfaces modernes. Je suis à la recherche de <3>projets ou d’opportunités</3> pour continuer à progresser dans un environnement professionnel et stimulant. Mon expérience de développeur remonte à l'enfance, à bidouiller des jeux flash et parcourir des distro obscures pour contourner des contrôles parentaux. Désormais réformé, mon intérêt se structure autour du développement web, plus particulièrement en front, et dans une quête constante de <5>qualité</5> et de <7>partage de connaissances</7>.",
     "education.title": "formation",
     "education.description.1": "J'ai fait mes études et obtenu mon diplôme à l'",
     "education.description.2": "Université de Technologie de Troyes",
