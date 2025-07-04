@@ -50,7 +50,7 @@ function App() {
 				<Hero />
 				<section className=""><About /></section>
 				<section className=""><Projects /></section>
-				<section className=""><Skills /></section>
+				<section className="skills-section"><Skills /></section>
 				<section className=""><Experiences /></section>
 				<section className=""><Contact /></section>
 			</div>

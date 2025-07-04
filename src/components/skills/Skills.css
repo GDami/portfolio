@@ -11,3 +11,7 @@
     content: "";
     flex-grow: 20;
 }
+
+.skills-section {
+    overflow: hidden;
+}
