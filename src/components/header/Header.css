@@ -139,7 +139,7 @@
     content:'🇫🇷';
 }
 
-a.resume-link {
+a.resume-link, #language-toggle {
     background-color: var(--color-item-bg);
     border: solid 1px var(--color-main);
 }

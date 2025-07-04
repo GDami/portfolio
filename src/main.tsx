@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 
 import "./utils/i18n/i18n.ts"
+import i18next from 'i18next'
 
 function initDarkMode() {
 
@@ -19,7 +20,20 @@ function initDarkMode() {
 
 }
 
+const initLanguage = () => {
+        let storedLang = localStorage.getItem("lang")
+
+        if (storedLang) {
+            i18next.changeLanguage(storedLang)
+        } else if (i18next.resolvedLanguage == "en") {
+            i18next.changeLanguage("en")
+        } else {
+            i18next.changeLanguage('fr')
+        }        
+    }
+
 initDarkMode()
+initLanguage()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

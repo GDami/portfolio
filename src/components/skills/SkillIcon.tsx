@@ -24,8 +24,6 @@ export function SkillIcon(props:SkillIconProps) {
             "top",
             div.getBoundingClientRect().bottom + popupRef.current?.offsetHeight! + 16 > window.innerHeight
         )
-
-        console.log(div.getBoundingClientRect().bottom + popupRef.current?.offsetHeight! + 16 > window.innerHeight)
     }
 
     return (

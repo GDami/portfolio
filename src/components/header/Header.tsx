@@ -2,65 +2,73 @@ import { useEffect, useRef } from 'react'
 import './Header.css'
 
 import resumePDF from '/Resume Damien Gervy Front End.pdf'
+import CVPDF from '/CV Damien Gervy Développeur Front End.pdf'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
-
-
-let html:HTMLElement
-let header:HTMLElement
-let darkToggle:HTMLElement
-
-function initHtmlElements() {
-    html = document.documentElement
-    header = document.getElementById("header")!
-    darkToggle = document.getElementById("dark-toggle")!
-}
-
-function toggleDarkMode() {
-    html.classList.toggle("dark")
-    if (html.classList.contains("dark")) {
-        darkToggle.classList.add("bx-sun")
-        darkToggle.classList.remove("bx-moon")
-        window.localStorage.setItem("dark", "dark")
-    } else {
-        darkToggle.classList.add("bx-moon")
-        darkToggle.classList.remove("bx-sun")
-        window.localStorage.setItem("dark", "light")
-    }
-}
-
-function handleScroll(this: Window, _ev: Event) : any {
-    if (this.scrollY > 1) {
-        header.classList.add("scrolled")
-    } else {
-        header.classList.remove("scrolled")
-    }
-}
 
 export function Header() {
     const { t } = useTranslation()
 
+    const headerRef = useRef<HTMLElement>(null)
+    const resumeRef = useRef<HTMLAnchorElement>(null)
+    const darkRef = useRef<HTMLAnchorElement>(null)
     const languageRef = useRef<HTMLAnchorElement>(null)
 
-    const initLanguage = () => {
-        languageRef.current?.classList.toggle("en", i18next.resolvedLanguage == "en")
-        languageRef.current?.classList.toggle("fr", i18next.resolvedLanguage == "fr")
+    const handleScroll = ( _ev: Event) => {
+        if (scrollY > 1) {
+            headerRef.current!.classList.add("scrolled")
+        } else {
+            headerRef.current!.classList.remove("scrolled")
+        }
     }
-    const toggleLanguage = () => {
-        if (i18next.resolvedLanguage == "fr") {
+
+    const initLanguage = () => {
+        if (i18next.resolvedLanguage == "en") {
+            changeLanguage("en")
+        } else {
+            changeLanguage('fr')
+        }        
+    }
+
+    const changeLanguage = (lang:string) => {
+        if (lang == "en") {
             i18next.changeLanguage("en")
             languageRef.current?.classList.add("en")
             languageRef.current?.classList.remove("fr")
+            resumeRef.current?.setAttribute('href', resumePDF)
+            window.localStorage.setItem("lang", "en")
         } else {
             i18next.changeLanguage("fr")
             languageRef.current?.classList.add("fr")
             languageRef.current?.classList.remove("en")
+            resumeRef.current?.setAttribute('href', CVPDF)
+            window.localStorage.setItem("lang", "fr")
+        }
+    }
+
+    const toggleDarkMode = () => {
+        document.documentElement.classList.toggle("dark")
+        if (document.documentElement.classList.contains("dark")) {
+            darkRef.current?.classList.add("bx-sun")
+            darkRef.current?.classList.remove("bx-moon")
+            window.localStorage.setItem("dark", "dark")
+        } else {
+            darkRef.current?.classList.add("bx-moon")
+            darkRef.current?.classList.remove("bx-sun")
+            window.localStorage.setItem("dark", "light")
+        }
+    }
+
+    const toggleLanguage = () => {
+        if (i18next.resolvedLanguage == "fr") {
+            changeLanguage("en")
+        } else {
+            changeLanguage("fr")
         }
     }
     
     useEffect(() => {
         initLanguage()
-        initHtmlElements()
         window.addEventListener('scroll', handleScroll, {passive: true})
 
         return () => window.removeEventListener('scroll', handleScroll)
@@ -69,7 +77,7 @@ export function Header() {
 
     return (
         
-        <header id="header">
+        <header ref={headerRef} id="header">
             <nav>
                 <a id="header-title" href='#home'>
                     <span>Damien Gervy</span>
@@ -98,12 +106,12 @@ export function Header() {
                     </a>
                 </div>
                 <div className='header-buttons'>
-                <a className='resume-link' href={resumePDF} target='_blank'>
+                <a ref={resumeRef} className='resume-link' href={resumePDF} target='_blank'>
                     <span>{t("header.resume")}</span>
                     <i className='resume-icon bx  bx-file-code'  ></i>
                 </a>
                 <a ref={languageRef} id='language-toggle' onClick={toggleLanguage}></a>
-                <a className="bx-sun" id='dark-toggle' onClick={toggleDarkMode}></a>
+                <a ref={darkRef} className="bx-sun" id='dark-toggle' onClick={toggleDarkMode}></a>
                 </div>
             </nav>
         </header>
