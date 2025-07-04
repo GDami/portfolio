@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import './Header.css'
 
 import resumePDF from '/Resume Damien Gervy Front End.pdf'
+import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
 
 let html:HTMLElement
@@ -20,10 +22,12 @@ function toggleDarkMode() {
         darkToggle.classList.add("bx-sun")
         darkToggle.classList.remove("bx-moon")
         window.localStorage.setItem("dark", "dark")
+        i18next.changeLanguage("fr")
     } else {
         darkToggle.classList.add("bx-moon")
         darkToggle.classList.remove("bx-sun")
         window.localStorage.setItem("dark", "light")
+        i18next.changeLanguage("en")
     }
 }
 
@@ -36,6 +40,8 @@ function handleScroll(this: Window, _ev: Event) : any {
 }
 
 export function Header() {
+    const { t } = useTranslation()
+    
     useEffect(() => {
         initHtmlElements()
         window.addEventListener('scroll', handleScroll, {passive: true})
@@ -45,6 +51,7 @@ export function Header() {
 
 
     return (
+        
         <header id="header">
             <nav>
                 <a href='#home'>
@@ -54,31 +61,31 @@ export function Header() {
                 <div className='header-filler'></div>
                 <div className='nav-center'>
                     <a href='#about'>
-                        <span>about</span>
+                        <span>{t("header.about")}</span>
                         < i className='bx  bx-info-square'  ></i> 
                     </a>
                     <a href='#projects'>
-                        <span>projects</span>
+                        <span>{t("header.projects")}</span>
                         < i className='bx  bx-chart-gantt'  ></i> 
                     </a>
                     <a href='#skills'>
-                        <span>skills</span>
+                        <span>{t("header.skills")}</span>
                         < i className='bx  bx-brush'  ></i> 
                     </a>
                     <a href='#experiences'>
-                        <span>experience</span>
+                        <span>{t("header.experience")}</span>
                         < i className='bx  bx-briefcase-alt-2'  ></i> 
                     </a>
                     <a href='#contact'>
-                        <span>contact</span>
+                        <span>{t("header.contact")}</span>
                         < i className='bx  bx-contact-book'  ></i> 
                     </a>
                 </div>
                 <div className='header-filler'></div>
                 <a className="bx-sun" id='dark-toggle' onClick={toggleDarkMode}></a>
                 <a className='resume-link' href={resumePDF} target='_blank'>
+                    <span>{t("header.resume")}</span>
                     <i className='resume-icon bx  bx-file-code'  ></i>
-                    <span>Resume</span>
                 </a>
             </nav>
         </header>

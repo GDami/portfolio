@@ -16,9 +16,9 @@ const resources = {
 
 i18next
     .use(initReactI18next)
-    // .use(I18nextBrowserLanguageDetector)
+    .use(I18nextBrowserLanguageDetector)
     .init({
-        fallbackLng: "fr",
+        fallbackLng: "en",
         lng: "fr",
         resources
     })

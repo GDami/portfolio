@@ -1,10 +1,13 @@
+import { useTranslation } from "react-i18next"
 import "./Contact.css"
 import { ContactIcon } from "./ContactIcon"
 
 export function Contact() {
+    const { t } = useTranslation()
+
     return (
         <div className="section-container contact" id="contact">
-            <h1>Contact <strong>Me!</strong></h1>
+            <h1 className="animated-underline">{t("contact.title.1")}<strong>{t("contact.title.2")}</strong></h1>
             <h3>gervydamien@gmail.com</h3>
             <div className="contact-container">
                 <ul className="contact-list">

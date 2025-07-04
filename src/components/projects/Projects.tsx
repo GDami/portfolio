@@ -4,22 +4,25 @@ import randomImg from "/random-preview.png"
 import modloaderImg from "/modloader.png"
 import modsImg from "/mods-prev.png"
 import "./Projects.css"
+import { useTranslation } from "react-i18next";
 
 export function Projects() {
+const { t } = useTranslation()
+
     return (
             <div className="section-container projects" id="projects">
-                <h1 className="section-title animated-underline">my <span>projects</span></h1>
+                <h1 className="section-title animated-underline">{t("projects.title.1")}<span>{t("projects.title.2")}</span></h1>
                 <div className="projects-list">
                     <Project
                         title="Suivi Candidatures"
-                        description="Suivi Candidatures - French for 'application tracking' - is a tool I developed to help me keep track of all the applications I've sent (you're in there). It is a fullstack project with a few pages, data management and server side rendering."
+                        description={t("project.suivi.description")}
                         source="https://github.com/GDami/SuiviCandidatures/"
                         image={suiviImg}
                         technos={['html5','css3','python','django', 'sqlite']}
                     ></Project>
                     <Project
                         title="random spotify button"
-                        description="A simple app I made to familiarize myself with Angular. This app shows you a random track with the press of a button. It uses the Spotify API."
+                        description={t("project.spotify.description")}
                         source="https://github.com/GDami/random-spotify/"
                         image={randomImg}
                         reversed
@@ -27,14 +30,14 @@ export function Projects() {
                     ></Project>
                     <Project
                         title="Mods"
-                        description="My obsession with games has led me to explore game dev, and I started modding as a way to gain experience developing and testing in short cycles. Mods have the advantage of requiring a minimal setup to work, and having a bunch of game system ready to be messed with. I made mods mostly for Brotato and Slay the Spire, but I have also tried my hand at 3D animation with blender."
+                        description={t("project.mods.description")}
                         source="https://github.com/stars/GDami/lists/mod-repos/"
                         image={modsImg}
                         technos={['java','blender', 'godot']}
                     ></Project>
                     <Project
                         title="Godot Mod Loader"
-                        description="A mod loader for games made in Godot. This is an open source project I contributed on, and it has been officially added to several games already. It is fully written in Godot's scripting language, gdscript, and also acts as an API to mod developers."
+                        description={t("project.modLoader.description")}
                         source="https://github.com/GodotModding/godot-mod-loader"
                         image={modloaderImg}
                         reversed

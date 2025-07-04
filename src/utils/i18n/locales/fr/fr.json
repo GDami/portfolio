@@ -1,4 +1,19 @@
 {
+    "header.about": "à propos",
+    "header.projects": "projets",
+    "header.skills": "compétences",
+    "header.experience": "expérience",
+    "header.contact": "contact",
+    "header.resume": "CV",
+    
+    "hero.title": "salut, moi c'est Damien ",
+    "hero.subtext.1": "",
+    "hero.subtext.2": "Développeur frontend",
+    "hero.subtext.3": " junior, je suis passionné par le design et très attentif aux ",
+    "hero.subtext.4": "détails",
+    "hero.cta.1": "À propos de moi",
+    "hero.cta.2": "Voir mes projets",
+
     "about.title.1": "à ",
     "about.title.2": "propos",
     "whoami.description": "Je suis <1>développeur frontend</1> et passionné par l'UX/UI et la création d'interfaces modernes. Je suis à la recherche de <3>projets ou d’opportunités</3> pour continuer à progresser dans un environnement professionnel et stimulant. Mon expérience de développeur remonte à l'enfance, à bidouiller des jeux flash et parcourir des distro obscures pour contourner le contrôle parental. Désormais réformé, mon intérêt se structure autour du développement web, plus particulièrement en front, et dans une quête constante de <5>qualité</5> et de <7>partage de connaissances</7>.",
@@ -7,5 +22,45 @@
     "education.description.2": "Université de Technologie de Troyes",
     "education.description.3": ", en 2021. Mon parcours à l'UTT m'a permis d'être confronté à mes premiers gros <3>projets logiciels</3>, et d'apprendre des outils fondamentaux comme <5>l'algorithmie</5>, les <7>statistiques</7> et la <9>géométrie</9>. Je me suis ensuite formé sur des technos spécifiques au cours de mes stages, de mes projets perso et de formations en ligne.",
     "hobbies.title": "hobbies",
-    "hobbies.description": "Au delà du code, je passe aussi du temps à jouer du <1>piano</1>, à <3>pédaler</3>, <5>cuisiner</5>, <7>jouer</7> et bien sûr à <9>embêter mon chat</9>. Je suis friand de <11>découvertes</11>, d'<13>apprentissage</13>, et j'aime <15>décortiquer</15> les choses pour apprendre <17>comment</17> elles marchent."
+    "hobbies.description": "Au delà du code, je passe aussi du temps à jouer du <1>piano</1>, à <3>pédaler</3>, <5>cuisiner</5>, <7>jouer</7> et bien sûr à <9>embêter mon chat</9>. Je suis friand de <11>découvertes</11>, d'<13>apprentissage</13>, et j'aime <15>décortiquer</15> les choses pour apprendre <17>comment</17> elles marchent.",
+
+    "projects.title.1": "mes ",
+    "projects.title.2": "projets",
+    "project.suivi.description": "\"Suivi Candidatures\" est un outil que j'ai créé pour m'aider à organiser et suivre mes candidatures dans le cadre de ma recherche d'emploi (oui, vous êtes dedans). C'est un projet fullstack développé avec Django, avec une base en SQLite et du SSR.",
+    "project.spotify.description": "Une application assez basique que j'ai développée pour me familiariser avec Angular, et pour réapprendre le workflow pour consommer une API en JavaScript. L'application est composée d'un unique bouton qui va récupérer et afficher une musique au hasard via l'API Spotify. Pratique en cas de panne d'inspiration.",
+    "project.mods.description": "Ma passion obsessionnelle pour les jeux m'a guidé vers le gamedev, et plus précisément vers le modding. Le développement de mods présente plusieurs avantages : la structure existante des jeux et de leurs systèmes permet des cycles de développement rapides et ciblés, et le déploiement est généralement facile et tout aussi rapide, ce qui permet d'avoir régulièrement des retours de la part des joueurs. J'ai surtout codé des mods sur Brotato et Slay the Spire, mais j'ai aussi touché à de la 3D sur blender.",
+    "project.modLoader.description": "Un mod loader pour les jeux créés sur Godot. C'est un projet open-source sur lequel j'ai contribué, et qui a déjà été intégré officiellement sur plusieurs jeux. Le code est complètement rédigé en gdscript, le langage de script de Godot, et offre une API pour les développeurs de mods.",
+
+    "skills.title.1": "mes ",
+    "skills.title.2": "compétences",
+    "skills.html.description": "\"<h1>Hello World!</h1>\"",
+    "skills.css.description": "Aisément le langage le plus excentrique que j'ai touché. J'admire les choses qu'il permet de faire, et la gymnastique mentale qu'il pousse à adopter pour y arriver.",
+    "skills.sass.description": "Je l'ai surtout utilisé pour les variables et le nesting.",
+    "skills.typescript.description": "J'ai appris TypeScript pendant un stage où j'ai dû migrer un outil interne depuis JavaScript. Je l'utilise maintenant religieusement.",
+    "skills.reactjs.description": "Ce site est développé sur React !",
+    "skills.nodejs.description": "Vous reprendrez bien quelque API REST ?",
+    "skills.java.description": "Le parlant depuis longtemps, j'ai développé en Java pour des projets professionnels, personnels et scolaires.",
+    "skills.docker.description": "J'adore naviguer !",
+    "skills.python.description": "Un langage que j'ai surtout utilisé pour gérer des fichiers quand je moddais.",
+    "skills.django.description": "J'ai appris Django pour un projet personnel que vous pouvez retrouver plus haut.",
+    "skills.git.description": "Je maîtrise les bases : branch, checkout, clone, push, pull, commit, et bien sûr, merge.",
+    "skills.github.description": "Mon GitHub est dispo en bas de la page. :)",
+    "skills.english.name": "Anglais",
+    "skills.english.description": "\"Be you, be proud of you because, you can be, do, what we want to do.\"",
+
+    "experiences.title.1": "mon ",
+    "experiences.title.2": "expérience",
+    "experience.coreoz.title": "Ingénieur fullstack (stage) chez Coreoz",
+    "experience.coreoz.description": "Je suis intervenu sur plusieurs projets : des applications et des outils internes, et des applications métier. La stack technique était du React côté front, et côté back du Java/Spring Boot avec une base en Postgre. J'ai énormément progressé sur React grâce à ces différents projets. J'ai aussi étroitement collaboré avec l'UX/UI designer sur un projet de refonte d'application métier, ce qui m'a permis d'implémenter des maquettes de zéro, et de mieux comprendre les problématiques liées à l'expérience utilisateur.",
+    "experience.coreoz.date.1": "Nov 2020",
+    "experience.coreoz.date.2": "Avr 2021",
+    "experience.factorythings.title": "Ingénieur backend (stage) chez factorythings",
+    "experience.factorythings.description": "J'ai travaillé sur la solution principale de la boîte : une application web B2B de visualisation de données industrielles provenant de capteurs connectés IoT. J'ai implémenté les protocoles de communication sur le backend en Node.js et j'ai collaboré avec le Lead pour adapter l'architecture. J'ai aussi corrigé des bugs et fait des retouches visuelles sur l'interface utilisateur en React.",
+    "experience.factorythings.date.1": "Aou 2018",
+    "experience.factorythings.date.2": "Jan 2019",
+
+    "contact.title.1": "contactez ",
+    "contact.title.2": "moi!"
+
+
 }
