@@ -1,7 +1,7 @@
 .skill-icon {
+    flex-grow: 1;
     display: flex;
     width: auto;
-    height: 3em;
     padding: var(--spacing-common);
 
     position: relative;
@@ -13,15 +13,15 @@
     border: solid 1px var(--color-main);
     color: var(--color-main);
     background-color: var(--color-item-bg);
-
-    z-index: 1;
 }
 
 .skill-icon:hover {
     border-color: var(--color-draw-shadow);
+    background-color: var(--color-draw-shadow);
 }
 
 .skill-text {
+    pointer-events: none;
     display: flex;
     justify-content: center;
     gap: 1em;

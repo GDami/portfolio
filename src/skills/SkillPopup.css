@@ -2,33 +2,48 @@
     pointer-events: none;
 
     position:absolute;
-    bottom: 30%;
-    right:10%;
+    top: calc(100% + var(--spacing-low));
+    left: -1px;
 
-    width: 80%;
+    width:max-content;
+    max-width: 300px;
+    height:fit-content;
 
     padding: var(--spacing-low);
 
     border: solid 1px;
-    border-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 3px;
+    border-radius: 3px;
     background-color: var(--color-item-bg);
     color: var(--color-main);
 
     line-height: normal;
 
+    z-index: 2;
     opacity: 0%;
 
-    transition: all var(--transition-time);
+    transition: all var(--transition-time) ease-in-out;
 }
 
 .skill-icon:hover .skill-popup, .skill-icon:active .skill-popup {
     opacity: 100%;
-    bottom: 75%;
-    right: 5%;
 }
 
 .skill-popup span {
     font-size: 0.9rem;
+}
+
+.skill-popup.top {
+    bottom: calc(100% + var(--spacing-low));
+    top: auto;
+}
+
+.skill-popup.left {
+    right: -1px;
+    left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .skill-popup {
+        max-width: 250px;
+    }
 }

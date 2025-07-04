@@ -1,8 +1,13 @@
 .skills-list {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-common);
 
     margin-top: var(--spacing-large);
+}
+
+.skills-list::after {
+    content: "";
+    flex-grow: 20;
 }
