@@ -7,7 +7,7 @@ export function Contact() {
 
     return (
         <div className="section-container contact" id="contact">
-            <h1 className="animated-underline">{t("contact.title.1")}<strong>{t("contact.title.2")}</strong></h1>
+            <h1 className="animated-underline"><strong>{t("contact.title.1")}</strong>{t("contact.title.2")}</h1>
             <h3>gervydamien@gmail.com</h3>
             <div className="contact-container">
                 <ul className="contact-list">
