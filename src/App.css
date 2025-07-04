@@ -79,11 +79,15 @@ section {
     display: flex;
     justify-content: center;
 
+
+}
+
+.hidden {
     opacity: 0;
 }
 
-section.shown {
-    animation: appear-and-scale .3s linear forwards;
+.shown {
+    animation: appear-and-scale .3s linear;
 }
 
 p span {

@@ -14,17 +14,31 @@ import { useEffect } from 'react'
 function App() {
 
 	useEffect(() => {
-		const sections = document.querySelectorAll("section")
+		const sectionTitles = document.querySelectorAll(".section-title")
+		const aboutDetails = document.querySelectorAll(".about-detail")
+		const projects = document.querySelectorAll(".project")
+		const skillIcons = document.querySelectorAll(".skill-icon")
+		const experiences = document.querySelectorAll(".experience")
 
 		const observer = new IntersectionObserver(entries => {
 			entries.forEach(entry => {
 				if (entry.isIntersecting) {
+					entry.target.classList.remove("hidden")
 					entry.target.classList.add("shown")
 				}
 			})
-		}, { rootMargin: "-100px"})
+		})
+
+		const registerElement = (element: Element) => {
+			element.classList.add("hidden")
+			observer.observe(element)
+		}
 		
-		sections.forEach(section => observer.observe(section))
+		sectionTitles.forEach(section => registerElement(section))
+		aboutDetails.forEach(aboutDetail => registerElement(aboutDetail))
+		projects.forEach(project => registerElement(project))
+		skillIcons.forEach(skillIcon => registerElement(skillIcon))
+		experiences.forEach(experience => registerElement(experience))
 
 		return () => observer.disconnect()
 	})
