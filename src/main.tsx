@@ -9,11 +9,11 @@ import i18next from 'i18next'
 function initDarkMode() {
 
     let dark = localStorage.getItem("dark")
-    dark = dark || "dark"
+    dark = dark || "light"
 
-    if (dark == "light" && document.documentElement.classList.contains("dark")) {
-      localStorage.setItem("dark", "light")
-      document.documentElement.classList.remove("dark")
+    if (dark == "dark" && !document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("dark", dark)
+      document.documentElement.classList.add("dark")
     }
 
     setTimeout(() => document.documentElement.classList.remove("no-transition"), 50);
