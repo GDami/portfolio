@@ -100,8 +100,8 @@ export function Header() {
                         <span>{t("header.experience")}</span>
                         < i className='bx  bx-briefcase-alt-2'  ></i> 
                     </a>
-                    <a href='#contact'>
-                        <span>{t("header.contact")}</span>
+                    <a id="header-contact" href='#contact'>
+                        <span>{t("header.contact")} →</span>
                         < i className='bx  bx-contact-book'  ></i> 
                     </a>
                 </div>

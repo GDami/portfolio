@@ -59,7 +59,7 @@
     max-width: 300px;
 
     opacity: 0;
-    animation: appear-and-scale .3s 1s ease-in-out forwards;
+    animation: appear-and-scale .3s .2s ease-in-out forwards;
 }
 
 .hero-img {
@@ -104,7 +104,7 @@
     font-size: 3rem;
     line-height: 1.2;
     opacity: 0;
-    animation: appear-from-left .3s .1s ease-in-out forwards;
+    animation: appear-from-left .3s .2s ease-in-out forwards;
 }
 
 .wave-hand {
@@ -132,14 +132,14 @@
     align-items: center;
     color:var(--color-secondary);
     opacity: 0;
-    animation: appear-from-right .3s .3s ease-in-out forwards; 
+    animation: appear-from-left .3s .3s ease-in-out forwards; 
 }
 
 .hero-subtext {
     font-size: 1.1rem;
     color: var(--color-main);
     opacity: 0;
-    animation: appear-from-left .3s .5s ease-in-out forwards;
+    animation: appear-from-left .3s .4s ease-in-out forwards;
 }
 
 .hero-detail:hover {
@@ -152,6 +152,8 @@
     display: flex;
     gap: var(--spacing-common);
     flex-wrap: wrap;
+    opacity: 0;
+    animation: appear-from-left .3s .5s ease-in-out forwards;
 }
 
 .hero-cta {
@@ -165,8 +167,6 @@
     padding-inline: var(--spacing-common);
 
     text-decoration: none;
-    opacity: 0;
-    animation: appear-from-right .3s .7s ease-in-out forwards;
 }
 
 .hero-cta.animated-underline::after {
@@ -182,31 +182,30 @@
 }
 
 .hero-cta.animated-underline.primary::after {
-    background-color: var(--color-draw-light);
+    background-color: var(--color-bg);
 }
 
 .hero-cta.animated-underline.hero-cta.secondary::after {
-    background-color: var(--color-draw);
+    background-color: var(--color-draw-shadow);
 }
 
 .hero-cta.primary {
-    color: var(--color-draw-light);
-    background-color: var(--color-draw);
+    color: var(--color-bg);
+    background-color: var(--color-draw-shadow);
     font-weight: bold;
     border: solid 1px var(--color-draw);
 }
 
 .hero-cta.secondary {
-    color: var(--color-draw);
-    background-color: var(--color-draw-light);
+    color: var(--color-draw-shadow);
+    background-color: var(--color-bg);
     font-weight: 600;
     border: solid 1px;
-    animation-delay: 0.77s;
 }
 
-.dark .hero-cta.secondary {
-    border-color: var(--color-draw-light);
-}
+/* .dark .hero-cta.secondary {
+    border-color: var(--color-draw-shadow);
+} */
 
 @media screen and (max-width: 1024px) {
 }

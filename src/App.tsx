@@ -27,6 +27,8 @@ function App() {
 					entry.target.classList.add("shown")
 				}
 			})
+		}, {
+			rootMargin: "-50px"
 		})
 
 		const registerElement = (element: Element) => {

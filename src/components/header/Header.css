@@ -16,7 +16,7 @@
 
     opacity: 0;
 
-    animation: appear .5s 1.5s forwards;
+    animation: appear .5s .6s forwards;
 }
 
 @keyframes appear {
@@ -59,15 +59,22 @@
     display: flex;
     gap: var(--spacing-common);
 
-    transition: opacity 4s 1s;
+    /* transition: opacity 4s 1s; */
 
-    opacity: 75%;
+    /* opacity: 75%; */
 }
 
 #header-title {
     position: absolute;
     left: var(--spacing-common);
 }
+
+#header-contact, #header-contact:visited {
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: var(--color-draw);
+}
+
 
 #header nav .header-buttons {
     position: absolute;
