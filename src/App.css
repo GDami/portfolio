@@ -87,7 +87,7 @@ section {
 }
 
 .shown {
-    animation: appear-and-scale .3s linear;
+    animation: appear-and-scale .15s linear;
 }
 
 p span {
