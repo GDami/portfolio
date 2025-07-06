@@ -7,7 +7,6 @@
     gap: calc(2 * var(--spacing-common));
 
     outline: solid 0px var(--color-draw);
-    background-color: var(--color-item-bg);
 
     /* have to transition the outline so it doesn't look weird */
     transition: box-shadow var(--transition-time),
@@ -20,6 +19,7 @@
     box-shadow: -10px 10px var(--color-draw);
     outline-width: 1px;
     border-color: var(--color-draw);
+    background-color: var(--color-item-bg);
 }
 
 .experience-header {

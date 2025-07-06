@@ -8,7 +8,6 @@
     
     border: solid 1px var(--color-secondary);
     outline: solid 0px var(--color-draw);
-    background-color: var(--color-item-bg);
 
     transition: box-shadow var(--transition-time),
     outline 0.1s,
@@ -20,6 +19,7 @@
     box-shadow: -8px 8px var(--color-draw);
     outline-width: 1px;
     border-color: var(--color-draw);
+    background-color: var(--color-item-bg);
 }
 
 .project:hover .project-overlay {

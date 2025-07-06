@@ -22,7 +22,7 @@ export function About() {
                         <h2>&gt; {t("education.title")}<span>_</span></h2>
                         <p>{t("education.description.1")}<span><a href='https://www.utt.fr/formations/diplome-d-ingenieur/reseaux-et-telecommunications/' target="_blank">{t("education.description.2")}</a></span>
                             <Trans i18nKey="education.description.3">
-                                 in 2021. This is where I took on my first large <em>coding projects</em>, and learned useful tools like <em>algorithms</em>, <em>statistics</em> or <em>geometry</em>.
+                                 in 2021. This is where I took on my first large <em>coding projects</em>, and learned useful tools like <em>algorithms</em>, <em>statistics</em> or <em>geometry</em>.<em></em>.
                             </Trans>
                         </p>
                         <br></br>

@@ -12,7 +12,6 @@
 
     border: solid 1px var(--color-main);
     color: var(--color-main);
-    background-color: var(--color-item-bg);
 }
 
 .skill-icon:hover {
