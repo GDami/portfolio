@@ -28,12 +28,12 @@ html.dark {
 
 	--color-main: white;
 	--color-secondary: rgb(197,197,197);
-	--color-bg: #032221;
+	--color-bg: #021B1A;
 
-	--color-draw: rgb(44,194,149);
+	--color-draw: #88F7E6;
 	--color-draw-light: white;
 	--color-draw-shadow: var(--color-main);
-	--color-item-bg: #021B1A;
+	--color-item-bg: #032221;
 
 	--color-header: var(--color-item-bg);
 
