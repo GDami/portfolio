@@ -28,13 +28,10 @@ export function SkillIcon(props:SkillIconProps) {
 
     return (
         <div onMouseEnter={checkBounds} className="skill-icon">
-            {/* <span className='inverter'></span> */}
             <span className='skill-text'>
                 < i className={props.class}  ></i> 
                 {props.name}
             </span>
-            {/* <span className='skill-bg back'></span>
-            <span className={'skill-bg level'+ props.level}></span> */}
             {props.description && <SkillPopup ref={popupRef} description={props.description}></SkillPopup>}
         </div>
     )

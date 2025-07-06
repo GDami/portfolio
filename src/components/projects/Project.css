@@ -59,7 +59,7 @@
     opacity: 0;
     background-color: rgba(0,0,0,0.6);
 
-    transition: all var(--transition-time);
+    transition: opacity var(--transition-time);
 }
 
 .project-link {
@@ -68,7 +68,7 @@
     color: white;
     border: solid 1px white;
     border-radius: 4px;
-    transition: all var(--transition-time-button);
+    transition: background-color var(--transition-time-button);
     text-decoration: none;
 }
 

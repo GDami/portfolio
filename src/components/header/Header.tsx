@@ -102,7 +102,7 @@ export function Header() {
                     </a>
                     <a id="header-contact" href='#contact'>
                         <span>{t("header.contact")} →</span>
-                        < i className='bx  bx-contact-book'  ></i> 
+                        < i className='bx  bx-hashtag'  ></i> 
                     </a>
                 </div>
                 <div className='header-buttons'>

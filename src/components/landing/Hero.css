@@ -54,7 +54,6 @@
 
 .hero-img-container {
     position:relative;
-    border-radius: 50%;
     min-width: 300px;
     max-width: 300px;
 
@@ -65,7 +64,6 @@
 .hero-img {
     display: block;
     width: 100%;
-    border-radius: 50%;
 
     transition: rotate var(--transition-time);
     backface-visibility: hidden;
@@ -77,13 +75,16 @@
     left: 0;
 
     width: 100%;
-    border-radius: 50%;
 
     transition: rotate var(--transition-time);
     backface-visibility: hidden;
 
     rotate: y -180deg;
 
+}
+
+.hero-img-container, .hero-img, .villain-img {
+    border-radius: 4%;
 }
 
 .hero-img-container:hover .hero-img {
@@ -193,7 +194,7 @@
     color: var(--color-bg);
     background-color: var(--color-draw-shadow);
     font-weight: bold;
-    border: solid 1px var(--color-draw);
+    border: solid 1px var(--color-draw-shadow);
 }
 
 .hero-cta.secondary {
@@ -207,24 +208,23 @@
     border-color: var(--color-draw-shadow);
 } */
 
-@media screen and (max-width: 1024px) {
-}
 
 @media screen and (max-width: 1024px) {
     .hero {
         flex-direction: column;
-        padding-top: calc(2 * var(--spacing-large));
-        padding-bottom: var(--spacing-xlarge);
+        padding-top: var(--spacing-large);
+        padding-bottom: calc( 2 * var(--spacing-xlarge));
         padding-inline: var(--spacing-large);
-
-        max-width: 600px;
+        max-width: 400px;
+        gap: var(--spacing-large);
     }
     
     .hero-img-container {
-        min-width: 250px;
-        width: 50vw;
+        min-width: 0;
         max-width: 400px;
     }
+
+
 
     .hero-img-container, .hero-title, .hero-info, .hero-subtext, .hero-ctas {
         animation-name: appear-from-left;
@@ -233,10 +233,12 @@
     .hero-img-container {
         animation-delay: .1s;
     }
+
 }
 
 @media screen and (max-width: 480px) {
     .hero {
+        padding-top: var(--spacing-common);
         padding-inline: var(--spacing-common);
     }
 

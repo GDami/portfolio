@@ -100,9 +100,9 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
-    .section-title {
+    /* .section-title {
         align-self: flex-start;
-    }
+    } */
 
     .section-container {
         margin-inline: var(--spacing-common);
@@ -115,4 +115,25 @@ strong {
 
 g, path {
     transition: inherit;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .content {
+        height: 100vh;
+        height: 100dvh;
+        overflow: scroll;
+    }
 }

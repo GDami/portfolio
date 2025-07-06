@@ -21,7 +21,7 @@
     z-index: 2;
     opacity: 0%;
 
-    transition: all var(--transition-time) ease-in-out;
+    transition: opacity var(--transition-time) ease-in-out;
 }
 
 .skill-icon:hover .skill-popup, .skill-icon:active .skill-popup {

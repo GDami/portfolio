@@ -28,7 +28,8 @@
     color: var(--color-main);
     height: 1.5em;
 
-    transition: all var(--transition-time-button) ease-in-out;
+    transition: var(--transition-time-button) ease-in-out;
+    transition-property: background-color, border-color, transform;
 }
 
 .contact-icon:hover {

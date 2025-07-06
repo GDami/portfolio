@@ -46,7 +46,7 @@ function App() {
 	})
 
 	return (
-		<>
+		<div className='content-wrapper'>
 			<Header />
 			<div className='content'>
 				<Hero />
@@ -55,9 +55,9 @@ function App() {
 				<section className="skills-section"><Skills /></section>
 				<section className=""><Experiences /></section>
 				<section className=""><Contact /></section>
+				<footer>© 2025 Damien Gervy</footer>
 			</div>
-			<footer>© 2025 Damien Gervy</footer>
-		</>
+		</div>
 	)
 }
 

@@ -75,7 +75,7 @@ html:not(.dark) {
 	flex-direction: column;
 }
 
-* {
+body, .content *, #header a {
 	transition: background-color var(--transition-time) ease-in-out,
 	color var(--transition-time) ease-in-out,
 	border-color var(--transition-time) ease-in-out;

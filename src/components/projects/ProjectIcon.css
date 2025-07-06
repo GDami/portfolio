@@ -7,7 +7,8 @@
     align-items: center;
 
     border: solid 1px var(--color-secondary);
-    transition: all var(--transition-time-button) ease-in-out;
+    transition: var(--transition-time-button) ease-in-out;
+    transition-property: background-color, border-color;
 }
 
 .project-icon i {
@@ -15,7 +16,7 @@
     font-size: 2rem;
 }
 .project-icon i, .project-icon svg {
-    transition: all var(--transition-time-button) ease-in-out;
+    transition: color var(--transition-time-button) ease-in-out;
 }
 
 .project-icon svg {

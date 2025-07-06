@@ -30,15 +30,7 @@
 
 #header.scrolled {
     box-shadow: 0 0 2px;
-    background-color: var(--color-header);
-}
-
-#header:hover nav .nav-center {
-    opacity: 100%;
-
-    transition-delay: 0s;
-    transition-duration: var(--transition-time);
-
+    /* background-color: var(--color-header); */
 }
 
 #header nav {
@@ -58,10 +50,6 @@
 #header nav .nav-center {
     display: flex;
     gap: var(--spacing-common);
-
-    /* transition: opacity 4s 1s; */
-
-    /* opacity: 75%; */
 }
 
 #header-title {
@@ -73,6 +61,7 @@
     font-weight: bold;
     font-size: 1.05rem;
     color: var(--color-draw);
+    transition: color var(--transition-time) ease-in-out;
 }
 
 
@@ -133,7 +122,14 @@
     border: solid 1px var(--color-main);
 }
 
+@font-face {
+    font-family: "Twemoji Country Flags";
+    unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+    src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
+}
+
 #language-toggle::before {
+    font-family: "Twemoji Country Flags", sans-serif;
     line-height: 1;
     font-size: 1.5rem;
 }
@@ -163,6 +159,7 @@ a.resume-link, #language-toggle {
     padding-inline: var(--spacing-low);
     border-radius: 4px;
 }
+
 .resume-link:not(:active),
 #language-toggle:not(:active) {
     box-shadow: -2px 3px;
@@ -177,38 +174,51 @@ a.resume-link, #language-toggle {
 }
 
 a, a:visited {
-    color:inherit;
+    color: var(--color-main);
 }
 
 
 @media screen and (max-width: 1024px) {
 
     #header {
-        display: none;
+        /* background-color: var(--color-header); */
 
-        bottom: 0;
+        position: static;
 
-        align-self: center;
+        top: 0;
+        right: 0;
+        width: clamp(32px, 10vw,var(--header-height));
+        height: 100vh;
+        height: 100dvh;
 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom: none;
-        border-top: solid 1px var(--color-secondary);
-        border-right: solid 1px var(--color-secondary);
-        
-        background-color: rgba(31,31,31, 0.5);
+        border-left: solid 1px var(--color-main);
     }
 
     #header nav {
-        padding: 0;
-        gap: 0;
+        /* padding: 0;
+        gap: 0; */
+        flex-direction: column;
 
+    }
+
+    #header nav #header-title {
+        position: initial;
+    }
+
+    #header nav .nav-center {
+        opacity: 1;
+        flex-direction: column;
+    }
+
+    #header nav .header-buttons {
+        bottom: var(--spacing-common);
+        flex-direction: column;
     }
 
     #header nav a {
         display: flex;
         padding-block: 0;
-        padding-inline: var(--spacing-common);
+        /* padding-inline: var(--spacing-common); */
         justify-content: center;
         align-items: center;
     }
