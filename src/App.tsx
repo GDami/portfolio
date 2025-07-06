@@ -49,6 +49,7 @@ function App() {
 		<div className='content-wrapper'>
 			<Header />
 			<div className='content'>
+				<div className='scroll-dummy'></div>
 				<Hero />
 				<section className=""><About /></section>
 				<section className=""><Projects /></section>

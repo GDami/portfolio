@@ -106,11 +106,13 @@ g, path {
 
     height: 100vh;
     height: 100dvh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .content {
     width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 1024px) {
@@ -121,7 +123,6 @@ g, path {
     .content {
         height: 100vh;
         height: 100dvh;
-        overflow: scroll;
     }
 }
 

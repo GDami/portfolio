@@ -3,14 +3,16 @@
     width: 100%;
     align-self: center;
     
-    position: fixed;
+    position: sticky;
+    top:0;
 
     font-family: "Roboto Mono", monospace;
     color: var(--color-main);
     background-color: var(--color-bg);
     transition: box-shadow calc(var(--transition-time) / 2),
     color var(--transition-time) ease-in-out,
-    background-color var(--transition-time) ease-in-out;
+    background-color var(--transition-time) ease-in-out,
+    border-color var(--transition-time) ease-in-out;
 
     z-index: 10;
 
@@ -192,6 +194,10 @@ a, a:visited {
         height: 100dvh;
 
         border-left: solid 1px var(--color-main);
+    }
+
+    #header.scrolled {
+        box-shadow: none;
     }
 
     #header nav {

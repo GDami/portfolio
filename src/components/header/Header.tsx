@@ -14,14 +14,6 @@ export function Header() {
     const darkRef = useRef<HTMLAnchorElement>(null)
     const languageRef = useRef<HTMLAnchorElement>(null)
 
-    const handleScroll = ( _ev: Event) => {
-        if (scrollY > 1) {
-            headerRef.current!.classList.add("scrolled")
-        } else {
-            headerRef.current!.classList.remove("scrolled")
-        }
-    }
-
     const initLanguage = () => {
         if (i18next.resolvedLanguage == "en") {
             changeLanguage("en")
@@ -69,9 +61,22 @@ export function Header() {
     
     useEffect(() => {
         initLanguage()
-        window.addEventListener('scroll', handleScroll, {passive: true})
 
-        return () => window.removeEventListener('scroll', handleScroll)
+        const scrollDummy = document.getElementsByClassName("scroll-dummy")[0]
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    headerRef.current!.classList.remove("scrolled")
+                } else {
+                    headerRef.current!.classList.add("scrolled")
+                }
+            })
+        })
+
+        scrollObserver.observe(scrollDummy)
+
+        return () => scrollObserver.disconnect()
     }, [])
 
 
