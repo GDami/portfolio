@@ -20,8 +20,8 @@ html {
 	--spacing-large: 2.5rem;
 	--spacing-xlarge: 3.5rem;
 
-	--transition-time: 0.3s;
-	--transition-time-button: calc(var(--transition-time) / 2);
+	--transition-time: 0.2s;
+	--transition-time-button: calc(var(--transition-time));
 }
 
 html.dark {
