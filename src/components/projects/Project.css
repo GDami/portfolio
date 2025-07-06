@@ -18,7 +18,7 @@
 
 .project:hover {
     box-shadow: -8px 8px var(--color-draw);
-    outline-width: 2px;
+    outline-width: 1px;
     border-color: var(--color-draw);
 }
 

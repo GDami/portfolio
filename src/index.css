@@ -33,7 +33,7 @@ html.dark {
 	--color-draw: rgb(58, 173, 110);
 	--color-draw-light: white;
 	--color-draw-shadow: var(--color-main);
-	--color-item-bg: rgb(17,23,22);
+	--color-item-bg: rgb(14,29,28);
 
 	--color-header: var(--color-item-bg);
 

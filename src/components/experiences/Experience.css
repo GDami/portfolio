@@ -18,7 +18,7 @@
 
 .experience:hover {
     box-shadow: -10px 10px var(--color-draw);
-    outline-width: 2px;
+    outline-width: 1px;
     border-color: var(--color-draw);
 }
 
