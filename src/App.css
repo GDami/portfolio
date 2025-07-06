@@ -17,18 +17,11 @@ footer {
 
 }
 
-@media screen and (max-width: 800px) {
-
-    /* without this the header and footer borders are aligned */
-    footer {
-        padding-block: calc(var(--spacing-low) + 2px);
-    }
-}
-
 .section-title {
     width: fit-content;
     align-self: center;
     font-weight: 400;
+    font-size: 2.2rem;
     cursor: default;
 }
 
@@ -64,7 +57,7 @@ footer {
     transition: width var(--transition-time) ease;
 }
 
-.animated-underline:hover::after {
+.animated-underline:hover::after, .hero-cta:hover .animated-underline::after {
     width: 100%;
     left: 0;
     right: auto;
@@ -99,18 +92,8 @@ strong {
     color: var(--color-draw)
 }
 
-@media screen and (max-width: 480px) {
-    /* .section-title {
-        align-self: flex-start;
-    } */
-
-    .section-container {
-        margin-inline: var(--spacing-common);
-    }
-
-    .section-title::before {
-        right: calc(100% + 2 * var(--spacing-common));
-    }
+h2 {
+    font-size: 1.5rem;
 }
 
 g, path {
@@ -120,6 +103,10 @@ g, path {
 .content-wrapper {
     display: flex;
     flex-direction: column;
+
+    height: 100vh;
+    height: 100dvh;
+    overflow: scroll;
 }
 
 .content {
@@ -135,5 +122,32 @@ g, path {
         height: 100vh;
         height: 100dvh;
         overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* .section-title {
+        align-self: flex-start;
+    } */
+
+    .section-container {
+        margin-inline: var(--spacing-common);
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-title::before {
+        right: calc(100% + 2 * var(--spacing-common));
+    }
+
+    /* without this the header and footer borders are aligned */
+    footer {
+        padding-block: calc(var(--spacing-low) + 2px);
+    }
+
+    h2 {
+        font-size: 1.3rem;
     }
 }

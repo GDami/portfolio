@@ -211,7 +211,7 @@ a, a:visited {
     }
 
     #header nav .header-buttons {
-        bottom: var(--spacing-common);
+        position:inherit;
         flex-direction: column;
     }
 

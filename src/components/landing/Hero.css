@@ -1,3 +1,12 @@
+.hero-container {
+    min-height: max(100vh, 500px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
 .hero {
     max-width: 800px;
     margin-inline: auto;
@@ -8,7 +17,6 @@
 
     gap: var(--spacing-xlarge);
 
-    min-height: max(100vh, 500px);
 
 }
 
@@ -54,8 +62,8 @@
 
 .hero-img-container {
     position:relative;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 250px    ;
+    max-width: 250px;
 
     opacity: 0;
     animation: appear-and-scale .3s .2s ease-in-out forwards;
@@ -143,9 +151,10 @@
     animation: appear-from-left .3s .4s ease-in-out forwards;
 }
 
-.hero-detail:hover {
-    color: var(--color-draw);
-    cursor: default;
+.hero-detail::after {
+    bottom: 0;
+    height: 1px;
+    background-color: var(--color-main);
 }
 
 .hero-ctas {
@@ -170,23 +179,21 @@
     text-decoration: none;
 }
 
-.hero-cta.animated-underline::after {
-    height: 1px;
-    bottom: calc( 1.5 * var(--spacing-low));
-    right: var(--spacing-common);
+.hero-cta .animated-underline::after {
+    height: 1.5px;
+    /* bottom: calc( 1.5 * var(--spacing-low)); */
+    /* right: var(--spacing-common); */
 }
 
-.hero-cta.animated-underline:hover::after {
+.hero-cta .animated-underline:hover::after {
     /* height: 2px; */
-    left: var(--spacing-common);
-    width: calc(100% - 2 * var(--spacing-common));
 }
 
-.hero-cta.animated-underline.primary::after {
+.hero-cta.primary .animated-underline::after {
     background-color: var(--color-bg);
 }
 
-.hero-cta.animated-underline.hero-cta.secondary::after {
+.hero-cta.secondary .animated-underline::after {
     background-color: var(--color-draw-shadow);
 }
 
@@ -215,15 +222,18 @@
         padding-top: var(--spacing-large);
         padding-bottom: calc( 2 * var(--spacing-xlarge));
         padding-inline: var(--spacing-large);
-        max-width: 400px;
         gap: var(--spacing-large);
+        width: auto;
+        align-items: flex-start;
+        justify-content: flex-end;
     }
     
     .hero-img-container {
-        min-width: 0;
-        max-width: 400px;
-    }
+        min-width: 200px;
+        width: 33%;
+        max-width: 33%;
 
+    }
 
 
     .hero-img-container, .hero-title, .hero-info, .hero-subtext, .hero-ctas {
@@ -234,15 +244,25 @@
         animation-delay: .1s;
     }
 
+    .hero-cta {
+        justify-content: center;
+    }
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .hero {
         padding-top: var(--spacing-common);
         padding-inline: var(--spacing-common);
+        gap: var(--spacing-common);
+        max-width: 600px;
     }
 
-    .hero-cta.animated-underline::after {
+    .hero-cta .animated-underline::after {
         display: none;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
     }
 }
