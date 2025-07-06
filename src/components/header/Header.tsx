@@ -113,9 +113,9 @@ export function Header() {
                 <div className='header-buttons'>
                     <a ref={resumeRef} className='resume-link' href={resumePDF} target='_blank'>
                         <span>{t("header.resume")}</span>
-                        <i className='resume-icon bx  bx-file-code'  ></i>
+                        <i className='resume-icon bx  bx-paperclip'  ></i>
                     </a>
-                    <a ref={languageRef} id='language-toggle' onClick={toggleLanguage}></a>
+                    <a ref={languageRef} className='bxr  bx-translate' id='language-toggle' onClick={toggleLanguage}></a>
                     <a ref={darkRef} className="bx-sun" id='dark-toggle' onClick={toggleDarkMode}></a>
                 </div>
             </nav>

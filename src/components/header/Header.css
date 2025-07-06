@@ -113,33 +113,19 @@
 }
 
 #dark-toggle {
-    color: var(--color-bg);
+    color: var(--color-darkmode-button-shadow);
     background-color: var(--color-draw-shadow);
     border: solid 1px var(--color-draw-shadow);
+    box-shadow: 0 0 var(--color-darkmode-button-shadow);
+}
+
+#dark-toggle::before {
+    color: var(--color-bg);
+    transition: color var(--transition-time) ease-in-out;
 }
 
 #language-toggle {
     border: solid 1px var(--color-main);
-}
-
-@font-face {
-    font-family: "Twemoji Country Flags";
-    unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
-    src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
-}
-
-#language-toggle::before {
-    font-family: "Twemoji Country Flags", sans-serif;
-    line-height: 1;
-    font-size: 1.5rem;
-}
-
-#language-toggle.en::before {
-    content:'🇬🇧';
-}
-
-#language-toggle.fr::before {
-    content:'🇫🇷';
 }
 
 a.resume-link, #language-toggle {
@@ -166,7 +152,7 @@ a.resume-link, #language-toggle {
 }
 
 #dark-toggle:not(:active) {
-    box-shadow: -2px 3px var(--color-darkmode-button-shadow);
+    box-shadow: -2px 3px;
 }
 
 #dark-toggle:active, .resume-link:active, #language-toggle:active {
@@ -180,10 +166,10 @@ a, a:visited {
 
 @media screen and (max-width: 1024px) {
 
-    #header {
+    /* #header { */
         /* background-color: var(--color-header); */
 
-        position: static;
+        /* position: static;
 
         top: 0;
         right: 0;
@@ -192,17 +178,17 @@ a, a:visited {
         height: 100dvh;
 
         border-left: solid 1px var(--color-main);
-    }
+    } */
 
     #header.scrolled {
-        box-shadow: none;
+        /* box-shadow: none; */
     }
 
     #header nav {
         /* padding: 0;
         gap: 0; */
-        flex-direction: column;
-        justify-content: space-around;
+        /* flex-direction: column; */
+        justify-content: center;
     }
 
     #header nav #header-title {
@@ -211,12 +197,13 @@ a, a:visited {
 
     #header nav .nav-center {
         opacity: 1;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     #header nav .header-buttons {
         position:initial;
-        flex-direction: column;
+        /* flex-direction: column; */
+        gap: var(--spacing-common);
     }
 
     #header nav a {
@@ -245,7 +232,7 @@ a, a:visited {
     }
 
     #header nav #dark-toggle, #header nav a.resume-link, #header nav #language-toggle {
-        padding: auto;
+        padding: 0;
         width: auto;
         border: none;
         box-shadow: none;
@@ -261,7 +248,7 @@ a, a:visited {
     }
 
     #header nav #dark-toggle {
-        padding: 2px;
-        border-radius: 20%;
+        color: var(--color-main);
+        background-color: var(--color-bg);
     }
 }
