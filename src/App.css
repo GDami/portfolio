@@ -80,7 +80,17 @@ section {
 }
 
 .shown {
-    animation: appear-and-scale .15s linear;
+    animation: appear-from-below .15s linear;
+}
+
+@keyframes appear-from-below {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 p span {
