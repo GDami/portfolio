@@ -7,8 +7,8 @@ export function Contact() {
 
     return (
         <div className="section-container contact" id="contact">
-            <h1 className="animated-underline"><strong>{t("contact.title.1")}</strong>{t("contact.title.2")}</h1>
-            <h3>gervydamien@gmail.com</h3>
+            <h1 className="contact-title animated-underline"><span>{t("contact.title.1")}</span>{t("contact.title.2")}</h1>
+            <h3 className="contact-mail">gervydamien@gmail.com</h3>
             <div className="contact-container">
                 <ul className="contact-list">
                     <ContactIcon link="mailto:gervydamien@gmail.com" class='bx  bx-envelope'></ContactIcon>
