@@ -10,8 +10,18 @@
     height: 3px;
 }
 
-.contact h3 {
-    color: var(--color-secondary);
+.contact-title {
+    font-weight: 400;
+    font-size: 2.7rem;
+    cursor: default;
+}
+
+.contact-title span {
+    color: var(--color-draw);
+}
+
+.contact-mail {
+    user-select: all;
 }
 
 .contact-list {
@@ -41,4 +51,10 @@
     margin:auto;
     height: 1px;
     background-color: var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-title {
+        font-size: 2.2rem;
+    }
 }

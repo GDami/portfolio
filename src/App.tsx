@@ -28,7 +28,7 @@ function App() {
 				}
 			})
 		}, {
-			rootMargin: "-50px"
+			rootMargin: "-80px"
 		})
 
 		const registerElement = (element: Element) => {

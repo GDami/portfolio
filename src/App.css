@@ -21,7 +21,7 @@ footer {
     width: fit-content;
     align-self: center;
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     cursor: default;
 }
 
@@ -80,7 +80,17 @@ section {
 }
 
 .shown {
-    animation: appear-and-scale .15s linear;
+    animation: appear-from-below .15s linear;
+}
+
+@keyframes appear-from-below {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 p span {
@@ -113,6 +123,11 @@ g, path {
     width: 100%;
     overflow: auto;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+.no-linebreak {
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 1024px) {
@@ -136,7 +151,7 @@ g, path {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
 
     .section-title::before {
@@ -149,6 +164,6 @@ g, path {
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
