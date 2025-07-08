@@ -6,7 +6,8 @@
     "header.contact": "contact",
     "header.resume": "Resume",
     
-    "hero.title": "hey, I'm Damien ",
+    "hero.title.1": "hey, ",
+    "hero.title.2": "I'm Damien ",
     "hero.subtext.1": "I'm a junior ",
     "hero.subtext.2": "frontend developer",
     "hero.subtext.3": " who cares about user experience and ",

@@ -15,7 +15,7 @@ export function Hero() {
                     <img className='villain-img' src={versoImg} alt='noisette-img'></img>
                 </div>
                 <div className='hero-heading'>
-                    <h1 className='hero-title'>{t("hero.title")}<span className='wave-hand'>👋</span></h1>
+                    <h1 className='hero-title'>{t("hero.title.1")}<span className='no-linebreak'>{t("hero.title.2")}<span className='wave-hand'>👋</span></span></h1>
                     <h3 className='hero-info'><i className='bxr  bx-location'  ></i> Paris, France</h3>
                     <h3 className='hero-subtext'>{t("hero.subtext.1")}<strong>{t("hero.subtext.2")}</strong>{t("hero.subtext.3")}<span className='hero-detail animated-underline'>{t("hero.subtext.4")}</span>.</h3>
                     <div className='hero-ctas'>

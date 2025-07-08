@@ -62,8 +62,8 @@
 
 .hero-img-container {
     position:relative;
-    min-width: 250px    ;
-    max-width: 250px;
+    min-width: 256px    ;
+    max-width: 256px;
 
     opacity: 0;
     animation: appear-and-scale .3s .2s ease-in-out forwards;
@@ -110,7 +110,7 @@
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 3.3rem;
     line-height: 1.2;
     opacity: 0;
     animation: appear-from-left .3s .2s ease-in-out forwards;
@@ -181,12 +181,6 @@
 
 .hero-cta .animated-underline::after {
     height: 1.5px;
-    /* bottom: calc( 1.5 * var(--spacing-low)); */
-    /* right: var(--spacing-common); */
-}
-
-.hero-cta .animated-underline:hover::after {
-    /* height: 2px; */
 }
 
 .hero-cta.primary .animated-underline::after {
@@ -263,7 +257,13 @@
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin-top: var(--spacing-common);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
     }
 }

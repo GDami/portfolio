@@ -126,6 +126,10 @@ g, path {
     scrollbar-width: thin;
 }
 
+.no-linebreak {
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 1024px) {
     .content-wrapper {
         flex-direction: column-reverse;
