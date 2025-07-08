@@ -68,7 +68,7 @@ h3 {
 }
 
 section {
-    padding-bottom: calc( 2 * var(--spacing-xlarge));
+    padding-bottom: var(--spacing-xlarge);
     display: flex;
     justify-content: center;
 
