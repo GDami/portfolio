@@ -1,6 +1,5 @@
 .hero-container {
     padding-top: calc(50vh - 220px);
-    padding-bottom: var(--spacing-xlarge);
     display: flex;
     flex-direction: column;
 
