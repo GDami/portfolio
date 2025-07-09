@@ -51,7 +51,7 @@
 
 #header nav .nav-center {
     display: flex;
-    gap: var(--spacing-common);
+    gap: calc(var(--spacing-common) + var(--spacing-low));
 }
 
 #header-title {
@@ -191,7 +191,7 @@ a, a:visited {
 
     #header nav .nav-center {
         opacity: 1;
-        /* flex-direction: column; */
+        gap: var(--spacing-common);
     }
 
     #header nav .header-buttons {
