@@ -51,7 +51,7 @@ function App() {
 			<div className='content'>
 				<div className='scroll-dummy'></div>
 				<Hero />
-				<section className=""><About /></section>
+				<section className="about-section"><About /></section>
 				<section className=""><Projects /></section>
 				<section className="skills-section"><Skills /></section>
 				<section className=""><Experiences /></section>

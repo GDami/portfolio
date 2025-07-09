@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-large)
+    gap: var(--spacing-large);
 }
 
 .about-container {
@@ -109,7 +109,8 @@
     margin-top: var(--spacing-common);
 }
 
-
+@media screen and (min-width: 1025px) {
+}
 
 @media screen and (max-width: 800px) {
     .about-container {

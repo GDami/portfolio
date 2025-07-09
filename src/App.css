@@ -8,6 +8,23 @@
     flex:1;
 
     padding-top: var(--spacing-large);
+
+    pointer-events: none;
+    opacity: 0;
+    animation: appear;
+    animation-timeline: scroll(nearest);
+    animation-range: 50px 300px;
+}
+
+@supports (animation-timeline: scroll()) {
+    .section-container {
+        animation-range-end: calc(50vh - 200px);
+    }
+}
+
+#header.scrolled + .content .section-container {
+    pointer-events: initial;
+    opacity: 1;
 }
 
 footer {
@@ -25,7 +42,7 @@ footer {
     cursor: default;
 }
 
-.section-title:hover span {
+.section-title span {
     color: var(--color-draw);
 }
 
@@ -39,6 +56,11 @@ footer {
     background-color: var(--color-main);
     pointer-events: none;
     transition: background-color var(--transition-time);
+}
+
+.scroll-dummy {
+    position: absolute;
+    height: 120px;
 }
 
 .animated-underline {
@@ -71,8 +93,6 @@ section {
     padding-bottom: var(--spacing-xlarge);
     display: flex;
     justify-content: center;
-
-
 }
 
 .hidden {
@@ -124,6 +144,8 @@ g, path {
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: thin;
+
+    position: relative;
 }
 
 .no-linebreak {
