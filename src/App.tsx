@@ -6,7 +6,7 @@ import { Projects } from './components/projects/Projects'
 import { Contact } from './components/contact/Contact'
 import { Skills } from './components/skills/Skills'
 import { Experiences } from './components/experiences/Experiences'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 
 
 
