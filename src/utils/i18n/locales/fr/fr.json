@@ -17,7 +17,7 @@
 
     "about.title.1": "à ",
     "about.title.2": "propos",
-    "whoami.description": "Je suis <1>Damien Gervy, développeur frontend</1> spécialisé sur React, et je cherche actuellement une <3>opportunité</3> de contribuer à des projets concrets et progresser au sein d'une équipe tech. Mon travail est principalement axé sur la <5>qualité</5> et la <7>simplicité</7>.",
+    "whoami.description": "Je m'appelle Damien Gervy et je suis un développeur frontend spécialisé sur <3>React</3>. Je cherche actuellement un poste pour <5>contribuer sur des projets concrets</5> et créer de la valeur avec mes développements. Mon travail est principalement axé sur la <7>qualité</7> et la <9>simplicité</9>.",
     "education.title": "formation",
     "education.description.1": "J'ai fait mes études et obtenu mon diplôme à l'",
     "education.description.2": "Université de Technologie de Troyes",
@@ -48,6 +48,12 @@
     "skills.github.description": "Mon GitHub est dispo en bas de la page. :)",
     "skills.english.name": "Anglais",
     "skills.english.description": "\"Be you, be proud of you because, you can be, do, what we want to do.\"",
+    "skills.problemsolving.name": "Résolution de problèmes",
+    "skills.problemsolving.description": "Trouver des solutions efficaces à des problèmes techniques ou métier.",
+    "skills.adaptability.name": "Adaptabilité",
+    "skills.adaptability.description": "Actually a shapeshifter.",
+    "skills.curiosity.name": "Curiosité",
+    "skills.curiosity.description": "I wonder.",
 
     "experiences.title.1": "mon ",
     "experiences.title.2": "expérience",

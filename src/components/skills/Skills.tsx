@@ -24,6 +24,9 @@ const { t } = useTranslation()
                 <SkillIcon name="git" class="bxl bx-git" level={2} description={t("skills.git.description")}></SkillIcon>
                 <SkillIcon name="Github" class="bxl bx-github" level={2} description={t("skills.github.description")}></SkillIcon>
                 {/* <SkillIcon name={t("skills.english.name")} class="bx bx-discussion" level={4} description={t("skills.english.description")}></SkillIcon> */}
+                <SkillIcon name={t("skills.problemsolving.name")} class="bxr bx-intellect" level={2} description=""></SkillIcon>
+                <SkillIcon name={t("skills.adaptability.name")} class="bxr bx-cursor" level={2} description=""></SkillIcon>
+                <SkillIcon name={t("skills.curiosity.name")} class="bxr bx-eye-alt" level={2} description=""></SkillIcon>
             </div>
         </div>
     )

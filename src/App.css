@@ -12,14 +12,8 @@
     pointer-events: none;
     opacity: 0;
     animation: appear;
-    animation-timeline: scroll(nearest);
+    animation-timeline: --content-scroller;
     animation-range: 50px 300px;
-}
-
-@supports (animation-timeline: scroll()) {
-    .section-container {
-        animation-range-end: calc(50vh - 200px);
-    }
 }
 
 #header.scrolled + .content .section-container {
@@ -145,6 +139,7 @@ g, path {
     scroll-behavior: smooth;
     scrollbar-width: thin;
 
+    scroll-timeline-name: --content-scroller;
     position: relative;
 }
 
@@ -156,17 +151,9 @@ g, path {
     .content-wrapper {
         flex-direction: column-reverse;
     }
-
-    /* .content {
-        height: 100vh;
-        height: 100dvh;
-    } */
 }
 
 @media screen and (max-width: 768px) {
-    /* .section-title {
-        align-self: flex-start;
-    } */
 
     .section-container {
         margin-inline: var(--spacing-common);
