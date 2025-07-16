@@ -163,8 +163,8 @@
 
 .hero-detail::after {
     bottom: 0;
-    height: 1px;
-    background-color: var(--color-main);
+    height: 1.5px;
+    background-color: var(--color-draw);
 }
 
 .hero-ctas {

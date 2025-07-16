@@ -8,10 +8,7 @@
     
     "hero.title.1": "hello, moi c'est ",
     "hero.title.2": "Damien ",
-    "hero.subtext.1": "",
-    "hero.subtext.2": "Développeur frontend",
-    "hero.subtext.3": " junior, je donne vie à vos designs avec une attention particulière aux ",
-    "hero.subtext.4": "détails",
+    "hero.subtext": "<1>Développeur frontend</1> junior, je donne vie à vos <3>designs</3> avec une attention particulière aux <5>détails</5>",
     "hero.cta.1": "À propos de moi",
     "hero.cta.2": "Voir mes projets",
 
