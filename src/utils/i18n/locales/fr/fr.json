@@ -33,6 +33,7 @@
     "skills.title.2": "compétences",
     "skills.html.description": "\"<h1>Hello World!</h1>\"",
     "skills.css.description": "Mon plaisir coupable. J'adore les choses qu'il permet de faire, et la gymnastique mentale qu'il pousse à adopter pour y arriver.",
+    "skills.tailwind.description": "CSS sans les lourdeurs de CSS, un vrai plaisir.",
     "skills.sass.description": "Je l'ai surtout utilisé pour les variables et le nesting.",
     "skills.typescript.description": "J'ai appris TypeScript pendant un stage où j'ai migré un outil interne depuis JavaScript. Je l'utilise maintenant religieusement.",
     "skills.reactjs.description": "Ce site est développé sur React !",
