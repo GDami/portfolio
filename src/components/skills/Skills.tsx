@@ -11,6 +11,7 @@ const { t } = useTranslation()
             <div className="skills-list">
                 <SkillIcon name="HTML5" class="bxl bx-html5" level={4} description={t("skills.html.description")}></SkillIcon>
                 <SkillIcon name="CSS3" class="bxl bx-css3" level={3} description={t("skills.css.description")}></SkillIcon>
+                <SkillIcon name="Tailwind" class="bxl bx-tailwind-css" level={3} description={t("skills.tailwind.description")}></SkillIcon>
                 {/* <SkillIcon name="Sass" class="bxl bx-sass" level={2} description={t("skills.sass.description")}></SkillIcon> */}
                 <SkillIcon name="TypeScript" class="bxl bx-typescript" level={3} description={t("skills.typescript.description")}></SkillIcon>
                 <SkillIcon name="React.js" class="bxl bx-react" level={3} description={t("skills.reactjs.description")}></SkillIcon>
