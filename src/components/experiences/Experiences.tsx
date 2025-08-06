@@ -14,6 +14,10 @@ export function Experiences() {
                 </div>
                 <div className='experiences-container'>
                     <Experience
+                    title={t("experience.younivibe.title")}
+                    description={t("experience.younivibe.description")}
+                    dates={[t("experience.younivibe.date.1"), t("experience.younivibe.date.2")]}/>
+                    <Experience
                     title={t("experience.coreoz.title")}
                     description={t("experience.coreoz.description")}
                     dates={[t("experience.coreoz.date.1"), t("experience.coreoz.date.2")]}/>

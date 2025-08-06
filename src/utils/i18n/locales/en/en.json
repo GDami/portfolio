@@ -55,6 +55,10 @@
 
     "experiences.title.1": "my ",
     "experiences.title.2": "experience",
+    "experience.younivibe.title": "Frontend developer at Younivibe",
+    "experience.younivibe.description": "I created the landing page for a very young startup company, collaborated with the designers to integrate the company's visual identity into the site and to deliver a smooth user experience. The whole website is written with React and Tailwind, and I also set the project up for continuous integration and deployment with Vercel.",
+    "experience.younivibe.date.1": "Jul 2025",
+    "experience.younivibe.date.2": "Aug 2025",
     "experience.coreoz.title": "Fullstack engineer intern at Coreoz",
     "experience.coreoz.description": "I collaborated on multiple projects : internal tools, apps and business applications. Most projects would use Spring Boot and React, and I gained a lot of hands-on experience using React in very different codebases. I also learned a lot on styling during a redesign project where I closely collaborated with the UX/UI Designer.",
     "experience.coreoz.date.1": "Nov 2020",

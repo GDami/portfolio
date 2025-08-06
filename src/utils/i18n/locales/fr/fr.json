@@ -55,6 +55,10 @@
 
     "experiences.title.1": "mon ",
     "experiences.title.2": "expérience",
+    "experience.younivibe.title": "Développeur frontend chez Younivibe",
+    "experience.younivibe.description": "J'ai créé une page d'accueil pour une startup à un stade précoce, en collaborant avec des designers pour donner au site l'identité visuelle du projet et pour créer une expérience utilisateur ciblée. La solution est codée en React et Tailwind, et est déployée automatiquement via Vercel.",
+    "experience.younivibe.date.1": "Juil 2025",
+    "experience.younivibe.date.2": "Aou 2025",
     "experience.coreoz.title": "Ingénieur fullstack (stage) chez Coreoz",
     "experience.coreoz.description": "Je suis intervenu sur plusieurs projets : des applications et des outils internes, et des applications métier. La stack technique était du React côté front, et côté back du Java/Spring Boot avec une base en Postgre. J'ai énormément progressé sur React grâce à ces différents projets. J'ai aussi étroitement collaboré avec l'UX/UI designer sur un projet de refonte d'application métier, ce qui m'a permis d'implémenter des maquettes de zéro, et de mieux comprendre les problématiques liées à l'expérience utilisateur.",
     "experience.coreoz.date.1": "Nov 2020",
