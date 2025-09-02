@@ -10,7 +10,7 @@ export function About() {
             <div className='about-container'>
                 <div className='about-details'>
                     <div className='about-detail'>
-                        <h2>&gt; whoami<span>_</span></h2>
+                        <h2>&gt; {t("whoami.title")}<span>_</span></h2>
                         <p>
                             <Trans i18nKey="whoami.description">
                                 I'm a <em>software engineer</em> with a degree in <em>computer science</em> and I am currently looking for opportunities to work as a <em>frontend or fullstack developer</em>. I started out as a script kiddie and have experience in both fullstack web development and game dev. I strive for <em>quality</em> and am always happy to <em>share my skills</em>.
