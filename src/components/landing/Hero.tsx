@@ -18,7 +18,7 @@ export function Hero() {
                 <h3 className='hero-info'><i className='bxr  bx-location'  ></i> Paris, France</h3>
                 <h3 className='hero-subtext'>
                     <Trans i18nKey="hero.subtext">
-                        I'm a junior <strong>frontend developer</strong> who cares about <strong>user experience</strong> and <strong className='hero-detail animated-underline'>detail</strong>.
+                        I'm a <strong>frontend developer</strong> who cares about <strong>user experience</strong> and <strong className='hero-detail animated-underline'>detail</strong>.
                     </Trans>
                 </h3>
                 <div className='hero-ctas'>
