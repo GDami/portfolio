@@ -52,7 +52,7 @@ const { t } = useTranslation()
                         reversed
                         technos={['godot']}
                     ></Project>
-                    <div className="more-to-come">{t("projects.emptysection")}</div>
+                    <h3 className="more-to-come">{t("projects.emptysection")}</h3>
                 </div>
             </div>
     )
