@@ -25,6 +25,7 @@
 
     "projects.title.1": "my ",
     "projects.title.2": "projects",
+    "projects.emptysection": "... and more to come !",
     "project.mouvise.description": "Mouvise is a fast and lightweight IMDB-like app I'm currently building. It tackles things like handling data, API calls, routing, and interface design.",
     "project.suivi.description": "Suivi Candidatures - French for 'application tracking' - is a tool I developed to help me keep track of all the applications I've sent (you're in there). It is a fullstack project with a few pages, data management and server side rendering.",
     "project.spotify.description": "A simple app I made to familiarize myself with Angular. This app shows you a random track with the press of a button. It uses the Spotify API.",

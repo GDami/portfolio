@@ -24,6 +24,7 @@ export function Project(props:ProjectProps) {
                 <img className="project-img" src={props.image} alt="project-img"></img>
                 <div className="project-overlay">
                     {props.source && (<a target='_blank' href={props.source} className="project-link bxl bx-github"></a>)}
+                    {props.link && (<a target='_blank' href={props.link} className="project-link bxr bx-arrow-in-up-right-stroke-square"></a>)}
                 </div>
             </div>
 

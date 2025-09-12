@@ -4,3 +4,9 @@
     gap: var(--spacing-common);
     margin-top: var(--spacing-large);
 }
+
+.more-to-come {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

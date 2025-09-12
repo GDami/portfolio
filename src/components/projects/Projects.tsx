@@ -18,13 +18,14 @@ const { t } = useTranslation()
                         title="mouvise"
                         description={t("project.mouvise.description")}
                         source="https://github.com/GDami/my-movie-app/"
+                        link="https://mouvise.damiengervy.dev/"
                         image={mouviseImg}
                         technos={['html5','css3','react','react-router', 'tailwind-css']}
                     ></Project>
                     <Project
                         title="Suivi Candidatures"
                         description={t("project.suivi.description")}
-                        source="https://github.com/GDami/SuiviCandidatures/"
+                        source="https://github.com/GDami/project.suivi.descriptionSuiviCandidatures/"
                         image={suiviImg}
                         technos={['html5','css3','python','django', 'sqlite']}
                     ></Project>
@@ -51,6 +52,7 @@ const { t } = useTranslation()
                         reversed
                         technos={['godot']}
                     ></Project>
+                    <div className="more-to-come">{t("projects.emptysection")}</div>
                 </div>
             </div>
     )
