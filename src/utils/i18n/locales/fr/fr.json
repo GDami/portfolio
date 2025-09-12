@@ -25,6 +25,7 @@
 
     "projects.title.1": "mes ",
     "projects.title.2": "projets",
+    "project.mouvise.description": "Mouvise est un outil de recherche de films et de séries, alla IMDB. C'est une application en cours de construction qui s'attaque à des problématiques de formatage des données, d'intégration d'API, de routage et d'UX/UI.",
     "project.suivi.description": "Un outil que j'ai créé pour m'aider à organiser et suivre mes candidatures dans le cadre de ma recherche d'emploi (oui, vous êtes dedans). C'est un projet fullstack développé avec Django, avec une base en SQLite et du SSR.",
     "project.spotify.description": "Une application assez basique que j'ai développée pour me familiariser avec Angular, et pour réapprendre le workflow pour consommer une API en JavaScript. L'application est composée d'un unique bouton qui va récupérer et afficher une musique au hasard via l'API Spotify. Pratique en cas de panne d'inspiration.",
     "project.mods.description": "Ma passion pour les jeux m'a guidé vers le gamedev, et plus précisément vers le modding. La structure existante des jeux et de leurs systèmes permet des cycles de développement rapides et ciblés, et le déploiement est généralement facile, ce qui permet d'avoir des retours réguliers de la part des joueurs. J'en ai surtout codé pour Brotato et Slay the Spire, mais j'ai aussi touché à de la 3D sur blender.",

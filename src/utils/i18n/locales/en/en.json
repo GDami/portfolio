@@ -25,6 +25,7 @@
 
     "projects.title.1": "my ",
     "projects.title.2": "projects",
+    "project.mouvise.description": "Mouvise is a fast and lightweight IMDB-like app I'm currently building. It tackles things like handling data, API calls, routing, and interface design.",
     "project.suivi.description": "Suivi Candidatures - French for 'application tracking' - is a tool I developed to help me keep track of all the applications I've sent (you're in there). It is a fullstack project with a few pages, data management and server side rendering.",
     "project.spotify.description": "A simple app I made to familiarize myself with Angular. This app shows you a random track with the press of a button. It uses the Spotify API.",
     "project.mods.description": "My love for games has led me to explore game dev, and I started modding as a way to gain experience developing and testing in short cycles. Mods have the advantage of requiring a minimal setup to work, and having a bunch of game system ready to be messed with. I made mods mostly for Brotato and Slay the Spire, but I have also tried my hand at 3D animation with blender.",

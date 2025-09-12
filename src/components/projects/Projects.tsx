@@ -1,8 +1,9 @@
 import { Project } from "./Project";
 import suiviImg from "/suivi-preview.png"
-import randomImg from "/random-preview.png"
+import mouviseImg from "/mouvise-preview.png"
+// import randomImg from "/random-preview.png"
 import modloaderImg from "/modloader.png"
-import modsImg from "/mods-prev.png"
+// import modsImg from "/mods-prev.png"
 import "./Projects.css"
 import { useTranslation } from "react-i18next";
 
@@ -14,27 +15,34 @@ const { t } = useTranslation()
                 <h1 className="section-title animated-underline">{t("projects.title.1")}<span>{t("projects.title.2")}</span></h1>
                 <div className="projects-list">
                     <Project
+                        title="mouvise"
+                        description={t("project.mouvise.description")}
+                        source="https://github.com/GDami/my-movie-app/"
+                        image={mouviseImg}
+                        technos={['html5','css3','react','react-router', 'tailwind-css']}
+                    ></Project>
+                    <Project
                         title="Suivi Candidatures"
                         description={t("project.suivi.description")}
                         source="https://github.com/GDami/SuiviCandidatures/"
                         image={suiviImg}
                         technos={['html5','css3','python','django', 'sqlite']}
                     ></Project>
-                    <Project
+                    {/* <Project
                         title="random spotify button"
                         description={t("project.spotify.description")}
                         source="https://github.com/GDami/random-spotify/"
                         image={randomImg}
                         reversed
                         technos={['html5','css3','typescript','angular',]}
-                    ></Project>
-                    <Project
+                    ></Project> */}
+                    {/* <Project
                         title="Mods"
                         description={t("project.mods.description")}
                         source="https://github.com/stars/GDami/lists/mod-repos/"
                         image={modsImg}
                         technos={['java','blender', 'godot']}
-                    ></Project>
+                    ></Project> */}
                     <Project
                         title="Godot Mod Loader"
                         description={t("project.modLoader.description")}
