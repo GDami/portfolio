@@ -52,7 +52,9 @@ const { t } = useTranslation()
                         reversed
                         technos={['godot']}
                     ></Project>
-                    <h3 className="more-to-come">{t("projects.emptysection")}</h3>
+                    <h3 className="more-to-come">
+                        <a href="https://www.linkedin.com/in/damien-gervy" target="_blank">{t("projects.emptysection")}</a>
+                    </h3>
                 </div>
             </div>
     )
