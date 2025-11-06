@@ -11,9 +11,9 @@ export function Contact() {
             <h3 className="contact-mail">gervydamien@gmail.com</h3>
             <div className="contact-container">
                 <ul className="contact-list">
+                    <ContactIcon link="https://www.linkedin.com/in/damien-gervy" class='bxl  bx-linkedin'></ContactIcon>
                     <ContactIcon link="mailto:gervydamien@gmail.com" class='bx  bx-envelope'></ContactIcon>
                     <ContactIcon link="https://github.com/GDami" class='bxl  bx-github'></ContactIcon>
-                    <ContactIcon link="https://www.linkedin.com/in/damien-gervy" class='bxl  bx-linkedin'></ContactIcon>
                     {/* <ContactIcon link="https://x.com/DamienGervy" class='bxl  bx-twitter'></ContactIcon> */}
                 </ul>
             </div>
