@@ -16,7 +16,6 @@ export function About() {
                                 I'm a <em>software engineer</em> with a degree in <em>computer science</em> and I am currently looking for opportunities to work as a <em>fullstack or frontend developer</em>. I started out as a script kiddie and have experience in both fullstack web development and game dev. I strive for <em>quality</em> and am always happy to <em>share my skills</em>.
                             </Trans>
                             </p>
-                        <br></br>
                     </div>
                     <div className='about-detail'>
                         <h2>&gt; {t("hobbies.title")}<span>_</span></h2>
@@ -25,7 +24,6 @@ export function About() {
                                 My other interests include <em>piano</em>, <em>biking</em>, <em>cooking</em>, <em>games</em> and <em>cat petting</em>. I love <em>exploring</em> and <em>learning</em>. I also find contentment in figuring out how things work, be it through <em>research</em> or <em>experimenting</em>.
                             </Trans>
                         </p>
-                        <br></br>
                     </div>
                     <div className='about-detail'>
                         <h2>&gt; {t("education.title")}<span>_</span></h2>
