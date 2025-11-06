@@ -35,7 +35,7 @@
 .contact-icon:hover {
     background-color: var(--color-draw);
     border-color: var(--color-draw);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .contact-icon:hover span {
