@@ -23,18 +23,26 @@ html {
 
 	--transition-time: 0.2s;
 	--transition-time-button: calc(var(--transition-time));
+
+    --shadow-xs: 0 0 2px black;
+    --shadow-sm: 0 0 4px black;
+    --shadow-md: 0 0 6px black;
+    --shadow-lg: 0 0 10px black;
 }
 
 html.dark {
 
 	--color-main: white;
 	--color-secondary: rgb(197,197,197);
-	--color-bg: #021B1A;
+	--color-bg: oklch(0.2 0.032 191.35);
+	--color-bg-light-1: oklch(0.27 0.032 191.35);
+	--color-bg-light-2: oklch(0.32 0.032 191.35);
 
 	--color-draw: #88F7E6;
 	--color-draw-light: white;
 	--color-draw-shadow: var(--color-main);
 	--color-item-bg: #032221;
+	--color-item-bg: var(--color-bg-light-2);
 
 	--color-header: var(--color-item-bg);
 
@@ -46,12 +54,14 @@ html:not(.dark) {
 
 	--color-main: rgb(38,52,46);
 	--color-secondary: rgb(31,31,31);
-	--color-bg: rgb(230,251,245);
+	--color-bg: oklch(0.94 0.0233 176.85);
+	--color-bg-light-1: oklch(0.97 0.0233 176.85);
+	--color-bg-light-2: white;
 
 	--color-draw: rgb(10, 120, 90);
 	--color-draw-light: white;
 	--color-draw-shadow: var(--color-draw);
-	--color-item-bg: rgb(248,252,251);
+	--color-item-bg: var(--color-bg-light-2);
 	
 	--color-header: var(--color-item-bg);
 	

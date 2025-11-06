@@ -77,6 +77,7 @@
 
     opacity: 0;
     animation: appear-and-scale .3s .2s ease-in-out forwards;
+
 }
 
 .hero-img {
@@ -85,6 +86,7 @@
 
     transition: rotate var(--transition-time);
     backface-visibility: hidden;
+    box-shadow: var(--shadow-sm);
 }
 
 .villain-img {
@@ -98,7 +100,7 @@
     backface-visibility: hidden;
 
     rotate: y -180deg;
-
+    box-shadow: var(--shadow-sm);
 }
 
 .hero-img-container, .hero-img, .villain-img {
@@ -187,6 +189,7 @@
     padding-inline: var(--spacing-common);
 
     text-decoration: none;
+    box-shadow: var(--shadow-sm);
 }
 
 .hero-cta .animated-underline::after {
@@ -205,14 +208,14 @@
     color: var(--color-bg);
     background-color: var(--color-draw-shadow);
     font-weight: bold;
-    border: solid 1px var(--color-draw-shadow);
+    /* border: solid 1px var(--color-draw-shadow); */
 }
 
 .hero-cta.secondary {
     color: var(--color-draw-shadow);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-light-2);
     font-weight: 600;
-    border: solid 1px;
+    /* border: solid 1px; */
 }
 
 /* .dark .hero-cta.secondary {

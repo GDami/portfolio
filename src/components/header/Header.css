@@ -9,7 +9,11 @@
     font-family: "Roboto Mono", monospace;
     color: var(--color-main);
     background-color: var(--color-bg);
-    transition: box-shadow calc(var(--transition-time) / 2),
+    /* border-bottom: solid 1px var(--color-secondary); */
+    box-shadow: var(--shadow-md);
+
+    transition:
+    /* box-shadow calc(var(--transition-time) / 2), */
     color var(--transition-time) ease-in-out,
     background-color var(--transition-time) ease-in-out,
     border-color var(--transition-time) ease-in-out;
@@ -31,7 +35,8 @@
 }
 
 #header.scrolled {
-    box-shadow: 0 0 2px;
+    /* border-color: var(--color-secondary); */
+    /* box-shadow: 0 0 2px; */
     /* background-color: var(--color-header); */
 }
 

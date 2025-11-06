@@ -49,14 +49,16 @@ function App() {
 		<div className='content-wrapper'>
 			<Header />
 			<div className='content'>
-				<div className='scroll-dummy'></div>
-				<Hero />
-				<section className="about-section"><About /></section>
-				<section className=""><Projects /></section>
-				<section className="skills-section"><Skills /></section>
-				<section className=""><Experiences /></section>
-				<section className=""><Contact /></section>
-				<footer>© 2025 Damien Gervy</footer>
+                <div className='content-thin'>
+                    <div className='scroll-dummy'></div>
+                    <Hero />
+                    <section className="about-section"><About /></section>
+                    <section className=""><Projects /></section>
+                    <section className="skills-section"><Skills /></section>
+                    <section className=""><Experiences /></section>
+                    <section className=""><Contact /></section>
+                    <footer>© 2025 Damien Gervy</footer>
+                </div>
 			</div>
 		</div>
 	)
