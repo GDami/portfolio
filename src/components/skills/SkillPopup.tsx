@@ -3,7 +3,7 @@ import './SkillPopup.css'
 
 type SkillPopupProps = {
     description: string,
-    ref:RefObject<any>
+    ref:RefObject<HTMLDivElement>
 }
 
 export function SkillPopup(props:SkillPopupProps) {

@@ -11,10 +11,10 @@
 
     padding: var(--spacing-low);
 
-    border: solid 1px;
-    border-radius: 3px;
-    background-color: var(--color-item-bg);
-    color: var(--color-main);
+    border: solid 1px var(--color-draw-shadow);
+    /* border-radius: 3px; */
+    background-color: var(--color-draw-shadow);
+    color: var(--color-bg);
 
     line-height: normal;
 

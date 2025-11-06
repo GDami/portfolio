@@ -1,4 +1,4 @@
-import { useRef, type MouseEventHandler } from 'react'
+import { useRef, type MouseEventHandler, type RefObject } from 'react'
 import './SkillIcon.css'
 import { SkillPopup } from './SkillPopup'
 
@@ -10,19 +10,25 @@ type SkillIconProps = {
 }
 
 export function SkillIcon(props:SkillIconProps) {
-    const popupRef = useRef<HTMLElement>(null)
+    const popupRef = useRef<HTMLDivElement>(null)
 
     const checkBounds:MouseEventHandler<HTMLDivElement> = (event) => {
         const div = event.target as HTMLElement
 
-        popupRef.current?.classList.toggle(
-            "left",
-            (div.offsetLeft + popupRef.current?.offsetWidth!) + 8 > window.innerWidth
-        )
+        console.log(div.offsetLeft + 8)
+        console.log(popupRef.current?.offsetWidth)
+        console.log(window.innerWidth)
+
+        if (div.parentElement) {
+            popupRef.current?.classList.toggle(
+                "left",
+                (div.offsetLeft + popupRef.current?.offsetWidth) + 8 > (div.parentElement?.offsetLeft + div.parentElement?.offsetWidth)
+            )
+        }
 
         popupRef.current?.classList.toggle(
             "top",
-            div.getBoundingClientRect().bottom + popupRef.current?.offsetHeight! + 16 > window.innerHeight
+            div.getBoundingClientRect().bottom + popupRef.current?.offsetHeight + 16 > window.innerHeight
         )
     }
 
@@ -32,7 +38,7 @@ export function SkillIcon(props:SkillIconProps) {
                 < i className={props.class}  ></i> 
                 {props.name}
             </span>
-            {props.description && <SkillPopup ref={popupRef} description={props.description}></SkillPopup>}
+            {props.description && <SkillPopup ref={popupRef as RefObject<HTMLDivElement>} description={props.description}></SkillPopup>}
         </div>
     )
 }
