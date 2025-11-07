@@ -9,4 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.more-to-come a {
+    text-decoration: none;
+}
+
+.more-to-come a:hover {
+    text-decoration: underline;
 }

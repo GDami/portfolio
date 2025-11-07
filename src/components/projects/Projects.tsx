@@ -53,7 +53,7 @@ const { t } = useTranslation()
                         technos={['godot']}
                     ></Project>
                     <h3 className="more-to-come">
-                        <a href="https://www.linkedin.com/in/damien-gervy" target="_blank">{t("projects.emptysection")}</a>
+                        <a href="https://github.com/GDami" target="_blank">{t("projects.emptysection")}</a>
                     </h3>
                 </div>
             </div>

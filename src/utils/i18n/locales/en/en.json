@@ -6,9 +6,9 @@
     "header.contact": "contact",
     "header.resume": "Resume",
     
-    "hero.title.1": "Hey, ",
-    "hero.title.2": "I'm Damien ",
-    "hero.subtext": "I'm a <1>fullstack developer</1> who is passionate about <3>user experience</3> and attentive to <5>detail</5>.",
+    "hero.title.1": "Damien Gervy",
+    "hero.title.2": "",
+    "hero.subtext": "<1>Fullstack developer</1>.",
     "hero.cta.1": "More about me",
     "hero.cta.2": "Check my projects",
 
@@ -65,7 +65,7 @@
     "experience.coreoz.date.1": "Nov 2020",
     "experience.coreoz.date.2": "Apr 2021",
     "experience.factorythings.title": "Backend engineer intern at factorythings",
-    "experience.factorythings.description": "I worked on the company's main project : a B2B web application for visualizing data from IoT devices that monitor critical physical values on industry machines. I implemented communication protocols with Node.js and collaborated with the Product Manager to adapt the architecture. I also did some bugfixing on the UI part of the application, which introduced me to React.",
+    "experience.factorythings.description": "I worked on the company's main project : a SaaS application for visualizing data from IoT devices, monitoring critical physical values on industry machinery. I implemented two communication protocols: Modbus and OPC UA, within the Node.js backend and collaborated with the Product Manager to adapt the architecture. I also did some bugfixing on the UI part of the application, which introduced me to React.",
     "experience.factorythings.date.1": "Aug 2018",
     "experience.factorythings.date.2": "Jan 2019",
 

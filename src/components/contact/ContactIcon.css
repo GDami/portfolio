@@ -19,7 +19,7 @@
 
     border: solid 1px var(--color-main);
     border-radius: 4px;
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-light-2);
 
     transition: all var(--transition-time-button) ease-in-out;
 }

@@ -7,20 +7,9 @@
 }
 
 .hero {
-    width: 800px;
-    height: 400px;
-    margin-inline: auto;
-
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap-reverse;
-
-    justify-content: center;
-    align-items: flex-end;
-
     gap: var(--spacing-common);
-
-
 }
 
 .hero > * {
@@ -68,16 +57,35 @@
     }
 }
 
+.hero-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xlarge);
+
+    width: 800px;
+    height: 400px;
+    margin-inline: auto;
+}
+
 .hero-img-container {
     position:relative;
     min-width: 256px;
     max-width: 256px;
     
-    order: 9;
+    /* order: 9; */
 
     opacity: 0;
     animation: appear-and-scale .3s .2s ease-in-out forwards;
 
+}
+    
+.hero-img-container:not(.mobile) {
+    display: block;
+}
+
+.hero-img-container.mobile {
+    display: none;
 }
 
 .hero-img {
@@ -126,6 +134,8 @@
     line-height: 1.2;
     opacity: 0;
     animation: appear-from-left .3s .2s ease-in-out forwards;
+
+    margin-bottom: -14px;
 }
 
 .wave-hand {
@@ -170,7 +180,7 @@
 }
 
 .hero-ctas {
-    margin-top: var(--spacing-common);
+    /* margin-top: var(--spacing-common); */
     display: flex;
     gap: var(--spacing-common);
     flex-wrap: wrap;
@@ -189,7 +199,6 @@
     padding-inline: var(--spacing-common);
 
     text-decoration: none;
-    box-shadow: var(--shadow-sm);
 }
 
 .hero-cta .animated-underline::after {
@@ -205,17 +214,17 @@
 }
 
 .hero-cta.primary {
-    color: var(--color-bg);
+    color: var(--color-bg-light-2);
     background-color: var(--color-draw-shadow);
     font-weight: bold;
-    /* border: solid 1px var(--color-draw-shadow); */
+    border: solid 1px var(--color-draw-shadow);
 }
 
 .hero-cta.secondary {
     color: var(--color-draw-shadow);
-    background-color: var(--color-bg-light-2);
+    /* background-color: var(--color-bg-light-2); */
     font-weight: 600;
-    /* border: solid 1px; */
+    border: solid 1px;
 }
 
 /* .dark .hero-cta.secondary {
@@ -232,16 +241,15 @@
         min-height: calc(100vh - var(--header-height));
     }
 
-    .hero {
-        flex-direction: column;
-        padding: var(--spacing-common);
-        gap: var(--spacing-common);
+    .hero-columns {
         width: auto;
         max-width: 400px;
-        align-items: flex-end;
-        justify-content: flex-end;
+    }
 
-        height:auto;
+    .hero {
+        flex-direction: column;
+        /* padding: var(--spacing-common); */
+        /* height:auto; */
     }
     
     .hero-img-container {
@@ -249,6 +257,14 @@
         width: 100%;
         max-width: 400px;
         order: 1;
+    }
+    
+    .hero-img-container:not(.mobile) {
+        display: none;
+    }
+
+    .hero-img-container.mobile {
+        display: block;
     }
 
     .hero-title {

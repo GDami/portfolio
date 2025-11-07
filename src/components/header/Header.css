@@ -8,7 +8,7 @@
 
     font-family: "Roboto Mono", monospace;
     color: var(--color-main);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-header);
     /* border-bottom: solid 1px var(--color-secondary); */
     box-shadow: var(--shadow-md);
 
@@ -37,7 +37,6 @@
 #header.scrolled {
     /* border-color: var(--color-secondary); */
     /* box-shadow: 0 0 2px; */
-    /* background-color: var(--color-header); */
 }
 
 #header nav {

@@ -67,7 +67,6 @@
 
 .about-detail:hover {
     background-color: var(--color-bg-light-2);
-    /* box-shadow: var(--shadow-xs); */
 }
 
 .about-details h2 {
