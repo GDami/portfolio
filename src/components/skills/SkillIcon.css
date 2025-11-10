@@ -31,5 +31,5 @@
 }
 
 .skill-icon:hover .skill-text {
-    color: var(--color-bg);
+    color: var(--color-bg-light-2);
 }

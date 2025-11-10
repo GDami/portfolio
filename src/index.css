@@ -32,6 +32,9 @@ html {
     --shadow-xs-inset: inset 0 0 2px black;
     --shadow-sm-inset: inset 0 0 4px black;
     --shadow-md-inset: inset 0 0 6px black;
+
+	--color-project-overlay: rgba(255,255,255,0.5);
+	--color-project-overlay-icon: black;
 }
 
 html.dark {
@@ -51,14 +54,17 @@ html.dark {
 
 	--color-darkmode-button-shadow: rgb(170,170,170);
 
+	--color-project-overlay: rgba(255,255,255,0.5);
+	--color-project-overlay-icon: white;
+
 }
 
 html:not(.dark) {
 
 	--color-main: rgb(38,52,46);
 	--color-secondary: rgb(31,31,31);
-	--color-bg: oklch(0.92 0.0233 176.85);
-	--color-bg-light-1: oklch(0.965 0.0233 176.85);
+	--color-bg: oklch(0.85 0.0233 176.85);
+	--color-bg-light-1: oklch(0.95 0.0233 176.85);
 	--color-bg-light-2: white;
 	--color-bg-header: oklch(0.99 0.0233 176.85);
 

@@ -14,7 +14,7 @@
     border: solid 1px var(--color-draw-shadow);
     /* border-radius: 3px; */
     background-color: var(--color-draw-shadow);
-    color: var(--color-bg);
+    color: var(--color-bg-light-2);
 
     line-height: normal;
 

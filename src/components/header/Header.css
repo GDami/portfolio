@@ -19,10 +19,6 @@
     border-color var(--transition-time) ease-in-out;
 
     z-index: 10;
-
-    opacity: 0;
-
-    animation: appear .5s .6s forwards;
 }
 
 @keyframes appear {
@@ -49,6 +45,10 @@
     padding-inline: var(--spacing-common);
 
     position: relative;
+
+    opacity: 0;
+
+    animation: appear .5s .3s forwards;
 }
 
 
@@ -124,7 +124,7 @@
 }
 
 #dark-toggle::before {
-    color: var(--color-bg);
+    color: var(--color-bg-light-2);
     transition: color var(--transition-time) ease-in-out;
 }
 
