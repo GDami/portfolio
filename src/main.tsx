@@ -9,7 +9,7 @@ import i18next from 'i18next'
 function initDarkMode() {
 
     let dark = localStorage.getItem("dark")
-    dark = dark || "light"
+    dark = dark || "dark"
 
     if (dark == "dark" && !document.documentElement.classList.contains("dark")) {
       localStorage.setItem("dark", dark)
