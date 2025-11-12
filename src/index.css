@@ -54,9 +54,6 @@ html.dark {
 
 	--color-darkmode-button-shadow: rgb(170,170,170);
 
-	--color-project-overlay: rgba(255,255,255,0.5);
-	--color-project-overlay-icon: white;
-
 }
 
 html:not(.dark) {
