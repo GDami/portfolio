@@ -9,17 +9,17 @@
 
     padding-top: var(--spacing-large);
 
-    pointer-events: none;
+    /* pointer-events: none; */
     opacity: 0;
-    animation: appear;
-    animation-timeline: --content-scroller;
-    animation-range: 50px 300px;
+    animation: appear 0.5s .7s forwards;
+    /* animation-timeline: --content-scroller;
+    animation-range: 50px 300px; */
 }
 
-#header.scrolled + .content .section-container {
+/* #header.scrolled + .content .section-container {
     pointer-events: initial;
     opacity: 1;
-}
+} */
 
 footer {
     border-top: solid 1px var(--color-secondary);
@@ -88,7 +88,7 @@ section {
     display: flex;
     justify-content: center;
 
-    
+
 }
 
 .hidden {
@@ -141,7 +141,7 @@ g, path {
     scroll-behavior: smooth;
     scrollbar-width: thin;
 
-    scroll-timeline-name: --content-scroller;
+    /* scroll-timeline-name: --content-scroller; */
     position: relative;
 
     display: flex;
