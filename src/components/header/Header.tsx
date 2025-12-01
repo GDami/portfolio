@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
 import './Header.css'
 
-import resumePDF from '/Resume Damien Gervy.pdf'
-import CVPDF from '/CV Damien Gervy.pdf'
+import resumePDF from '/Resume - Damien Gervy - Fullstack Developer - 2025.pdf'
+import CVPDF from '/CV - Damien Gervy - Développeur Fullstack - 2025.pdf'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 
