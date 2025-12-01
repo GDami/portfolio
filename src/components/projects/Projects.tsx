@@ -25,7 +25,7 @@ const { t } = useTranslation()
                     <Project
                         title="Suivi Candidatures"
                         description={t("project.suivi.description")}
-                        source="https://github.com/GDami/project.suivi.descriptionSuiviCandidatures/"
+                        source="https://github.com/GDami/SuiviCandidatures/"
                         image={suiviImg}
                         technos={['html5','css3','python','django', 'sqlite']}
                     ></Project>
